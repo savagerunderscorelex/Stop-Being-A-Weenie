@@ -1,10 +1,43 @@
-[gd_scene load_steps=2 format=3 uid="uid://cy0csimrn28jr"]
+[gd_scene load_steps=6 format=3 uid="uid://cy0csimrn28jr"]
 
-[ext_resource type="Texture2D" uid="uid://cxybykecjfbu1" path="res://icon.svg" id="1_wtcfe"]
+[ext_resource type="Texture2D" uid="uid://cxybykecjfbu1" path="res://icon.svg" id="1_0xm2m"]
+[ext_resource type="Texture2D" uid="uid://dwjfbn6bmuy3m" path="res://fillin bagz - Single by zyth _ Spotify.jpg" id="2_h2yge"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_1bvp3"]
+size = Vector2(132, 128)
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_lquwl"]
+texture = ExtResource("2_h2yge")
+28:12/0 = 0
+29:12/0 = 0
+30:12/0 = 0
+31:12/0 = 0
+28:13/0 = 0
+29:13/0 = 0
+30:13/0 = 0
+31:13/0 = 0
+28:14/0 = 0
+29:14/0 = 0
+30:14/0 = 0
+31:14/0 = 0
+28:15/0 = 0
+29:15/0 = 0
+30:15/0 = 0
+31:15/0 = 0
+
+[sub_resource type="TileSet" id="TileSet_7mycd"]
+sources/1 = SubResource("TileSetAtlasSource_lquwl")
 
 [node name="Node2D" type="Node2D"]
 
 [node name="CharacterBody2D" type="CharacterBody2D" parent="."]
 
 [node name="Sprite2D" type="Sprite2D" parent="CharacterBody2D"]
-texture = ExtResource("1_wtcfe")
+texture = ExtResource("1_0xm2m")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D"]
+position = Vector2(1, -1)
+shape = SubResource("RectangleShape2D_1bvp3")
+
+[node name="TileMapLayer" type="TileMapLayer" parent="."]
+tile_set = SubResource("TileSet_7mycd")
