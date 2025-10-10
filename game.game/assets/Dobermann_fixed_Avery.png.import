@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dwjfbn6bmuy3m"
-path="res://.godot/imported/fillin bagz - Single by zyth _ Spotify.jpg-6dd79d54dcfa2f42ce13c77187b23cf9.ctex"
+uid="uid://x3thbho7ao1r"
+path="res://.godot/imported/Dobermann_fixed_Avery.png-c1ae898dde5bd210acbf5f88bf15cab3.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://fillin bagz - Single by zyth _ Spotify.jpg"
-dest_files=["res://.godot/imported/fillin bagz - Single by zyth _ Spotify.jpg-6dd79d54dcfa2f42ce13c77187b23cf9.ctex"]
+source_file="res://assets/Dobermann_fixed_Avery.png"
+dest_files=["res://.godot/imported/Dobermann_fixed_Avery.png-c1ae898dde5bd210acbf5f88bf15cab3.ctex"]
 
 [params]
 
