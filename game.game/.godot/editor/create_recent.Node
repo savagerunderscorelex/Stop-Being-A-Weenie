@@ -1,4 +1,5 @@
+AnimatedSprite2D
+CharacterBody2D
 TileMapLayer
 CollisionShape2D
 Sprite2D
-CharacterBody2D

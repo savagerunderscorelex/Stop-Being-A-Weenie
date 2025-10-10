@@ -1,0 +1,25 @@
+[gd_scene load_steps=2 format=3 uid="uid://b6r057qfjm5ad"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_8f7nc"]
+animations = [{
+"frames": [],
+"loop": true,
+"name": &"Idle",
+"speed": 5.0
+}, {
+"frames": [],
+"loop": true,
+"name": &"Walking_left",
+"speed": 5.0
+}, {
+"frames": [],
+"loop": true,
+"name": &"Walking_right",
+"speed": 5.0
+}]
+
+[node name="Hotdog" type="CharacterBody2D"]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_8f7nc")
+animation = &"Walking_left"
