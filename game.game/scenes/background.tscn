@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=3 uid="uid://cwqj114lof07w"]
+
+[ext_resource type="Texture2D" uid="uid://cvbmocbsrul8d" path="res://assets/Background_2.png" id="1_y0upk"]
+[ext_resource type="Texture2D" uid="uid://1i60u65l7lys" path="res://assets/Background_1.png" id="2_jougr"]
+
+[node name="Background" type="Node2D"]
+
+[node name="Background-Sky" type="Sprite2D" parent="."]
+position = Vector2(1033.5, 469)
+scale = Vector2(4.16734, 3.44117)
+texture = ExtResource("1_y0upk")
+
+[node name="Foreground-clouds" type="Sprite2D" parent="."]
+position = Vector2(1033.5, 470.5)
+scale = Vector2(4.16734, 3.43015)
+texture = ExtResource("2_jougr")

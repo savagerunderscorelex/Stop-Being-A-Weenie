@@ -1,0 +1,93 @@
+[gd_scene load_steps=13 format=3 uid="uid://m0d0pdtqgsgi"]
+
+[ext_resource type="Script" uid="uid://cmwk0qdpd21gf" path="res://scripts/hot_dog_coin.gd" id="1_pixb7"]
+[ext_resource type="Texture2D" uid="uid://knfyjm33x7iv" path="res://assets/hotdog.png" id="1_vfcmv"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_pixb7"]
+atlas = ExtResource("1_vfcmv")
+region = Rect2(0, 270, 1080, 270)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_knub6"]
+atlas = ExtResource("1_vfcmv")
+region = Rect2(0, 0, 1080, 270)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_m0tef"]
+atlas = ExtResource("1_vfcmv")
+region = Rect2(0, 810, 1080, 270)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_wrc28"]
+atlas = ExtResource("1_vfcmv")
+region = Rect2(0, 540, 1080, 270)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_58kic"]
+atlas = ExtResource("1_vfcmv")
+region = Rect2(0, 540, 1080, 270)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4jdl8"]
+atlas = ExtResource("1_vfcmv")
+region = Rect2(0, 810, 1080, 270)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_xryim"]
+atlas = ExtResource("1_vfcmv")
+region = Rect2(0, 0, 1080, 270)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_bkt6f"]
+atlas = ExtResource("1_vfcmv")
+region = Rect2(0, 270, 1080, 270)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_do0wu"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_pixb7")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_knub6")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_m0tef")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_wrc28")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_58kic")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_4jdl8")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_xryim")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_bkt6f")
+}],
+"loop": true,
+"name": &"default",
+"speed": 6.0
+}, {
+"frames": [],
+"loop": true,
+"name": &"new_animation",
+"speed": 5.0
+}]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_knub6"]
+radius = 140.014
+
+[node name="hot_dog_coin" type="Node2D"]
+script = ExtResource("1_pixb7")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(213, 164)
+sprite_frames = SubResource("SpriteFrames_do0wu")
+frame = 6
+frame_progress = 0.488157
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(186, 155)
+shape = SubResource("CircleShape2D_knub6")
+
+[connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]

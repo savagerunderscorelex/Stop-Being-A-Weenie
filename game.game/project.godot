@@ -15,6 +15,10 @@ run/main_scene="uid://blo78sse3cfin"
 config/features=PackedStringArray("4.4", "Mobile")
 config/icon="res://icon.svg"
 
+[autoload]
+
+BgMusic="*res://bgMusic.tscn"
+
 [display]
 
 window/stretch/mode="viewport"
