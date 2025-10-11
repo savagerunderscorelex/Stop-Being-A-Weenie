@@ -1,6 +1,5 @@
-res://addons/godot_super-wakatime/README.md
-res://hotdog.tscn
-res://scenes/hotdog.tscn
-res://scripts/hotdog.gd
 res://main.tscn
+res://scenes/hotdog.tscn
 res://scenes/platform.tscn
+res://scenes/main_menu.tscn
+res://scripts/hotdog.gd

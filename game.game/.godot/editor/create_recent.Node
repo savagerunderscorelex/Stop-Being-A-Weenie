@@ -1,5 +1,6 @@
-StaticBody2D
+Camera2D
 CollisionPolygon2D
+StaticBody2D
 CollisionShape2D
 ColorRect
 MeshInstance2D

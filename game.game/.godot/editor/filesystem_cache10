@@ -1,7 +1,7 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1760137704
+::res://::1760179976
 icon.svg::CompressedTexture2D/CompressedTexture2D::6436833944720680894::1751111885::1751111899::1::::<><><>0<>0<>a34015e5905048d440045f1ad2ece94f<>res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex::
-main.tscn::PackedScene::3189402100681708417::1760137704::0::1::::<><><>0<>0<><>::uid://dy1hr0aihdyf4::::res://scenes/hotdog.tscn<>uid://cmebxqkg26v3d::::res://scenes/platform.tscn
+main.tscn::PackedScene/PackedScene::3189402100681708417::1760144061::0::1::::<><><>0<>0<><>::uid://dy1hr0aihdyf4::::res://scenes/hotdog.tscn<>uid://cmebxqkg26v3d::::res://scenes/platform.tscn
 ::res://addons/::1751831262
 ::res://addons/godot_super-wakatime/::1760133845
 api_key_prompt.tscn::PackedScene/PackedScene::3919262858641749045::1751233709::0::1::::<><><>0<>0<><>::
@@ -12,11 +12,11 @@ heartbeat.gd::GDScript/GDScript::5135817611947281363::1751233709::0::1::::<>RefC
 plugin.cfg::TextFile/TextFile::-1::1751233709::0::1::::<><><>0<>0<><>::
 README.md::TextFile/TextFile::-1::1760133845::0::1::::<><><>0<>0<><>::
 utils.gd::GDScript/GDScript::7505042153182745399::1751233709::0::1::::<>RefCounted<><>0<>0<><>::
-::res://assets/::1760138064
+::res://assets/::1760138068
 Dobermann_fixed_Avery.png::CompressedTexture2D/CompressedTexture2D::1673312168224172477::1760138064::1760138068::1::::<><><>0<>0<>0c16e49bb028c2f13d18bce89291460e<>res://.godot/imported/Dobermann_fixed_Avery.png-c1ae898dde5bd210acbf5f88bf15cab3.ctex::
 ::res://images/::1760134077
-::res://scenes/::1760137704
-hotdog.tscn::PackedScene::8897924810900120239::1760137704::0::1::::<><><>0<>0<><>::uid://bu0i6i2j6wilr::::res://scripts/hotdog.gd<>uid://x3thbho7ao1r::::res://assets/Dobermann_fixed_Avery.png
-platform.tscn::PackedScene::5623467648442992631::1760137704::0::1::::<><><>0<>0<><>::
-::res://scripts/::1760137704
-hotdog.gd::GDScript::3842348558206166567::1760137704::0::1::::<>CharacterBody2D<><>0<>0<><>::
+::res://scenes/::1760144062
+hotdog.tscn::PackedScene/PackedScene::8897924810900120239::1760144061::0::1::::<><><>0<>0<><>::uid://bu0i6i2j6wilr::::res://scripts/hotdog.gd<>uid://x3thbho7ao1r::::res://assets/Dobermann_fixed_Avery.png
+platform.tscn::PackedScene/PackedScene::5623467648442992631::1760144062::0::1::::<><><>0<>0<><>::
+::res://scripts/::1760143942
+hotdog.gd::GDScript/GDScript::3842348558206166567::1760143942::0::1::::<>CharacterBody2D<><>0<>0<><>::

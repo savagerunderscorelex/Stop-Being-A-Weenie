@@ -10,10 +10,19 @@ position = Vector2(2136, -86)
 scale = Vector2(-2.74627, 2.55958)
 
 [node name="StaticBody2D" parent="." instance=ExtResource("2_0xm2m")]
-position = Vector2(331, -82)
+position = Vector2(725, 227)
+scale = Vector2(0.47846, 0.214251)
+
+[node name="StaticBody2D4" parent="." instance=ExtResource("2_0xm2m")]
+position = Vector2(303, 51)
+scale = Vector2(0.47846, 0.214251)
+
+[node name="StaticBody2D5" parent="." instance=ExtResource("2_0xm2m")]
+position = Vector2(-87, 207)
+scale = Vector2(0.47846, 0.214251)
 
 [node name="Dog" parent="." instance=ExtResource("1_ig7tw")]
-position = Vector2(28, 257)
+position = Vector2(442, 295)
 scale = Vector2(2.6, 2.752)
 
 [node name="StaticBody2D3" type="StaticBody2D" parent="."]

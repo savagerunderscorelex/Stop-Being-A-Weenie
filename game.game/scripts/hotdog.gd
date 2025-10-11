@@ -1,6 +1,6 @@
 extends CharacterBody2D
 
-@export var speed : float = 500 # @export adds a variable to the inspector menu of the parent node (that's actually so cool)
+@export var speed : float = 350 # @export adds a variable to the inspector menu of the parent node (that's actually so cool)
 @onready var animator: AnimatedSprite2D = $AnimatedSprite2D
 @export var jump_speed: int = -speed * 2
 @export var gravity: float = speed * 3
@@ -12,8 +12,8 @@ func _physics_process(delta: float) -> void: # This function takes a float as an
 	move_and_slide() # Can only be used in a Character2D Node
 
 func get_input() -> void:
-	if Input.is_action_just_pressed("jump") and is_on_floor():
-		velocity.y = jump_speed
+	if Input.is_action_just_pressed("jump") and is_on_floor(): # If the up buttons are pressed and the sprite is touching a solid object
+		velocity.y = jump_speed # jumping height
 	var direction = Input.get_axis("move_left", "move_right") # Gets 2 input actions for input, the right side of the assignment operator returns a value between -1 and 1, -1 for left, 1 for right
 	velocity.x = direction * speed
 
@@ -26,7 +26,7 @@ func update_animation() -> void:
 		return
 	elif velocity.x < 0: # After like an hour of reading godot forums, I got this to work. I didn't follow the tutorial version because it's code would shrink my sprite when it turned left or right
 		animator.play("walking_right") # Also this version is way more easier to understand (and actually works!!)
-		animator.flip_h = true
+		animator.flip_h = false
 	else:
 		animator.play("walking_right")
 		animator.flip_h = false

@@ -63,13 +63,19 @@ scale = Vector2(0.89, 0.868)
 script = ExtResource("1_cqpsy")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
-position = Vector2(73, 48.668)
-scale = Vector2(1.742, 1.7)
+position = Vector2(41.9063, 39.6393)
+scale = Vector2(0.927073, 0.967152)
 sprite_frames = SubResource("SpriteFrames_8f7nc")
 animation = &"walking_right"
 autoplay = "idle"
 frame_progress = 0.95679
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
-position = Vector2(123.5, 29.7131)
-polygon = PackedVector2Array(-8, 8.70902, -9, -5.12295, -38, -19.9795, -60, -2.04918, -83.5, -5.63525, -100, -11.7828, -99.5, 16.3934, -97.5, 36.8852, -91.5, 44.5697, -83.5, 47.6434, -38, 47.6434, -26, 46.1066, -23, 18.4426)
+position = Vector2(1.1236, 11.1933)
+scale = Vector2(0.568426, 0.596523)
+polygon = PackedVector2Array(38.2022, 78.341, 48.3146, 77.1889, 49.4382, 78.341, 50.5618, 79.4931, 60.6742, 79.4931, 64.0449, 78.341, 69.6629, 78.341, 71.9101, 79.4931, 82.0225, 79.4931, 83.1461, 77.1889, 93.2584, 77.1889, 94.382, 77.1889, 94.382, 73.7327, 88.764, 62.212, 91.0112, 56.4516, 95.5056, 46.083, 102.787, 44.9691, 108.717, 43.0378, 112.671, 37.2438, 100, 24.1935, 86.5169, 17.2811, 79.0672, 19.862, 73.0337, 32.2581, 70.7865, 36.8664, 46.0674, 35.7143, 38.2022, 23.0415, 27.6735, 43.0378, 37.5569, 52.6943, 37.0787, 57.6037, 34.8315, 73.7327)
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(1.1236, -1.15207)
+zoom = Vector2(0.9, 0.9)
+position_smoothing_enabled = true
