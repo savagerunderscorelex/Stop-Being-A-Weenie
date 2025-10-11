@@ -5,12 +5,13 @@
 
 [node name="Node2D" type="Node2D"]
 
-[node name="Dog" parent="." instance=ExtResource("1_ig7tw")]
-position = Vector2(32, 321)
-
 [node name="StaticBody2D2" parent="." instance=ExtResource("2_0xm2m")]
 position = Vector2(2136, -86)
 scale = Vector2(-2.74627, 2.55958)
 
 [node name="StaticBody2D" parent="." instance=ExtResource("2_0xm2m")]
 position = Vector2(331, -82)
+
+[node name="Dog" parent="." instance=ExtResource("1_ig7tw")]
+position = Vector2(36, 157)
+scale = Vector2(2.6, 2.752)

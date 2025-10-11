@@ -1,7 +1,15 @@
-[gd_scene load_steps=8 format=3 uid="uid://dy1hr0aihdyf4"]
+[gd_scene load_steps=10 format=3 uid="uid://dy1hr0aihdyf4"]
 
 [ext_resource type="Script" uid="uid://bu0i6i2j6wilr" path="res://scripts/hotdog.gd" id="1_cqpsy"]
 [ext_resource type="Texture2D" uid="uid://x3thbho7ao1r" path="res://assets/Dobermann_fixed_Avery.png" id="2_2frf8"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ui47c"]
+atlas = ExtResource("2_2frf8")
+region = Rect2(72, 51, 72, 51)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_etl4d"]
+atlas = ExtResource("2_2frf8")
+region = Rect2(72, 51, 72, 51)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_joqqu"]
 atlas = ExtResource("2_2frf8")
@@ -23,6 +31,17 @@ region = Rect2(72, 51, 72, 51)
 animations = [{
 "frames": [{
 "duration": 1.0,
+"texture": SubResource("AtlasTexture_ui47c")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_etl4d")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
 "texture": SubResource("AtlasTexture_joqqu")
 }, {
 "duration": 1.0,
@@ -36,11 +55,11 @@ animations = [{
 }],
 "loop": true,
 "name": &"walking_right",
-"speed": 5.0
+"speed": 7.0
 }]
 
 [node name="Dog" type="CharacterBody2D"]
-scale = Vector2(2, 1.952)
+scale = Vector2(0.89, 0.868)
 script = ExtResource("1_cqpsy")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
@@ -48,8 +67,7 @@ position = Vector2(73, 48.668)
 scale = Vector2(1.742, 1.7)
 sprite_frames = SubResource("SpriteFrames_8f7nc")
 animation = &"walking_right"
-frame = 3
-frame_progress = 0.43857
+autoplay = "idle"
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
 position = Vector2(123.5, 29.7131)
