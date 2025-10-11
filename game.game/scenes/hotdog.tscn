@@ -55,7 +55,7 @@ animations = [{
 }],
 "loop": true,
 "name": &"walking_right",
-"speed": 7.0
+"speed": 8.0
 }]
 
 [node name="Dog" type="CharacterBody2D"]
@@ -68,6 +68,7 @@ scale = Vector2(1.742, 1.7)
 sprite_frames = SubResource("SpriteFrames_8f7nc")
 animation = &"walking_right"
 autoplay = "idle"
+frame_progress = 0.95679
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
 position = Vector2(123.5, 29.7131)
