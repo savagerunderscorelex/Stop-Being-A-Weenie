@@ -17,8 +17,8 @@ func update_animation() -> void:
 		animator.play("idle") # Makes the current animation the idle animation
 		return
 	elif velocity.x < 0:
-		animator.flip_h = -1
 		animator.play("walking_right")
-	elif velocity.x > 0: 
-		animator.flip_h = 1
+		animator.flip_h = true
+	else:
 		animator.play("walking_right")
+		animator.flip_h = false
