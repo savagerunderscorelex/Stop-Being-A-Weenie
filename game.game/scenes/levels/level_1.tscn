@@ -1,17 +1,17 @@
-[gd_scene load_steps=10 format=4 uid="uid://blo78sse3cfin"]
+[gd_scene load_steps=10 format=4 uid="uid://dl1httt8w868s"]
 
-[ext_resource type="Script" uid="uid://c1hpideu1kigx" path="res://scripts/main.gd" id="1_fcfvj"]
-[ext_resource type="PackedScene" uid="uid://cwqj114lof07w" path="res://scenes/background.tscn" id="2_pa8r4"]
-[ext_resource type="PackedScene" uid="uid://dy1hr0aihdyf4" path="res://scenes/hotdog.tscn" id="3_15mv3"]
-[ext_resource type="Texture2D" uid="uid://c6t2x5yjm8748" path="res://assets/world_tileset.png" id="4_e3sih"]
-[ext_resource type="PackedScene" uid="uid://m0d0pdtqgsgi" path="res://scenes/hot_dog_coin.tscn" id="5_2y5yt"]
-[ext_resource type="PackedScene" uid="uid://df6jpdfprom5p" path="res://scenes/game_ui.tscn" id="6_2os1m"]
+[ext_resource type="Script" uid="uid://c1hpideu1kigx" path="res://scripts/main.gd" id="1_sk5k4"]
+[ext_resource type="PackedScene" uid="uid://cwqj114lof07w" path="res://scenes/background.tscn" id="2_oc4kc"]
+[ext_resource type="Texture2D" uid="uid://c6t2x5yjm8748" path="res://assets/world_tileset.png" id="3_s8va5"]
+[ext_resource type="PackedScene" uid="uid://dy1hr0aihdyf4" path="res://scenes/hotdog.tscn" id="4_dga24"]
+[ext_resource type="PackedScene" uid="uid://m0d0pdtqgsgi" path="res://scenes/hot_dog_coin.tscn" id="5_qxy0u"]
+[ext_resource type="PackedScene" uid="uid://df6jpdfprom5p" path="res://scenes/game_ui.tscn" id="6_excbq"]
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_1bvp3"]
-size = Vector2(1171, 38)
+[sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_sk5k4"]
+distance = 11.0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_fcfvj"]
-texture = ExtResource("4_e3sih")
+texture = ExtResource("3_s8va5")
 0:0/0 = 0
 0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 1:0/0 = 0
@@ -260,13 +260,13 @@ physics_layer_0/collision_layer = 1
 sources/0 = SubResource("TileSetAtlasSource_fcfvj")
 
 [node name="Node2D" type="Node2D"]
-script = ExtResource("1_fcfvj")
+script = ExtResource("1_sk5k4")
 
-[node name="Background" parent="." instance=ExtResource("2_pa8r4")]
+[node name="Background" parent="." instance=ExtResource("2_oc4kc")]
 position = Vector2(-1709, -838)
 scale = Vector2(2.1744, 2.29272)
 
-[node name="Background2" parent="." instance=ExtResource("2_pa8r4")]
+[node name="Background2" parent="." instance=ExtResource("2_oc4kc")]
 position = Vector2(2720, -837)
 scale = Vector2(2.05604, 2.29569)
 
@@ -274,44 +274,28 @@ scale = Vector2(2.05604, 2.29569)
 position = Vector2(495, -66)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
-position = Vector2(-1257, 640)
-shape = SubResource("RectangleShape2D_1bvp3")
-
-[node name="Area2D2" type="Area2D" parent="."]
-position = Vector2(495, -66)
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D2"]
-position = Vector2(1458.5, 629)
-shape = SubResource("RectangleShape2D_1bvp3")
-
-[node name="Area2D3" type="Area2D" parent="."]
-position = Vector2(495, -66)
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D3"]
-position = Vector2(3303, 643)
-shape = SubResource("RectangleShape2D_1bvp3")
+position = Vector2(-713, 614)
+shape = SubResource("WorldBoundaryShape2D_sk5k4")
 
 [node name="TileMapLayer" type="TileMapLayer" parent="."]
 scale = Vector2(5, 5)
 tile_map_data = PackedByteArray("AAD+/wYAAAAAAAAAAAD//wYAAAAAAAAAAAAAAAYAAAAAAAAAAAABAAYAAAAAAAAAAAACAAYAAAAAAAAAAAADAAYAAAAAAAAAAAAEAAYAAAAAAAAAAAAFAAYAAAAAAAAAAAAGAAYAAAAAAAAAAAAHAAYAAAAAAAAAAAAIAAYAAAAAAAAAAAAJAAYAAAAAAAAAAAAKAAYAAAAAAAAAAAALAAYAAAAAAAAAAAAMAAYAAAAAAAAAAAANAAYAAAAAAAAAAAAOAAYAAAAAAAAAAAAPAAYAAAAAAAAAAAAQAAYAAAAAAAAAAAD//wQAAAAAAAAAAAAAAAQAAAAAAAAAAAABAAQAAAAAAAAAAAAJAAQAAAAAAAAAAAAKAAQAAAAAAAAAAAALAAQAAAAAAAAAAAADAAIAAAAAAAAAAAAEAAIAAAAAAAAAAAAFAAIAAAAAAAAAAAAGAAIAAAAAAAAAAAAHAAIAAAAAAAAAAAALAAEAAAAAAAAAAAAMAAEAAAAAAAAAAAANAAEAAAAAAAAAAAAQAAIAAAAAAAAAAAARAAIAAAAAAAAAAAASAAIAAAAAAAAAAAAWAAEAAAAAAAAAAAAXAAEAAAAAAAAAAAAYAAEAAAAAAAAAAAAcAAAAAAAAAAAAAAAdAAAAAAAAAAAAAAAeAAAAAAAAAAAAAAAgAAQAAAAAAAAAAAAhAAQAAAAAAAAAAAAiAAQAAAAAAAAAAAAjAAQAAAAAAAAAAAAgAAUAAAAAAAEAAAAhAAUAAAAAAAEAAAAiAAUAAAAAAAEAAAAjAAUAAAAAAAEAAAAgAAYAAAAAAAEAAAAhAAYAAAAAAAEAAAAiAAYAAAAAAAEAAAAjAAYAAAAAAAEAAAAkAAYAAAAAAAEAAAAlAAYAAAAAAAEAAAAmAAYAAAAAAAEAAAAnAAYAAAAAAAEAAAAnAAUAAAAAAAEAAAAmAAUAAAAAAAEAAAAlAAUAAAAAAAEAAAAkAAUAAAAAAAEAAAAkAAQAAAAAAAAAAAAlAAQAAAAAAAAAAAAmAAQAAAAAAAAAAAAnAAQAAAAAAAAAAAAlAAMAAAABAAMAAAAgAAMAAAABAAMAAAAQAAUAAAABAAMAAAAGAAEAAAABAAMAAAA=")
 tile_set = SubResource("TileSet_7mycd")
 
-[node name="Dog" parent="." instance=ExtResource("3_15mv3")]
+[node name="Dog" parent="." instance=ExtResource("4_dga24")]
 position = Vector2(437, 318)
 scale = Vector2(2.6, 2.752)
 
-[node name="hot_dog_coin" parent="." instance=ExtResource("5_2y5yt")]
+[node name="hot_dog_coin" parent="." instance=ExtResource("5_qxy0u")]
 position = Vector2(3075, 168)
 scale = Vector2(0.45967, 0.466328)
 
-[node name="hot_dog_coin2" parent="." instance=ExtResource("5_2y5yt")]
+[node name="hot_dog_coin2" parent="." instance=ExtResource("5_qxy0u")]
 position = Vector2(1044, 324)
 scale = Vector2(0.45967, 0.466328)
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 
-[node name="Game_UI" parent="CanvasLayer" instance=ExtResource("6_2os1m")]
+[node name="Game_UI" parent="CanvasLayer" instance=ExtResource("6_excbq")]
 
 [connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]
-[connection signal="body_entered" from="Area2D2" to="." method="_on_area_2d_body_entered"]
-[connection signal="body_entered" from="Area2D3" to="." method="_on_area_2d_3_body_entered"]

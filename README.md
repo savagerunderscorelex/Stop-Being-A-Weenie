@@ -2,7 +2,12 @@
 
 ## Tutorials and Resources
 
+### Tutorials/Videos
+
 - Base Tutorial: Making a 2D Platformer Game: [Smooth and Fun Platformer Movement in Godot | Platformer Series #2 | Tutorial](https://www.youtube.com/watch?v=eTVT1KFToCQ&list=PLzSeGMddYQXDGEIOfDR7EXSvd1cuIfFWY&index=11)
 - Getting the UI to Stay in the Same Place:
 [Stick UI to Screen with Position Smoothing Camera2D | Godot 4.4](https://www.youtube.com/watch?v=dOr-fgBRMgs)
-- 
+
+### Forum Posts and Such
+
+- Doing Code Based on a Signal with If Statements: [Stack Overflow](https://stackoverflow.com/questions/77389673/godot-body-entered-only-for-a-specific-object-in-the-scene)

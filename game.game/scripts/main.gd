@@ -4,16 +4,9 @@ func _ready() -> void: # When the node/scene is ready
 	Autoload.hotdogs_found = 0
 	Autoload.hotdogs_needed = 2
 	
-func _on_area_2d_body_entered(body: Node2D) -> void: # When falling off the platforms...
-	get_tree().reload_current_scene() # Reset the level
-
-
-func _on_area_2d_2_body_entered(body: Node2D) -> void: # When falling off the platforms and into this area body...
-	get_tree().reload_current_scene() # Reset the level
-
-
-func _on_area_2d_3_body_entered(body: Node2D) -> void: # When falling off the platforms and into this area body...
-	get_tree().reload_current_scene() # Reset the level
+func _on_area_2d_body_entered(body: Node2D) -> void: # When something enters this body...
+	if body.name == "Dog": # And it is the player aka Dog...
+		get_tree().reload_current_scene() # Reset the level!
 
 func _process(delta: float) -> void:
 	$CanvasLayer/Game_UI/Hotdogs_obtained.text = str(Autoload.hotdogs_found) # Makes the label the amount of hotdogs found

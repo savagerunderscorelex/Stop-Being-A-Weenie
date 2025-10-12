@@ -12,7 +12,6 @@
 - [ ] Figure out how to do the script to change the ui based on current objectives (objectives are probably going to be: find x number of hotdogs, listen to rules, etc )
 - [ ] maybe add sound effects on jumping and landing and collecting hot dogs
 - [ ] specify game goals a little better
-- [ ] 
 
 ## Logs
 
@@ -40,8 +39,20 @@ You play as a weiner dog, trying to get little hot dogs throughout multiple leve
 
 12:09 PM I'm thinking of have 5-10 levels and maybe implementing some more advanced stuff like puzzles
 
-1:20 PM Adjusted the labels for the number of hotdogs required and the number obtained, added timer to make the changing of the scenes less sudden, 
+1:20 PM Adjusted the labels for the number of hotdogs required and the number obtained, added timer to make the changing of the scenes less sudden,
 
 1:39 PM Added code for level 2, readjusted the placement for the ui words
 
 1:49 PM Added a folder for levels within the scenes folder
+
+2:51 PM Added levels 3-5 Scenes, worked further on the level 2 script
+
+2:57 PM Finished most of code for level 2 (just need to finish the level map to figure out where to place the area 2d node)
+
+Also I just understood why the scene would forever restart before, it was because the code would make the scene reset when ANY body entered it, included the platforms. I'm going to try to adjust the code to do something when the player body enters it specifically
+
+3:11 PM A forum post I found helped me with the above problem!! If I was a lil smarter I could've figured it out, but it was a simple solution: using an if statement to reset the scene based on the body that enters it.
+
+Actions: changed the collision body for the boundary to be a world boundary instead of a collision rectangle. This makes it way easier to make the whole edge "deathly". I should've done this with my flappy game project, but this is the whole point of learning tho!!
+
+I basically finished all of the level 2 code! (3:16 PM)
