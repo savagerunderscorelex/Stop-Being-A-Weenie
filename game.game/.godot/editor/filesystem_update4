@@ -8,3 +8,10 @@ res://scripts/hot_dog_coin.gd
 res://scenes/hot_dog_coin.tscn
 res://scenes/game_ui.tscn
 res://scripts/hotdog.gd
+res://scenes/autoload.tscn
+res://scripts/autoload.gd
+res://scenes/Autoload.tscn
+res://addons/godot_super-wakatime/api_key_prompt.tscn
+res://scenes/level_2.tscn
+res://scenes/level_1.tscn
+res://scenes/bgMusic.tscn

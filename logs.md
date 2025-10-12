@@ -29,3 +29,9 @@ You play as a weiner dog, trying to get little hot dogs throughout multiple leve
 5:31 PM Got distracted while writing log: I adjusted the background, added a hotdog coin thingie and had to create the spritesheet (why is it so hard finding assets????? i'm not looking for things that are super specific), added the animation for the coin, coded it to disappear on when the player runs into it, also added the basic basic ui (commit)
 
 10:41 PM Added Autoload, added fraction to level 1 ui node
+
+## 10/12
+
+9:34 AM Changed the objective ui to stay in its own scene and added it separately in the main/level 1 scene, updated autoload variables, added code to make the hotdogs_found label update when collecting hotdogs
+
+9:46 AM Created level 2 scene (not started), created code to change the scene when finding all the hotdogs in level 1

@@ -1,8 +1,7 @@
-[gd_scene load_steps=11 format=3 uid="uid://dy1hr0aihdyf4"]
+[gd_scene load_steps=10 format=3 uid="uid://dy1hr0aihdyf4"]
 
 [ext_resource type="Script" uid="uid://bu0i6i2j6wilr" path="res://scripts/hotdog.gd" id="1_cqpsy"]
 [ext_resource type="Texture2D" uid="uid://x3thbho7ao1r" path="res://assets/Dobermann_fixed_Avery.png" id="2_2frf8"]
-[ext_resource type="PackedScene" uid="uid://df6jpdfprom5p" path="res://scenes/game_ui.tscn" id="3_c5awu"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_ui47c"]
 atlas = ExtResource("2_2frf8")
@@ -80,7 +79,3 @@ polygon = PackedVector2Array(38.2022, 78.341, 48.3146, 77.1889, 49.4382, 78.341,
 position = Vector2(1.1236, -1.15207)
 offset = Vector2(0, 100)
 position_smoothing_enabled = true
-
-[node name="CanvasLayer" type="CanvasLayer" parent="."]
-
-[node name="Game_UI" parent="CanvasLayer" instance=ExtResource("3_c5awu")]
