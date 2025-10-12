@@ -1,18 +1,13 @@
 extends Node2D
 
-func _ready() -> void:
-	Autoload.hotdogs_found = 0
-	Autoload.hotdogs_needed = 4
+func _ready() -> void: # When the node is ready
+	Autoload.hotdogs_found = 0 # Hotdogs found: 0 (default)
+	Autoload.hotdogs_needed = 4 # The amount of hotdogs required to go on to the next level
 	
-# Insert Area 2D Node Code Here
-# Insert Area 2D Node Code Here
-# Insert Area 2D Node Code Here
-# Insert Area 2D Node Code Here
-# Insert Area 2D Node Code Here
-# Insert Area 2D Node Code Here
-
-	
-	
+func _on_boundary_body_entered(body: Node2D) -> void: # When a body enters the boundary...
+	if body.name == "Dog": # and if the body is the player, aka "Dog"
+		get_tree().reload_current_scene() # restart the scene!
+		
 func _process(delta: float) -> void:
 	$CanvasLayer/Game_UI/Hotdogs_obtained.text = str(Autoload.hotdogs_found)
 	$CanvasLayer/Game_UI/Hotdogs_required.text = str(Autoload.hotdogs_needed)

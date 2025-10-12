@@ -56,3 +56,9 @@ Also I just understood why the scene would forever restart before, it was becaus
 Actions: changed the collision body for the boundary to be a world boundary instead of a collision rectangle. This makes it way easier to make the whole edge "deathly". I should've done this with my flappy game project, but this is the whole point of learning tho!!
 
 I basically finished all of the level 2 code! (3:16 PM)
+
+3:27 PM I changed the name of the boundaries and added some comments to my code so I can understand it a bit better (I remember looking at my flappy game code and couldn't understand a lot of it lol)
+
+3:50 PM Continued working on the level 2 map
+
+4:19 PM Finished Level 2 Map!!

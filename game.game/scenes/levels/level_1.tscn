@@ -259,7 +259,7 @@ texture = ExtResource("3_s8va5")
 physics_layer_0/collision_layer = 1
 sources/0 = SubResource("TileSetAtlasSource_fcfvj")
 
-[node name="Node2D" type="Node2D"]
+[node name="level_1" type="Node2D"]
 script = ExtResource("1_sk5k4")
 
 [node name="Background" parent="." instance=ExtResource("2_oc4kc")]
@@ -270,10 +270,10 @@ scale = Vector2(2.1744, 2.29272)
 position = Vector2(2720, -837)
 scale = Vector2(2.05604, 2.29569)
 
-[node name="Area2D" type="Area2D" parent="."]
-position = Vector2(495, -66)
+[node name="Boundary" type="Area2D" parent="."]
+position = Vector2(433, 75)
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Boundary"]
 position = Vector2(-713, 614)
 shape = SubResource("WorldBoundaryShape2D_sk5k4")
 
@@ -298,4 +298,4 @@ scale = Vector2(0.45967, 0.466328)
 
 [node name="Game_UI" parent="CanvasLayer" instance=ExtResource("6_excbq")]
 
-[connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]
+[connection signal="body_entered" from="Boundary" to="." method="_on_boundary_body_entered"]
