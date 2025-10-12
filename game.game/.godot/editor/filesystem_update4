@@ -7,3 +7,4 @@ res://scripts/main.gd
 res://scripts/hot_dog_coin.gd
 res://scenes/hot_dog_coin.tscn
 res://scenes/game_ui.tscn
+res://scripts/hotdog.gd

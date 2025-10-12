@@ -303,6 +303,10 @@ tile_set = SubResource("TileSet_7mycd")
 position = Vector2(3075, 168)
 scale = Vector2(0.45967, 0.466328)
 
+[node name="hot_dog_coin2" parent="." instance=ExtResource("5_lquwl")]
+position = Vector2(1044, 324)
+scale = Vector2(0.45967, 0.466328)
+
 [connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]
 [connection signal="body_entered" from="Area2D2" to="." method="_on_area_2d_body_entered"]
 [connection signal="body_entered" from="Area2D3" to="." method="_on_area_2d_3_body_entered"]
