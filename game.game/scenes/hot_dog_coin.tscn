@@ -71,6 +71,7 @@ animations = [{
 radius = 140.014
 
 [node name="hot_dog_coin" type="Node2D"]
+scale = Vector2(0.446, 0.446)
 script = ExtResource("1_pixb7")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]

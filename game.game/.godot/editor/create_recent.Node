@@ -1,5 +1,7 @@
-CanvasLayer
 Panel
+CanvasLayer
+Timer
+TileMapLayer
 RichTextLabel
 Label
 Area2D
@@ -8,7 +10,5 @@ AnimatedSprite2D
 Sprite2D
 Node2D
 Node
-TileMapLayer
 AudioStreamPlayer
 AudioStreamPlayer2D
-Camera2D

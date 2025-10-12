@@ -34,4 +34,14 @@ You play as a weiner dog, trying to get little hot dogs throughout multiple leve
 
 9:34 AM Changed the objective ui to stay in its own scene and added it separately in the main/level 1 scene, updated autoload variables, added code to make the hotdogs_found label update when collecting hotdogs
 
-9:46 AM Created level 2 scene (not started), created code to change the scene when finding all the hotdogs in level 1
+9:46 AM Created level 2 scene (not started), created code to change the scene when finding all the hotdogs in level 1 (commit)
+
+9:59 AM added background to level 2, working on the tileset map
+
+12:09 PM I'm thinking of have 5-10 levels and maybe implementing some more advanced stuff like puzzles
+
+1:20 PM Adjusted the labels for the number of hotdogs required and the number obtained, added timer to make the changing of the scenes less sudden, 
+
+1:39 PM Added code for level 2, readjusted the placement for the ui words
+
+1:49 PM Added a folder for levels within the scenes folder
