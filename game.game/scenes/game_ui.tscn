@@ -8,12 +8,20 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 
+[node name="Hotdogs_fraction" type="Label" parent="."]
+offset_left = 1039.0
+offset_top = -6.0
+offset_right = 1116.0
+offset_bottom = 104.0
+theme_override_font_sizes/font_size = 80
+text = "/ 2"
+
 [node name="Hotdogs_label" type="Label" parent="."]
 layout_mode = 0
-offset_left = 1066.0
-offset_top = 4.0
-offset_right = 1112.0
-offset_bottom = 114.0
+offset_left = 975.0
+offset_top = -4.0
+offset_right = 1021.0
+offset_bottom = 106.0
 theme_override_font_sizes/font_size = 80
 text = "0"
 
