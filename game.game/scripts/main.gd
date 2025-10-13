@@ -14,6 +14,7 @@ func _process(delta: float) -> void:
 	$CanvasLayer/Game_UI/Objective_label.text = "Current Objective: Find %s Hotdogs in this level!" %[str(Autoload.hotdogs_needed)]
 	
 	if Autoload.hotdogs_found == Autoload.hotdogs_needed: # Once the player gets all the hotdogs..
+		Autoload.levelComplete.play()
 		$CanvasLayer/Game_UI/Objective_label.text = "Objective Completed!" # their objective is complete..
 		await get_tree().create_timer(3).timeout # they wait a bit... (Creates a timer that waits 3 seconds and then timesout)
 		get_tree().change_scene_to_file("res://scenes/levels/level_2.tscn") # and they Go to Level 2!

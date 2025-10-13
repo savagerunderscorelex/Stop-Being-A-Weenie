@@ -3,7 +3,7 @@
 [ext_resource type="PackedScene" uid="uid://cwqj114lof07w" path="res://scenes/background.tscn" id="1_jm1iu"]
 [ext_resource type="Script" uid="uid://ie2ja0v5kpk0" path="res://scripts/level_2.gd" id="1_wo48x"]
 [ext_resource type="Texture2D" uid="uid://c6t2x5yjm8748" path="res://assets/world_tileset.png" id="2_pbc48"]
-[ext_resource type="PackedScene" uid="uid://dy1hr0aihdyf4" path="res://scenes/hotdog.tscn" id="3_pbc48"]
+[ext_resource type="PackedScene" uid="uid://dy1hr0aihdyf4" path="res://scenes/dog.tscn" id="3_pbc48"]
 [ext_resource type="PackedScene" uid="uid://df6jpdfprom5p" path="res://scenes/game_ui.tscn" id="5_y0kc7"]
 [ext_resource type="PackedScene" uid="uid://m0d0pdtqgsgi" path="res://scenes/hot_dog_coin.tscn" id="6_ne2mo"]
 

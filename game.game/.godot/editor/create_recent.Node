@@ -1,3 +1,4 @@
+AudioStreamPlayer
 Panel
 CanvasLayer
 Timer
@@ -10,5 +11,4 @@ AnimatedSprite2D
 Sprite2D
 Node2D
 Node
-AudioStreamPlayer
 AudioStreamPlayer2D

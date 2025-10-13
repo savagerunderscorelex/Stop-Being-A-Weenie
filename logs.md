@@ -62,3 +62,13 @@ I basically finished all of the level 2 code! (3:16 PM)
 3:50 PM Continued working on the level 2 map
 
 4:19 PM Finished Level 2 Map!!
+
+7:30 PM Added an eating sound effect, had to adjust the background music, since the tutorial I used before was not helping me do what I wanted to do
+
+7:42 PM Added the jump sound effect!! This took me a bit because it wouldn't work for some reason???? (it returned null when I tried to use the sound node in the dog character)
+
+## 10/13
+
+5:38 AM Added hackatime banner thingie
+
+5:44 AM Added level completed sound effect (commit)

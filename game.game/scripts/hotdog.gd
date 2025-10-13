@@ -4,6 +4,7 @@ extends CharacterBody2D
 @onready var animator: AnimatedSprite2D = $AnimatedSprite2D
 @export var jump_speed: int = -speed * 2
 @export var gravity: float = speed * 3
+@onready var jumper = Autoload.jumpSound
 
 func _physics_process(delta: float) -> void: # This function takes a float as an input
 	get_input()
@@ -14,6 +15,8 @@ func _physics_process(delta: float) -> void: # This function takes a float as an
 func get_input() -> void: # -> void means returns void, which means that this function does not return a value
 	if Input.is_action_just_pressed("jump") and is_on_floor(): # If the up buttons are pressed and the sprite is touching a solid object
 		velocity.y = jump_speed # jumping height
+		Autoload.jumpSound.play()
+		
 	elif Input.is_action_just_pressed("reset"):
 		get_tree().reload_current_scene()
 	var direction = Input.get_axis("move_left", "move_right") # Gets 2 input actions for input, the right side of the assignment operator returns a value between -1 and 1, -1 for left, 1 for right

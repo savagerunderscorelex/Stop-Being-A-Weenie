@@ -1,5 +1,7 @@
 # Stop Being A Weenie
 
+![](https://hackatime-badge.hackclub.com/U08UGTGS4HE/Stop-Being-A-Weenie
+)
 ## Tutorials and Resources
 
 ### Tutorials/Videos
