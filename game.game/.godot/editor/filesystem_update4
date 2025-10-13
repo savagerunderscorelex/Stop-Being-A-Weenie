@@ -18,3 +18,4 @@ res://scripts/sound_board.gd
 res://scripts/hot_dog_coin.gd
 res://scenes/sound_board.tscn
 res://scenes/Soundboard.tscn
+res://scripts/level_2.gd

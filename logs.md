@@ -12,6 +12,9 @@
 - [ ] Figure out how to do the script to change the ui based on current objectives (objectives are probably going to be: find x number of hotdogs, listen to rules, etc )
 - [ ] maybe add sound effects on jumping and landing and collecting hot dogs
 - [ ] specify game goals a little better
+- [ ] finish level 3
+- [ ] finish level 4
+- [ ] finish level 5
 
 ## Logs
 
@@ -84,3 +87,9 @@ What I'm going to do is create 2 scenes with global variables (one for sound and
 I'm working on trying to fix the sound issue with completing a level
 
 5PM I'm lowkey tired of this thing glitching. No matter what I do, the level complete sound doesn't play correctly and when I want it to and instead plays this creepy glitching sound. I'm just going to make it the level loading sound (im tireeeeeeeeeeeeeeeeeeed)
+
+5:32 PM Removed a random file that was in the folder
+
+5:45 PM Finished level 2, standardized code between level 1 and level 2, deleted platform scene (since I'm not doing that anymore)
+
+5:46 Decided not to delete it anymore
