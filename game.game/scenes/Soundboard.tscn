@@ -1,0 +1,19 @@
+[gd_scene load_steps=5 format=3 uid="uid://dgf0lhhbsslhq"]
+
+[ext_resource type="Script" uid="uid://dila31fqatppp" path="res://scripts/sound_board.gd" id="1_xf37r"]
+[ext_resource type="AudioStream" uid="uid://cneoh13wd3nxm" path="res://sound-effects/jump.mp3" id="2_du4l5"]
+[ext_resource type="AudioStream" uid="uid://cksehvg58fo7t" path="res://sound-effects/levelcomplete.mp3" id="3_vi46a"]
+[ext_resource type="AudioStream" uid="uid://bch82q1agxevm" path="res://sound-effects/carrotnom-92106.mp3" id="4_vgdl2"]
+
+[node name="SoundBoard" type="Node2D"]
+script = ExtResource("1_xf37r")
+
+[node name="Jump" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("2_du4l5")
+
+[node name="LevelComplete" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("3_vi46a")
+pitch_scale = 1.14
+
+[node name="Chomp" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("4_vgdl2")

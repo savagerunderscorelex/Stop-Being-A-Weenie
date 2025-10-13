@@ -13,3 +13,8 @@ res://scenes/levels/level_4.tscn
 res://scenes/levels/level_5.tscn
 res://scripts/autoload.gd
 res://scripts/main.gd
+res://scripts/hotdog.gd
+res://scripts/sound_board.gd
+res://scripts/hot_dog_coin.gd
+res://scenes/sound_board.tscn
+res://scenes/Soundboard.tscn

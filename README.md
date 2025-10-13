@@ -13,3 +13,4 @@
 ### Forum Posts and Such
 
 - Doing Code Based on a Signal with If Statements: [Stack Overflow](https://stackoverflow.com/questions/77389673/godot-body-entered-only-for-a-specific-object-in-the-scene)
+- Playing Sound Effects: [Godot Forum](https://forum.godotengine.org/t/playing-sound-fx/57980/7)

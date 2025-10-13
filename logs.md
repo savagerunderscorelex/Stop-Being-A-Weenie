@@ -72,3 +72,15 @@ I basically finished all of the level 2 code! (3:16 PM)
 5:38 AM Added hackatime banner thingie
 
 5:44 AM Added level completed sound effect (commit)
+
+4:04 PM Tried to fix the issue with the level complete sfx glitching and instead playing when entering the next level, still doesn't work
+
+What I'm going to do is create 2 scenes with global variables (one for sound and one for general variables). I'm also going to try to solve this problem by making the sound play when the is_level_completed variable is true instead of putting it with the code to change the scene to the next level. 
+
+4:35 PM Added soundboard global scene since the answer to a forum i found also did that, adjusted the code to be update to the new scene since I moved the sound effects there
+
+4:48 PM Adjusted errors, removed the variables for hotdogs need and hotdogs required in the level 1 script because it felt unnecessary and was also causing some issues
+
+I'm working on trying to fix the sound issue with completing a level
+
+5PM I'm lowkey tired of this thing glitching. No matter what I do, the level complete sound doesn't play correctly and when I want it to and instead plays this creepy glitching sound. I'm just going to make it the level loading sound (im tireeeeeeeeeeeeeeeeeeed)
