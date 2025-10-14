@@ -103,3 +103,5 @@ I'm working on trying to fix the sound issue with completing a level
 I'm tired so I'm gonna go to sleep
 
 8:29 PM Forgot to put the boundary death thingie, I'm foreal going to sleep (after I put a lil idea thing down)
+
+8:58 PM I lied, but I updated the readme file with more links. I'm ACTUALLY going to sleep this time
