@@ -125,3 +125,9 @@ I followed a tutorial to create moving platforms. The animation part went well (
 I tested the platforms in the level 3 map, and they work well. I just need to also find a way to make them go up and down (in fact I will test the platform movement now.)
 
 7:07 PM Ok, turns out I can't make it go up and down from its current position. what I'll do is that I'll create a second platform scene where the platform is horizontal, and see from there
+
+7:13 PM I FEEL SOOOOOOOOO SMART!!!! My hypothesis was correct!!
+
+So changing the orientation of the platform makes it so that it will actually go up. I'm really happy that I figured this out!!.
+
+Although I put on my task list that I will finish level 4 today, I'll put it off until tomorrow. It's pretty late already, so I think it'll be best to wake up early tomorrow and try to finish it. 

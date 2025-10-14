@@ -14,3 +14,4 @@ res://scenes/up_down_platform.tscn
 res://scenes/platform.tscn
 res://scripts/platform.gd
 res://scripts/hotdog.gd
+res://scenes/platform-vertical.tscn
