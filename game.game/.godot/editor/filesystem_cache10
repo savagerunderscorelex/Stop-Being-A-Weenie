@@ -1,5 +1,5 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1760475943
+::res://::1760479074
 icon.svg::CompressedTexture2D/CompressedTexture2D::6436833944720680894::1751111885::1751111899::1::::<><><>0<>0<>a34015e5905048d440045f1ad2ece94f<>res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex::
 README.md::TextFile/TextFile::-1::1760217605::0::1::::<><><>0<>0<><>::
 Test.tscn::PackedScene/PackedScene::-1::1760217605::0::1::::<><><>0<>0<><>::
@@ -19,38 +19,39 @@ Background_2.png::CompressedTexture2D/CompressedTexture2D::6249625173999668033::
 Dobermann_fixed_Avery.png::CompressedTexture2D/CompressedTexture2D::1673312168224172477::1760138064::1760138068::1::::<><><>0<>0<>0c16e49bb028c2f13d18bce89291460e<>res://.godot/imported/Dobermann_fixed_Avery.png-c1ae898dde5bd210acbf5f88bf15cab3.ctex::
 hotdog.png::CompressedTexture2D/CompressedTexture2D::729072283759005597::1760216328::1760216351::1::::<><><>0<>0<>1c55eab33c36e226ad196081242b1a89<>res://.godot/imported/hotdog.png-52c0e7124359c9ea6f6f52b9c8a241be.ctex::
 Pixel fallen tree log.png::CompressedTexture2D/CompressedTexture2D::6485384804426691298::1760474372::1760474403::1::::<><><>0<>0<>ddac7f5c4dc7ad0eb17801240613fe6b<>res://.godot/imported/Pixel fallen tree log.png-e524e8e53394a7881e3cd1166c1e0d66.ctex::
-world_tileset.png::CompressedTexture2D::6989600742758949091::1760188170::1760475944::1::::<><><>0<>0<>51f288e3f21d8793ef2df0c3d3d842be<>res://.godot/imported/world_tileset.png-43b294f106264424c84ae223dbce0789.ctex::
+world_tileset.png::CompressedTexture2D/CompressedTexture2D::6989600742758949091::1760188170::1760475944::1::::<><><>0<>0<>51f288e3f21d8793ef2df0c3d3d842be<>res://.godot/imported/world_tileset.png-43b294f106264424c84ae223dbce0789.ctex::
 ::res://fonts/::1760287347
 04B_30__.TTF::FontFile/FontFile::126126614154722312::1760287277::1760287347::1::::<><><>0<>0<>7db05952c8995f8f1cababce3ccd3d1d<>res://.godot/imported/04B_30__.TTF-2961d1558bf3d6850cc50be39dfe57a2.fontdata::
 ::res://images/::1760217607
 godotwaka2.png::CompressedTexture2D/CompressedTexture2D::7026850610005011835::1760217605::1760217607::1::::<><><>0<>0<>810b540a66b6e3b66a13986e88af977c<>res://.godot/imported/godotwaka2.png-7d3d010fb4adc0d433467ab1cc4754ed.ctex::
 godotwaka.png::CompressedTexture2D/CompressedTexture2D::7932361111412089001::1760217605::1760217606::1::::<><><>0<>0<>b1dc139e8838b61e9cb033db1ca4f185<>res://.godot/imported/godotwaka.png-ef0518417b4f997d237759e5551dd05d.ctex::
 icon.jpg::CompressedTexture2D/CompressedTexture2D::3122668444336440389::1760217605::1760217606::1::::<><><>0<>0<>e0b87e0d780caf0d81474113c8024455<>res://.godot/imported/icon.jpg-64f68b30ea939aa8019167e67dffb2db.ctex::
-::res://scenes/::1760478971
-Autoload.tscn::PackedScene::7832068740231236907::1760478261::0::1::::<><><>0<>0<><>::uid://dih155idw2oku::::res://scripts/autoload.gd
-background.tscn::PackedScene::6350620265989453154::1760478261::0::1::::<><><>0<>0<><>::uid://cvbmocbsrul8d::::res://assets/Background_2.png<>uid://1i60u65l7lys::::res://assets/Background_1.png
-bgMusic.tscn::PackedScene::4424623996054775009::1760478261::0::1::::<><><>0<>0<><>::uid://btbmgj8vvm3gw::::res://weenie-bg.wav
-dog.tscn::PackedScene::8897924810900120239::1760478261::0::1::::<><><>0<>0<><>::uid://bu0i6i2j6wilr::::res://scripts/hotdog.gd<>uid://x3thbho7ao1r::::res://assets/Dobermann_fixed_Avery.png
-game_ui.tscn::PackedScene::7574775385487676507::1760478261::0::1::::<><><>0<>0<><>::uid://b2dj0wvhrnjk::::res://fonts/04B_30__.TTF
-hot_dog_coin.tscn::PackedScene::894103156703381484::1760478261::0::1::::<><><>0<>0<><>::uid://cmwk0qdpd21gf::::res://scripts/hot_dog_coin.gd<>uid://knfyjm33x7iv::::res://assets/hotdog.png
+::res://scenes/::1760483479
+Autoload.tscn::PackedScene::7832068740231236907::1760483478::0::1::::<><><>0<>0<><>::uid://dih155idw2oku::::res://scripts/autoload.gd
+background.tscn::PackedScene::6350620265989453154::1760483478::0::1::::<><><>0<>0<><>::uid://cvbmocbsrul8d::::res://assets/Background_2.png<>uid://1i60u65l7lys::::res://assets/Background_1.png
+bgMusic.tscn::PackedScene::4424623996054775009::1760483478::0::1::::<><><>0<>0<><>::uid://btbmgj8vvm3gw::::res://weenie-bg.wav
+dog.tscn::PackedScene::8897924810900120239::1760483478::0::1::::<><><>0<>0<><>::uid://bu0i6i2j6wilr::::res://scripts/hotdog.gd<>uid://x3thbho7ao1r::::res://assets/Dobermann_fixed_Avery.png
+game_ui.tscn::PackedScene::7574775385487676507::1760483478::0::1::::<><><>0<>0<><>::uid://b2dj0wvhrnjk::::res://fonts/04B_30__.TTF
+hot_dog_coin.tscn::PackedScene::894103156703381484::1760483478::0::1::::<><><>0<>0<><>::uid://cmwk0qdpd21gf::::res://scripts/hot_dog_coin.gd<>uid://knfyjm33x7iv::::res://assets/hotdog.png
 main_menu.tscn::PackedScene/PackedScene::1305783009719021549::1760183076::0::1::::<><><>0<>0<><>::
-SoundBoard.tscn::PackedScene::7592254948777203642::1760478261::0::1::::<><><>0<>0<><>::uid://dila31fqatppp::::res://scripts/sound_board.gd<>uid://cneoh13wd3nxm::::res://sound-effects/jump.mp3<>uid://cksehvg58fo7t::::res://sound-effects/levelcomplete.mp3<>uid://bch82q1agxevm::::res://sound-effects/carrotnom-92106.mp3
-up_down_platform.tscn::PackedScene::3613378556732725179::1760478371::0::1::::<><><>0<>0<><>::uid://cyntltjkvc02i::::res://assets/Pixel fallen tree log.png
-::res://scenes/levels/::1760478262
-level_1.tscn::PackedScene::7985473130561810872::1760478260::0::1::::<><><>0<>0<><>::uid://c1hpideu1kigx::::res://scripts/main.gd<>uid://cwqj114lof07w::::res://scenes/background.tscn<>uid://c6t2x5yjm8748::::res://assets/world_tileset.png<>uid://dy1hr0aihdyf4::::res://scenes/dog.tscn<>uid://m0d0pdtqgsgi::::res://scenes/hot_dog_coin.tscn<>uid://df6jpdfprom5p::::res://scenes/game_ui.tscn
-level_2.tscn::PackedScene::6606331608483861334::1760478262::0::1::::<><><>0<>0<><>::uid://cwqj114lof07w::::res://scenes/background.tscn<>uid://ie2ja0v5kpk0::::res://scripts/level_2.gd<>uid://c6t2x5yjm8748::::res://assets/world_tileset.png<>uid://dy1hr0aihdyf4::::res://scenes/dog.tscn<>uid://df6jpdfprom5p::::res://scenes/game_ui.tscn<>uid://m0d0pdtqgsgi::::res://scenes/hot_dog_coin.tscn
-level_3.tscn::PackedScene::5180470710093259444::1760478260::0::1::::<><><>0<>0<><>::uid://bfglbhv1muvhm::::res://scripts/level_3.gd<>uid://cwqj114lof07w::::res://scenes/background.tscn<>uid://c6t2x5yjm8748::::res://assets/world_tileset.png<>uid://dy1hr0aihdyf4::::res://scenes/dog.tscn<>uid://df6jpdfprom5p::::res://scenes/game_ui.tscn<>uid://m0d0pdtqgsgi::::res://scenes/hot_dog_coin.tscn
-level_4.tscn::PackedScene::7890186910599202541::1760478262::0::1::::<><><>0<>0<><>::uid://cwqj114lof07w::::res://scenes/background.tscn<>uid://c6t2x5yjm8748::::res://assets/world_tileset.png<>uid://dy1hr0aihdyf4::::res://scenes/dog.tscn<>uid://cyntltjkvc02i::::res://assets/Pixel fallen tree log.png
+platform.tscn::PackedScene::3613378556732725179::1760483479::0::1::::<><><>0<>0<><>::uid://dejkxaygs4mf0::::res://scripts/platform.gd<>uid://cyntltjkvc02i::::res://assets/Pixel fallen tree log.png
+platform-vertical.tscn::PackedScene::4215979363896646361::1760483479::0::1::::<><><>0<>0<><>::uid://dejkxaygs4mf0::::res://scripts/platform.gd<>uid://cyntltjkvc02i::::res://assets/Pixel fallen tree log.png
+SoundBoard.tscn::PackedScene::7592254948777203642::1760483478::0::1::::<><><>0<>0<><>::uid://dila31fqatppp::::res://scripts/sound_board.gd<>uid://cneoh13wd3nxm::::res://sound-effects/jump.mp3<>uid://cksehvg58fo7t::::res://sound-effects/levelcomplete.mp3<>uid://bch82q1agxevm::::res://sound-effects/carrotnom-92106.mp3
+::res://scenes/levels/::1760483586
+level_1.tscn::PackedScene::7985473130561810872::1760483477::0::1::::<><><>0<>0<><>::uid://c1hpideu1kigx::::res://scripts/main.gd<>uid://cwqj114lof07w::::res://scenes/background.tscn<>uid://c6t2x5yjm8748::::res://assets/world_tileset.png<>uid://dy1hr0aihdyf4::::res://scenes/dog.tscn<>uid://m0d0pdtqgsgi::::res://scenes/hot_dog_coin.tscn<>uid://df6jpdfprom5p::::res://scenes/game_ui.tscn
+level_2.tscn::PackedScene::6606331608483861334::1760483479::0::1::::<><><>0<>0<><>::uid://cwqj114lof07w::::res://scenes/background.tscn<>uid://ie2ja0v5kpk0::::res://scripts/level_2.gd<>uid://c6t2x5yjm8748::::res://assets/world_tileset.png<>uid://dy1hr0aihdyf4::::res://scenes/dog.tscn<>uid://df6jpdfprom5p::::res://scenes/game_ui.tscn<>uid://m0d0pdtqgsgi::::res://scenes/hot_dog_coin.tscn
+level_3.tscn::PackedScene::5180470710093259444::1760483586::0::1::::<><><>0<>0<><>::uid://bfglbhv1muvhm::::res://scripts/level_3.gd<>uid://cwqj114lof07w::::res://scenes/background.tscn<>uid://c6t2x5yjm8748::::res://assets/world_tileset.png<>uid://dy1hr0aihdyf4::::res://scenes/dog.tscn<>uid://df6jpdfprom5p::::res://scenes/game_ui.tscn<>uid://m0d0pdtqgsgi::::res://scenes/hot_dog_coin.tscn
+level_4.tscn::PackedScene::7890186910599202541::1760483479::0::1::::<><><>0<>0<><>::uid://cwqj114lof07w::::res://scenes/background.tscn<>uid://c6t2x5yjm8748::::res://assets/world_tileset.png<>uid://dy1hr0aihdyf4::::res://scenes/dog.tscn<>uid://cyntltjkvc02i::::res://assets/Pixel fallen tree log.png
 level_5.tscn::PackedScene/PackedScene::8270404224050356454::1760387292::0::1::::<><><>0<>0<><>::
-::res://scripts/::1760478543
+::res://scripts/::1760481796
 autoload.gd::GDScript/GDScript::7736857248316778680::1760387290::0::1::::<>Node2D<><>0<>0<><>::
 bg_music.gd::GDScript/GDScript::4666694685824584668::1760471951::0::1::::<>AudioStreamPlayer<><>0<>0<><>::
-hotdog.gd::GDScript/GDScript::3842348558206166567::1760387781::0::1::::<>CharacterBody2D<><>0<>0<><>::
+hotdog.gd::GDScript::3842348558206166567::1760481796::0::1::::<>CharacterBody2D<><>0<>0<><>::
 hot_dog_coin.gd::GDScript/GDScript::5661176462101840225::1760387781::0::1::::<>Node2D<><>0<>0<><>::
 level_2.gd::GDScript/GDScript::571423730685091897::1760391665::0::1::::<>Node2D<><>0<>0<><>::
 level_3.gd::GDScript/GDScript::2750421242424469038::1760401758::0::1::::<>Node2D<><>0<>0<><>::
 main.gd::GDScript/GDScript::6613127152189322483::1760391665::0::1::::<>Node2D<><>0<>0<><>::
-platform.gd::GDScript::7459245105978574395::1760478543::0::1::::<>PathFollow2D<><>0<>0<><>::
+platform.gd::GDScript::7459245105978574395::1760479078::0::1::::<>PathFollow2D<><>0<>0<><>::
 sound_board.gd::GDScript/GDScript::7743532331766414113::1760387291::0::1::::<>Node2D<><>0<>0<><>::
 ::res://sound-effects/::1760349169
 carrotnom-92106.mp3::AudioStreamMP3/AudioStreamMP3::2543301772991754238::1760310374::1760310545::1::::<><><>0<>0<>92c7336f6e7bb8cd9e5acceb8ff255f4<>res://.godot/imported/carrotnom-92106.mp3-ffe3bac0777a9e07346873af8d875fb4.mp3str::

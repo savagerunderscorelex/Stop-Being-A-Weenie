@@ -131,3 +131,5 @@ I tested the platforms in the level 3 map, and they work well. I just need to al
 So changing the orientation of the platform makes it so that it will actually go up. I'm really happy that I figured this out!!.
 
 Although I put on my task list that I will finish level 4 today, I'll put it off until tomorrow. It's pretty late already, so I think it'll be best to wake up early tomorrow and try to finish it. 
+
+7:17 PM Adjusted the name of the original scene. That's it :)
