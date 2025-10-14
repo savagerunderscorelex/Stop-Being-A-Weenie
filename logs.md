@@ -115,3 +115,13 @@ I'm trying to make moving platforms for levels 4 and 5. I finished designing the
 4:49 PM Actually created platform node
 
 5:19 PM I'm starting to work on the level 4 map and stuff. I don't know why it took me so long to set it up lol
+
+5:56 PM I removed the old platform scene so that I can rename the platform scene that I'm actually going to use. 
+
+6:47 PM Ok so! I figured out how to fix the platform thing, so the platform works now and I created a way to implement platforms!!
+
+I followed a tutorial to create moving platforms. The animation part went well (I just didn't realize the platforms were supposed to be a staticbody2d instead of an area body, the icons look similar), buuuut the dog wouldn't stay on the platform when it moved. I tried a couple solutions (changing move_and_slide() to move_and_slide_with_snap although I rushed this solution so maybe it did work, rearranging the path2d node and the other nodes, and changing the static body to an animatable body). What worked for me was nesting the sprite node and the collision body node into a character body node, which was nested in the static body node, which was nested within the pathfollownode which was nested within the path2dnode. So yeah. (I found this solution in the comments of the tutorial I found :3)
+
+I tested the platforms in the level 3 map, and they work well. I just need to also find a way to make them go up and down (in fact I will test the platform movement now.)
+
+7:07 PM Ok, turns out I can't make it go up and down from its current position. what I'll do is that I'll create a second platform scene where the platform is horizontal, and see from there

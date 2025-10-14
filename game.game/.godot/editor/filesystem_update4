@@ -11,3 +11,6 @@ res://scenes/hot_dog_coin.tscn
 res://scenes/game_ui.tscn
 res://scenes/Autoload.tscn
 res://scenes/up_down_platform.tscn
+res://scenes/platform.tscn
+res://scripts/platform.gd
+res://scripts/hotdog.gd

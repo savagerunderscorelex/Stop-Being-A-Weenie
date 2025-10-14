@@ -1,17 +1,39 @@
-[gd_scene load_steps=2 format=3 uid="uid://dgf653pvw6xg1"]
+[gd_scene load_steps=5 format=3 uid="uid://brql21l02irx0"]
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_v4t87"]
-size = Vector2(481, 241)
+[ext_resource type="Script" uid="uid://dejkxaygs4mf0" path="res://scripts/platform.gd" id="1_nlgqw"]
+[ext_resource type="Texture2D" uid="uid://cyntltjkvc02i" path="res://assets/Pixel fallen tree log.png" id="2_507ja"]
 
-[node name="StaticBody2D" type="StaticBody2D"]
+[sub_resource type="Curve2D" id="Curve2D_7s5xs"]
+_data = {
+"points": PackedVector2Array(0, 0, 0, 0, 272.729, 324.475, 0, 0, 0, 0, 272.729, 324.475, 0, 0, 0, 0, 265.519, 78.8448)
+}
+point_count = 3
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(568, 338)
-shape = SubResource("RectangleShape2D_v4t87")
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_lxsjr"]
+size = Vector2(162.029, 45)
 
-[node name="ColorRect" type="ColorRect" parent="."]
-offset_left = 329.0
-offset_top = 219.0
-offset_right = 809.0
-offset_bottom = 459.0
-color = Color(2.16588e-06, 0.727479, 0.112743, 1)
+[node name="Platform" type="Path2D"]
+curve = SubResource("Curve2D_7s5xs")
+
+[node name="PathFollow2D" type="PathFollow2D" parent="."]
+position = Vector2(254, 232)
+rotation = -0.0153245
+loop = false
+script = ExtResource("1_nlgqw")
+
+[node name="Platform-Full" type="AnimatableBody2D" parent="PathFollow2D"]
+rotation = 0.0346452
+scale = Vector2(1, 1)
+collision_layer = 7
+
+[node name="CharacterBody2D" type="CharacterBody2D" parent="PathFollow2D/Platform-Full"]
+
+[node name="Sprite2D" type="Sprite2D" parent="PathFollow2D/Platform-Full/CharacterBody2D"]
+position = Vector2(109.509, 46.7112)
+scale = Vector2(0.338415, 0.424156)
+texture = ExtResource("2_507ja")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="PathFollow2D/Platform-Full/CharacterBody2D"]
+position = Vector2(105.197, 35.4703)
+scale = Vector2(1, 1)
+shape = SubResource("RectangleShape2D_lxsjr")
