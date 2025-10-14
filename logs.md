@@ -105,3 +105,13 @@ I'm tired so I'm gonna go to sleep
 8:29 PM Forgot to put the boundary death thingie, I'm foreal going to sleep (after I put a lil idea thing down)
 
 8:58 PM I lied, but I updated the readme file with more links. I'm ACTUALLY going to sleep this time
+
+## 10/14
+
+4:14 PM Created and deleted up_down_node
+
+I'm trying to make moving platforms for levels 4 and 5. I finished designing them already
+
+4:49 PM Actually created platform node
+
+5:19 PM I'm starting to work on the level 4 map and stuff. I don't know why it took me so long to set it up lol

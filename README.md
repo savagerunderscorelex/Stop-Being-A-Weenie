@@ -1,7 +1,14 @@
 # Stop Being A Weenie
 
+## About
+
+Stop Being A Weenie is a game where you play as a Wiener Dog / Dachshund. The goal of the game is to collect all the hotdogs scattered around the map in each levelk
+
 **Time Spent:** ![Hackatime: Time Spent on this project](https://hackatime-badge.hackclub.com/U08UGTGS4HE/Stop-Being-A-Weenie
 )
+
+## Journey
+
 
 ## Tutorials and Resources
 
