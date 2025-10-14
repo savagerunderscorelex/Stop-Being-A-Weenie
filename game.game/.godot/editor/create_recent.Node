@@ -1,3 +1,5 @@
+CollisionShape2D
+Area2D
 AudioStreamPlayer
 Panel
 CanvasLayer
@@ -5,8 +7,6 @@ Timer
 TileMapLayer
 RichTextLabel
 Label
-Area2D
-CollisionShape2D
 AnimatedSprite2D
 Sprite2D
 Node2D

@@ -4,17 +4,18 @@
 
 - [ ] Design Starting menu with player instructions/keys (wasd, arrows), start button, and options (turning off music or maybe changing music)
 - [ ] Figure out how many levels to do
-- [ ] Figure out how to update the level ui when finding the collectibles in each level
+- [x] ~~Figure out how to update the level ui when finding the collectibles in each level~~
 - [ ] Design each level
-- [ ] Figure out hotdog counter thingie (updating the ui when player finds each hot dog)
+- [x] ~~Figure out hotdog counter thingie (updating the ui when player finds each hot dog)~~
 - [ ] Explain the goal of the game at the cutscene
 - [ ] Figure out how to even do cutscenes
-- [ ] Figure out how to do the script to change the ui based on current objectives (objectives are probably going to be: find x number of hotdogs, listen to rules, etc )
-- [ ] maybe add sound effects on jumping and landing and collecting hot dogs
+- [x] ~~Figure out how to do the script to change the ui based on current objectives (objectives are probably going to be: find x number of hotdogs, listen to rules, etc )~~
+- [x] ~~maybe add sound effects on jumping and landing and collecting hot dogs~~
 - [ ] specify game goals a little better
-- [ ] finish level 3
+- [x] ~~finish level 3~~
 - [ ] finish level 4
 - [ ] finish level 5
+- [ ] do a stats thing when the player finishes the game like how I did for the flappy game: deaths, total hotdogs eaten, maybe time (as if ppl are gonna speedrun this game) 
 
 ## Logs
 
@@ -93,3 +94,12 @@ I'm working on trying to fix the sound issue with completing a level
 5:45 PM Finished level 2, standardized code between level 1 and level 2, deleted platform scene (since I'm not doing that anymore)
 
 5:46 Decided not to delete it anymore
+
+7:30 PM Started on the map for level 3, added the hotdogs and all of the tiles for the map
+
+7:57 Wrote most of the level 2 code, somehow the SoundBoard scene got removed from globals so I had to read it again
+
+8:25 PM Finished level 3 code!! :3
+I'm tired so I'm gonna go to sleep
+
+8:29 PM Forgot to put the boundary death thingie, I'm foreal going to sleep (after I put a lil idea thing down)

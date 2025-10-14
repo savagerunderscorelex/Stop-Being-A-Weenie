@@ -7,7 +7,7 @@
 [ext_resource type="PackedScene" uid="uid://df6jpdfprom5p" path="res://scenes/game_ui.tscn" id="5_y0kc7"]
 [ext_resource type="PackedScene" uid="uid://m0d0pdtqgsgi" path="res://scenes/hot_dog_coin.tscn" id="6_ne2mo"]
 
-[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_eqxsl"]
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_qpwj6"]
 texture = ExtResource("2_pbc48")
 0:0/0 = 0
 0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
@@ -254,7 +254,7 @@ texture = ExtResource("2_pbc48")
 
 [sub_resource type="TileSet" id="TileSet_b4j7a"]
 physics_layer_0/collision_layer = 1
-sources/0 = SubResource("TileSetAtlasSource_eqxsl")
+sources/0 = SubResource("TileSetAtlasSource_qpwj6")
 
 [sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_wo48x"]
 distance = -426.0
