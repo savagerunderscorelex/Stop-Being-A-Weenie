@@ -5,7 +5,7 @@
 - [ ] Design Starting menu with player instructions/keys (wasd, arrows), start button, and options (turning off music or maybe changing music)
 - [ ] Figure out how many levels to do
 - [x] ~~Figure out how to update the level ui when finding the collectibles in each level~~
-- [ ] Design each level
+- [x] Design each level
 - [x] ~~Figure out hotdog counter thingie (updating the ui when player finds each hot dog)~~
 - [ ] Explain the goal of the game at the cutscene
 - [ ] Figure out how to even do cutscenes
@@ -15,7 +15,8 @@
 - [x] ~~finish level 3~~
 - [ ] finish level 4
 - [ ] finish level 5
-- [ ] do a stats thing when the player finishes the game like how I did for the flappy game: deaths, total hotdogs eaten, maybe time (as if ppl are gonna speedrun this game) 
+- [ ] do a stats thing when the player finishes the game like how I did for the flappy game: deaths, total hotdogs eaten, maybe time (as if ppl are gonna speedrun this game)
+- [ ] need to consider adding a wait time between moving up and down for the platforms
 
 ## Logs
 
@@ -79,7 +80,7 @@ I basically finished all of the level 2 code! (3:16 PM)
 
 4:04 PM Tried to fix the issue with the level complete sfx glitching and instead playing when entering the next level, still doesn't work
 
-What I'm going to do is create 2 scenes with global variables (one for sound and one for general variables). I'm also going to try to solve this problem by making the sound play when the is_level_completed variable is true instead of putting it with the code to change the scene to the next level. 
+What I'm going to do is create 2 scenes with global variables (one for sound and one for general variables). I'm also going to try to solve this problem by making the sound play when the is_level_completed variable is true instead of putting it with the code to change the scene to the next level.
 
 4:35 PM Added soundboard global scene since the answer to a forum i found also did that, adjusted the code to be update to the new scene since I moved the sound effects there
 
@@ -116,7 +117,7 @@ I'm trying to make moving platforms for levels 4 and 5. I finished designing the
 
 5:19 PM I'm starting to work on the level 4 map and stuff. I don't know why it took me so long to set it up lol
 
-5:56 PM I removed the old platform scene so that I can rename the platform scene that I'm actually going to use. 
+5:56 PM I removed the old platform scene so that I can rename the platform scene that I'm actually going to use.
 
 6:47 PM Ok so! I figured out how to fix the platform thing, so the platform works now and I created a way to implement platforms!!
 
@@ -130,7 +131,7 @@ I tested the platforms in the level 3 map, and they work well. I just need to al
 
 So changing the orientation of the platform makes it so that it will actually go up. I'm really happy that I figured this out!!.
 
-Although I put on my task list that I will finish level 4 today, I'll put it off until tomorrow. It's pretty late already, so I think it'll be best to wake up early tomorrow and try to finish it. 
+Although I put on my task list that I will finish level 4 today, I'll put it off until tomorrow. It's pretty late already, so I think it'll be best to wake up early tomorrow and try to finish it.
 
 7:17 PM Adjusted the name of the original scene. That's it :)
 
@@ -142,12 +143,16 @@ Although I put on my task list that I will finish level 4 today, I'll put it off
 
 I'm going to use tweening instead
 
-5:26 PM I came back from school :3. I deleted the old platform horizontal scene, and changed the code to use tweening instead of a path2d node. It was wayyy too difficult to use a path2d node, so I'd rather use tweening instead. 
+5:26 PM I came back from school :3. I deleted the old platform horizontal scene, and changed the code to use tweening instead of a path2d node. It was wayyy too difficult to use a path2d node, so I'd rather use tweening instead.
 
 5:52 PM waow I feel so inteligente!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!1
 
-So I figured out how to make the platform go up and down with the code. I even just had a revelation mid log writing, but I'll get to that later. 
+So I figured out how to make the platform go up and down with the code. I even just had a revelation mid log writing, but I'll get to that later.
 
 Before, I had a couple issues with the tweening also acting weird, but it was because I kinda did the code for the up and down movement a bit wrong. However, I'm glad that I was able to figure it out all by myself. I added  exported variables like wait_time, duration, and direction so that I could customize the movement for each individual platform (at least I think that's what its for.) I also thought up a way to determine which direction a platform goes in first, since I noticed that the platform went the opposite way from where I wanted. So, I thought of creating another exported variable where I could put the values "up" or "down" (a string variable which may not be the best). So, if I want the platform to go down first, I use a conditional statement to make it go down then back up, and vice versa.
 
 To what I realized: I thought that I would have to have two separate platform scenes: one for going up and down and one for going left and right. When I was writing the log, I remembered the variable thing I did for the up and down movement, so then I thought: "Why can't I just do that for all of the movement functions?" So right after I commit this I'm going to perform my hypothesis.
+
+6:04 PM Checked off todos
+
+6:22 PM I started on the actual level code (didn't realize that I didn't since I was so focused on trying to implement a platform), I finished polishing up the platform movement code, so I added a second platform; added the boundary of death to level 4; added the basic Autoload variables (hotdogs_needed and hotdogs_found)

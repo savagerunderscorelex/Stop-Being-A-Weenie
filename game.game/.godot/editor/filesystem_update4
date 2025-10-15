@@ -13,3 +13,5 @@ res://scenes/background.tscn
 res://scenes/platform-vertical.tscn
 res://scripts/platform.gd
 res://scripts/platform_vertical.gd
+res://scenes/platform.tscn
+res://scripts/level_4.gd

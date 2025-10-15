@@ -1,13 +1,13 @@
-[gd_scene load_steps=4 format=3 uid="uid://b5nl2mnotasme"]
+[gd_scene load_steps=4 format=3 uid="uid://b1citgf11b13r"]
 
-[ext_resource type="Script" uid="uid://dejkxaygs4mf0" path="res://scripts/platform.gd" id="1_nlgqw"]
-[ext_resource type="Texture2D" uid="uid://cyntltjkvc02i" path="res://assets/Pixel fallen tree log.png" id="2_507ja"]
+[ext_resource type="Script" uid="uid://ny44pob21cx" path="res://scripts/platform.gd" id="1_sgs7c"]
+[ext_resource type="Texture2D" uid="uid://cyntltjkvc02i" path="res://assets/Pixel fallen tree log.png" id="2_ycufq"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_sgs7c"]
 size = Vector2(516.185, 113.707)
 
 [node name="Platform" type="Node2D"]
-script = ExtResource("1_nlgqw")
+script = ExtResource("1_sgs7c")
 
 [node name="StaticBody2D" type="StaticBody2D" parent="."]
 rotation = 1.57228
@@ -17,7 +17,7 @@ rotation = -0.189905
 
 [node name="Sprite2D" type="Sprite2D" parent="StaticBody2D/CharacterBody2D"]
 rotation = -1.39375
-texture = ExtResource("2_507ja")
+texture = ExtResource("2_ycufq")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D/CharacterBody2D"]
 position = Vector2(-21.016, -0.571329)

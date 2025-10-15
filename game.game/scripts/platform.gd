@@ -1,10 +1,19 @@
 extends Node2D
 
-@export var distance: int
+@export var distance: float
 @export var wait_time: int
+@export var duration: int
+@export var start_direction : String
 
 func _ready() -> void:
-	move_right()
+	if start_direction == "down":
+		move_up()
+	elif start_direction == "up":
+		move_down()
+	elif start_direction == "right":
+		move_left()
+	else:
+		move_right()
 
 func move_right():
 	var tween = create_tween()
@@ -21,10 +30,10 @@ func move_left():
 
 func move_up():
 	var tween = create_tween()
-	tween.tween_property(self, "position", position + Vector2(0, distance), 1)
+	tween.tween_property(self, "position", position + Vector2(0, distance), duration)
 	tween.tween_callback(move_down)
 
 func move_down():
 	var tween = create_tween()
-	tween.tween_property(self, "position", position + Vector2(0, distance), 1)
+	tween.tween_property(self, "position", position + Vector2(0, -distance), duration)
 	tween.tween_callback(move_up)
