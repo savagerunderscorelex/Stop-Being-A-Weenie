@@ -143,3 +143,11 @@ Although I put on my task list that I will finish level 4 today, I'll put it off
 I'm going to use tweening instead
 
 5:26 I came back from school :3. I deleted the old platform horizontal scene, and changed the code to use tweening instead of a path2d node. It was wayyy too difficult to use a path2d node, so I'd rather use tweening instead. 
+
+5:52 PM waow I feel so inteligente!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!1
+
+So I figured out how to make the platform go up and down with the code. I even just had a revelation mid log writing, but I'll get to that later. 
+
+Before, I had a couple issues with the tweening also acting weird, but it was because I kinda did the code for the up and down movement a bit wrong. However, I'm glad that I was able to figure it out all by myself. I added  exported variables like wait_time, duration, and direction so that I could customize the movement for each individual platform (at least I think that's what its for.) I also thought up a way to determine which direction a platform goes in first, since I noticed that the platform went the opposite way from where I wanted. So, I thought of creating another exported variable where I could put the values "up" or "down" (a string variable which may not be the best). So, if I want the platform to go down first, I use a conditional statement to make it go down then back up, and vice versa.
+
+To what I realized: I thought that I would have to have two separate platform scenes: one for going up and down and one for going left and right. When I was writing the log, I remembered the variable thing I did for the up and down movement, so then I thought: "Why can't I just do that for all of the movement functions?" So right after I commit this I'm going to perform my hypothesis.

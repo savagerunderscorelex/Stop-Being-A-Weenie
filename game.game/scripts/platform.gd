@@ -4,7 +4,7 @@ extends Node2D
 @export var wait_time: int
 
 func _ready() -> void:
-	move_down()
+	move_right()
 
 func move_right():
 	var tween = create_tween()

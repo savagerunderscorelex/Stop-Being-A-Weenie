@@ -295,4 +295,7 @@ position = Vector2(-264, 65)
 scale = Vector2(2.6, 2.752)
 
 [node name="Platform" parent="." instance=ExtResource("5_anwe6")]
-position = Vector2(699, 502)
+position = Vector2(540, 461)
+rotation = 0.000411549
+scale = Vector2(0.5, 0.5)
+duration = 12
