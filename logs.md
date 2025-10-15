@@ -142,7 +142,7 @@ Although I put on my task list that I will finish level 4 today, I'll put it off
 
 I'm going to use tweening instead
 
-5:26 I came back from school :3. I deleted the old platform horizontal scene, and changed the code to use tweening instead of a path2d node. It was wayyy too difficult to use a path2d node, so I'd rather use tweening instead. 
+5:26 PM I came back from school :3. I deleted the old platform horizontal scene, and changed the code to use tweening instead of a path2d node. It was wayyy too difficult to use a path2d node, so I'd rather use tweening instead. 
 
 5:52 PM waow I feel so inteligente!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!1
 
