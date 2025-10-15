@@ -133,3 +133,13 @@ So changing the orientation of the platform makes it so that it will actually go
 Although I put on my task list that I will finish level 4 today, I'll put it off until tomorrow. It's pretty late already, so I think it'll be best to wake up early tomorrow and try to finish it. 
 
 7:17 PM Adjusted the name of the original scene. That's it :)
+
+## 10/15
+
+4:10 AM So the path thing acts kind of weird: it makes the whole sprite rotate and I can't figure out how to stop it from doing that (when I try to add a path). The path is not independent from the node, so anything I do to adjust the path changes the orientation of the node as well. It's super annoying though
+
+5 AM Yeah I'm not using paths for this project anymore, it's not acting the way I want it to
+
+I'm going to use tweening instead
+
+5:26 I came back from school :3. I deleted the old platform horizontal scene, and changed the code to use tweening instead of a path2d node. It was wayyy too difficult to use a path2d node, so I'd rather use tweening instead. 

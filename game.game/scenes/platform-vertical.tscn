@@ -1,39 +1,26 @@
-[gd_scene load_steps=5 format=3 uid="uid://b1citgf11b13r"]
+[gd_scene load_steps=4 format=3 uid="uid://b1citgf11b13r"]
 
 [ext_resource type="Script" uid="uid://dejkxaygs4mf0" path="res://scripts/platform.gd" id="1_sgs7c"]
 [ext_resource type="Texture2D" uid="uid://cyntltjkvc02i" path="res://assets/Pixel fallen tree log.png" id="2_ycufq"]
 
-[sub_resource type="Curve2D" id="Curve2D_7s5xs"]
-_data = {
-"points": PackedVector2Array(0, 0, 0, 0, 367, 258, 0, 0, 0, 0, 398, -172)
-}
-point_count = 2
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_sgs7c"]
+size = Vector2(516.185, 113.707)
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_lxsjr"]
-size = Vector2(162.029, 45)
-
-[node name="Platform" type="Path2D"]
-curve = SubResource("Curve2D_7s5xs")
-
-[node name="PathFollow2D" type="PathFollow2D" parent="."]
-position = Vector2(254, 232)
-rotation = -0.0153245
-loop = false
+[node name="Platform" type="Node2D"]
 script = ExtResource("1_sgs7c")
 
-[node name="Platform-Full" type="AnimatableBody2D" parent="PathFollow2D"]
-rotation = 0.0346452
-collision_layer = 7
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+rotation = 1.57228
+scale = Vector2(1, 1)
 
-[node name="CharacterBody2D" type="CharacterBody2D" parent="PathFollow2D/Platform-Full"]
+[node name="CharacterBody2D" type="CharacterBody2D" parent="StaticBody2D"]
+rotation = -0.189905
 
-[node name="Sprite2D" type="Sprite2D" parent="PathFollow2D/Platform-Full/CharacterBody2D"]
-position = Vector2(109.509, 46.7112)
-rotation = 1.5708
-scale = Vector2(0.338415, 0.424156)
+[node name="Sprite2D" type="Sprite2D" parent="StaticBody2D/CharacterBody2D"]
+rotation = -1.39375
 texture = ExtResource("2_ycufq")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="PathFollow2D/Platform-Full/CharacterBody2D"]
-position = Vector2(120.886, 44.6729)
-rotation = 1.5361
-shape = SubResource("RectangleShape2D_lxsjr")
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D/CharacterBody2D"]
+position = Vector2(-21.016, -0.571329)
+rotation = -1.39375
+shape = SubResource("RectangleShape2D_sgs7c")

@@ -1,10 +1,30 @@
-extends PathFollow2D
+extends Node2D
 
-var direction : float = 1 # Initializing the Variable of direction
+@export var distance: int
+@export var wait_time: int
 
-# So the goal of this code is to program the PathFollow 2D to go to the end of the path, hit the end, and go back 
-# to the start of the path again. 
-func _physics_process(delta: float) -> void:
-	progress += direction # progress in PathFollow2D is how much the node has gone through the path
-	if progress_ratio >= 1 or progress_ratio <= 0: # When the node has progress through the path
-		direction = -direction # make the platform node go the opposite direction
+func _ready() -> void:
+	move_down()
+
+func move_right():
+	var tween = create_tween()
+	tween.tween_property(self, "position", position + Vector2(distance,0), 1)
+	await get_tree().create_timer(wait_time).timeout
+	tween.tween_callback(move_left)
+	
+func move_left():
+	var tween = create_tween()
+	tween.tween_property(self, "position", position + Vector2(-distance,0), 1)
+	tween.tween_callback(move_right)
+
+# Based on the code from the tutorial, I can guess the code to make the platform move up and down
+
+func move_up():
+	var tween = create_tween()
+	tween.tween_property(self, "position", position + Vector2(0, distance), 1)
+	tween.tween_callback(move_down)
+
+func move_down():
+	var tween = create_tween()
+	tween.tween_property(self, "position", position + Vector2(0, distance), 1)
+	tween.tween_callback(move_up)
