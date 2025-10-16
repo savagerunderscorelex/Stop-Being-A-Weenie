@@ -4,7 +4,7 @@
 [ext_resource type="Texture2D" uid="uid://cyntltjkvc02i" path="res://assets/Pixel fallen tree log.png" id="2_ycufq"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_sgs7c"]
-size = Vector2(516.185, 113.707)
+size = Vector2(432.382, 113.707)
 
 [node name="Platform" type="Node2D"]
 script = ExtResource("1_sgs7c")
@@ -20,6 +20,6 @@ rotation = -1.39375
 texture = ExtResource("2_ycufq")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D/CharacterBody2D"]
-position = Vector2(-21.016, -0.571329)
+position = Vector2(-23.2228, 11.7629)
 rotation = -1.39375
 shape = SubResource("RectangleShape2D_sgs7c")

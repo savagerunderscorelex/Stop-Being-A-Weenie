@@ -156,3 +156,5 @@ To what I realized: I thought that I would have to have two separate platform sc
 6:04 PM Checked off todos
 
 6:22 PM I started on the actual level code (didn't realize that I didn't since I was so focused on trying to implement a platform), I finished polishing up the platform movement code, so I added a second platform; added the boundary of death to level 4; added the basic Autoload variables (hotdogs_needed and hotdogs_found)
+
+9:33 PM I added all of the platforms and hotdog collectibles that I planned to add in my design. I have yet to code the platforms or anything. I also want to add an interactive tile within the game, but I'm reading up on tileset documentation to figure out how to customize things for certain tiles.
