@@ -158,3 +158,13 @@ To what I realized: I thought that I would have to have two separate platform sc
 6:22 PM I started on the actual level code (didn't realize that I didn't since I was so focused on trying to implement a platform), I finished polishing up the platform movement code, so I added a second platform; added the boundary of death to level 4; added the basic Autoload variables (hotdogs_needed and hotdogs_found)
 
 9:33 PM I added all of the platforms and hotdog collectibles that I planned to add in my design. I have yet to code the platforms or anything. I also want to add an interactive tile within the game, but I'm reading up on tileset documentation to figure out how to customize things for certain tiles.
+
+10:03 PM Why is godot so complicated???????????????????
+
+I'm trying to make a custom tile that's like a marker to let the player know about the moving platforms. After coding for a bit, what I think I'm gonna do is that I'm just going to create a separate node with the same picture of the little board things
+
+Or maybe I won't do that. Idk im in the middle of figuring it out and I'm soooooooooooooooooooooo tired (it's literally 10PM!!!!)
+
+10:15 PM I was reconsidering taking the easy way out, but what I'm trying to do is way too complicated for my understanding. I'm just going to take the easy way out and just use a photo of that same signboard to do the events on.
+
+I'm going to sleep now
