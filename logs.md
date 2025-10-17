@@ -194,3 +194,5 @@ SO!!!!!! I finally figured out how to make the interact ui appear when the playe
 I was just about to write down about how the code for the interact ui stopped working (i probably messed with it and forgot). However, I looked at the changes tree on the side of my VS Code editor and thought to just undo my changes in my level 4 scene. And who would have thought that doing this would actually fix my code!!!
 
 I only had to adjust the visibility on node_ready, and I changed the type of interact ui autoload to control (I forgot the ui was a control node and not a node2d).
+
+7:45 PM Added sign code comments
