@@ -1,13 +1,17 @@
 extends Node2D
 
-func _on_area_2d_body_exited(body: Node2D) -> void:
-	if body.name == "Dog":
-		$Label.text = " "
-		Autoload.can_open_interact_ui = false
+# The purpose of this script is to control when the player can open the interact ui control node. The code checks for if the 
+# player has exited or entered the collision body of the sign. This is so that the interact ui will be available if the
+# player is near the sign and not available if the player is not near the sign. 
 
-func _on_area_2d_body_entered(body: Node2D):
-	if body.name == "Dog":
-			$Label.text = "Press E to Interact"
-			Autoload.can_open_interact_ui = true
+func _on_area_2d_body_exited(body: Node2D) -> void: # If a body leaves the sign's collision body...
+	if body.name == "Dog": # and the body is the dog aka player...
+		$Label.text = " " # remove the text from the label...
+		Autoload.can_open_interact_ui = false # and don't allow the player to be able to open the interact ui
+
+func _on_area_2d_body_entered(body: Node2D): # If a body enters the sign's collision body...
+	if body.name == "Dog": # and the body is named "Dog"...
+			$Label.text = "Press E to Interact" # change the label text to this...
+			Autoload.can_open_interact_ui = true # and allow the player to be able to open the interact ui.
 	
 	
