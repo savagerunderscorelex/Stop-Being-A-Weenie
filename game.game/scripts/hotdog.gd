@@ -2,7 +2,7 @@ extends CharacterBody2D
 
 @export var speed : float = 300 # @export adds a variable to the inspector menu of the parent node (that's actually so cool)
 @onready var animator: AnimatedSprite2D = $AnimatedSprite2D
-@export var jump_speed: int = -speed * 2
+@export var jump_speed: float = -speed * 2
 @export var gravity: float = speed * 3
 
 func _physics_process(delta: float) -> void: # This function takes a float as an input
@@ -36,3 +36,14 @@ func update_animation() -> void:
 	else:
 		animator.play("walking_right")
 		animator.flip_h = false # Makes the sprite go back to the original position
+		
+func _input(event: InputEvent) -> void:
+	if Input.is_key_pressed(KEY_E):
+		toggle_visibility(Autoload.interact_ui)
+		
+# Sign and Interact_ui code 
+func toggle_visibility(object):
+	if object.visible:
+		object.visible = false
+	else:
+		object.visible = true

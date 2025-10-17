@@ -180,3 +180,11 @@ So far, I've added the sign scene and I'm working on the code. I'm trying to adj
 11:29 PM Ok I figured out the sign code anyways. I just remembered that there is a body_exited signal for area bodies. Before, I was trying to do what the body_exited signal did by using a while loop, but it would always freeze the game (idk why though?). But yeah I figured out how to do the sign code :)
 
 I just need to adjust styling now.
+
+## 10/17
+
+6:29 AM Worked on the interact ui thing, added the basic controls, and I'm working on the code to make it appear and disappear when the player presses e near it.
+
+5:25 PM I was lazy so I didn't originally do logs.
+
+SO!!!!!! I finally figured out how to make the interact ui appear when the player pressed "e"!!!!!!!!!!!!!! It took a lot of trial and error and looking through 20 forum posts. Documentation wasn't super helpful, though. I also used a tutorial to figure out how to actually make the ui disappear and appear. The way I figured out how to do this action using a key is through putting the code for the key press within the player node (this may have been the main problem) and the code to change it in the level 4 node.
