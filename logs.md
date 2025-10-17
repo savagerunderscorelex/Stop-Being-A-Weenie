@@ -17,6 +17,8 @@
 - [ ] finish level 5
 - [ ] do a stats thing when the player finishes the game like how I did for the flappy game: deaths, total hotdogs eaten, maybe time (as if ppl are gonna speedrun this game)
 - [ ] need to consider adding a wait time between moving up and down for the platforms
+- [ ] adjust sign label styling
+- [ ] design popup menu that appears when the player presses e when near a sign
 
 ## Logs
 
@@ -168,3 +170,13 @@ Or maybe I won't do that. Idk im in the middle of figuring it out and I'm sooooo
 10:15 PM I was reconsidering taking the easy way out, but what I'm trying to do is way too complicated for my understanding. I'm just going to take the easy way out and just use a photo of that same signboard to do the events on.
 
 I'm going to sleep now
+
+## 10/16
+
+11:22 PM I didn't get that much time today to work on my project because of an event, but that's alright I guess, since I did my 2 hours throughout this week (and even did 3 hours yesterday). I'm going to take my laptop on the bus to be able to work on the project there too.
+
+So far, I've added the sign scene and I'm working on the code. I'm trying to adjust the label code so that a certain phrase will appear when the player moves into the scene's body and tell the player about the obstacles.
+
+11:29 PM Ok I figured out the sign code anyways. I just remembered that there is a body_exited signal for area bodies. Before, I was trying to do what the body_exited signal did by using a while loop, but it would always freeze the game (idk why though?). But yeah I figured out how to do the sign code :)
+
+I just need to adjust styling now.

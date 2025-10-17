@@ -18,6 +18,8 @@ func get_input() -> void: # -> void means returns void, which means that this fu
 		
 	elif Input.is_action_just_pressed("reset"):
 		get_tree().reload_current_scene()
+	elif Input.is_action_just_pressed("Interact"):
+		pass # run a function
 	var direction = Input.get_axis("move_left", "move_right") # Gets 2 input actions for input, the right side of the assignment operator returns a value between -1 and 1, -1 for left, 1 for right
 	velocity.x = direction * speed # If direction is negative, the velocity direction is left, if direction is positive, the velocity value will make the sprite go right
 

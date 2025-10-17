@@ -1,4 +1,4 @@
-[gd_scene load_steps=13 format=4 uid="uid://dkochw328ucvl"]
+[gd_scene load_steps=14 format=4 uid="uid://dkochw328ucvl"]
 
 [ext_resource type="Script" uid="uid://dog504fckphxb" path="res://scripts/level_4.gd" id="1_5vn0v"]
 [ext_resource type="PackedScene" uid="uid://cwqj114lof07w" path="res://scenes/background.tscn" id="1_w6h2s"]
@@ -7,6 +7,7 @@
 [ext_resource type="Texture2D" uid="uid://cyntltjkvc02i" path="res://assets/Pixel fallen tree log.png" id="3_ogj6a"]
 [ext_resource type="PackedScene" uid="uid://b1citgf11b13r" path="res://scenes/platform.tscn" id="5_anwe6"]
 [ext_resource type="PackedScene" uid="uid://m0d0pdtqgsgi" path="res://scenes/hot_dog_coin.tscn" id="7_ts8eg"]
+[ext_resource type="PackedScene" uid="uid://cqrnkoel2p0os" path="res://scenes/sign.tscn" id="8_ts8eg"]
 
 [sub_resource type="TileMapPattern" id="TileMapPattern_ftfob"]
 tile_data = PackedInt32Array(393216, 0, 0, 393217, 0, 0, 393218, 0, 0, 262148, 0, 0, 524292, 0, 0, 262149, 0, 0, 524293, 0, 0, 262150, 0, 0, 524294, 0, 0, 131080, 0, 0, 655368, 0, 0, 1114120, 0, 0, 131081, 0, 0, 655369, 0, 0, 1114121, 0, 0, 131082, 0, 0, 655370, 0, 0, 1114122, 0, 0, 1114123, 0, 0, 12, 0, 0, 786444, 0, 0, 1114124, 0, 0, 13, 0, 0, 786445, 0, 0, 1114125, 0, 0, 14, 0, 0, 786446, 0, 0, 1048590, 0, 0, 983055, 0, 0, 131088, 0, 0, 917520, 0, 0, 131089, 0, 0, 917521, 0, 0, 131090, 0, 0, 917522, 0, 0, 262164, 0, 0, 1048596, 0, 0, 262165, 0, 0, 1048597, 0, 0, 262166, 0, 0, 1048598, 0, 0, 393240, 0, 0, 1179672, 0, 0, 1245208, 0, 1, 1310744, 0, 1, 1376280, 0, 1, 1441816, 0, 1, 1507352, 0, 1, 393241, 0, 0, 1179673, 0, 0, 1245209, 0, 1, 1310745, 0, 1, 1376281, 0, 1, 1441817, 0, 1, 1507353, 0, 1, 393242, 0, 0, 1179674, 0, 0, 1245210, 0, 1, 1310746, 0, 1, 1376282, 0, 1, 1441818, 0, 1, 1507354, 0, 1, 393243, 0, 0, 1179675, 0, 0, 1245211, 0, 1, 1310747, 0, 1, 1376283, 0, 1, 1441819, 0, 1, 1507355, 0, 1, 262173, 0, 0, 1048605, 0, 0, 262174, 0, 0, 1048606, 0, 0, 262175, 0, 0, 1048607, 0, 0, 131105, 0, 0, 917537, 0, 0, 131106, 0, 0, 917538, 0, 0, 131107, 0, 0, 917539, 0, 0, 983076, 0, 0, 37, 0, 0, 786469, 0, 0, 1048613, 0, 0, 38, 0, 0, 786470, 0, 0, 1114150, 0, 0, 39, 0, 0, 786471, 0, 0, 1114151, 0, 0, 1114152, 0, 0, 131113, 0, 0, 655401, 0, 0, 1114153, 0, 0, 131114, 0, 0, 655402, 0, 0, 1114154, 0, 0, 131115, 0, 0, 655403, 0, 0, 1114155, 0, 0, 262189, 0, 0, 524333, 0, 0, 262190, 0, 0, 524334, 0, 0, 262191, 0, 0, 524335, 0, 0, 393265, 0, 0, 393266, 0, 0, 393267, 0, 0)
@@ -252,13 +253,18 @@ texture = ExtResource("2_ogj6a")
 3:15/0 = 0
 3:15/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 8:3/0 = 0
-8:4/0 = 0
+8:3/0/custom_data_0 = true
+8:3/0/custom_data_1 = true
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_anwe6"]
 texture = ExtResource("3_ogj6a")
 
 [sub_resource type="TileSet" id="TileSet_5vn0v"]
 physics_layer_0/collision_layer = 1
+custom_data_layer_0/name = "player_is_near"
+custom_data_layer_0/type = 1
+custom_data_layer_1/name = "player_pressed_e"
+custom_data_layer_1/type = 1
 sources/0 = SubResource("TileSetAtlasSource_rej77")
 sources/1 = SubResource("TileSetAtlasSource_anwe6")
 pattern_0 = SubResource("TileMapPattern_ftfob")
@@ -286,46 +292,85 @@ scale = Vector2(1.9367, 2.24459)
 position = Vector2(-2842, -677)
 scale = Vector2(1.9367, 2.24459)
 
+[node name="sign" parent="." instance=ExtResource("8_ts8eg")]
+position = Vector2(115, 206)
+
 [node name="TileMapLayer" type="TileMapLayer" parent="."]
-position = Vector2(3, 16)
 scale = Vector2(5, 5)
-tile_map_data = PackedByteArray("AAAAAAMAAAAAAAAAAAABAAMAAAAAAAAAAAACAAMAAAAAAAAAAAAAAAQAAAAAAAEAAAABAAQAAAAAAAEAAAACAAQAAAAAAAEAAAAAAAUAAAAAAAEAAAABAAUAAAAAAAEAAAACAAUAAAAAAAEAAAADAAUAAAAAAAEAAAAEAAYAAAAAAAEAAAADAAQAAAAAAAAAAAAEAAUAAAAAAAAAAAABAAYAAAAAAAEAAAACAAYAAAAAAAEAAAADAAYAAAAAAAEAAAAAAAYAAAAAAAEAAAD//wYAAAAAAAEAAAD+/wYAAAAAAAEAAAD9/wYAAAAAAAEAAAD9/wUAAAAAAAEAAAD+/wUAAAAAAAEAAAD//wUAAAAAAAEAAAD//wQAAAAAAAEAAAD+/wQAAAAAAAEAAAD9/wQAAAAAAAEAAAD//wMAAAAAAAAAAAD+/wMAAAAAAAAAAAD9/wMAAAAAAAAAAAD9/w4AAAAAAAAAAAD+/w4AAAAAAAAAAAD//w4AAAAAAAAAAAAAAA4AAAAAAAAAAAABAA4AAAAAAAAAAAACAA4AAAAAAAAAAAADAA4AAAAAAAAAAAAEAA4AAAAAAAAAAAD9/w8AAAAAAAEAAAD+/w8AAAAAAAEAAAD//w8AAAAAAAEAAAAAAA8AAAAAAAEAAAABAA8AAAAAAAEAAAACAA8AAAAAAAEAAAADAA8AAAAAAAEAAAAEAA8AAAAAAAEAAAAEABAAAAAAAAEAAAADABAAAAAAAAEAAAACABAAAAAAAAEAAAABABAAAAAAAAEAAAAAABAAAAAAAAEAAAD//xAAAAAAAAEAAAD+/xAAAAAAAAEAAAD+/xEAAAAAAAEAAAD9/xEAAAAAAAEAAAD9/xAAAAAAAAEAAAD//xEAAAAAAAEAAAAAABEAAAAAAAEAAAABABEAAAAAAAEAAAACABEAAAAAAAEAAAADABEAAAAAAAEAAAAEABEAAAAAAAEAAAD9/xIAAAAAAAEAAAD+/xIAAAAAAAEAAAD//xIAAAAAAAEAAAAAABIAAAAAAAEAAAABABIAAAAAAAEAAAACABIAAAAAAAEAAAADABIAAAAAAAEAAAAEABIAAAAAAAEAAAAHAAEAAAAAAAAAAAAIAAEAAAAAAAAAAAAIAAIAAAAAAAEAAAAHAAIAAAAAAAEAAAAJAAEAAAAAAAAAAAAJAAIAAAAAAAEAAAA=")
+tile_map_data = PackedByteArray("AAAAAAMAAAAAAAAAAAABAAMAAAAAAAAAAAACAAMAAAAAAAAAAAAAAAQAAAAAAAEAAAABAAQAAAAAAAEAAAACAAQAAAAAAAEAAAAAAAUAAAAAAAEAAAABAAUAAAAAAAEAAAACAAUAAAAAAAEAAAADAAUAAAAAAAEAAAAEAAYAAAAAAAEAAAADAAQAAAAAAAAAAAAEAAUAAAAAAAAAAAABAAYAAAAAAAEAAAACAAYAAAAAAAEAAAADAAYAAAAAAAEAAAAAAAYAAAAAAAEAAAD//wYAAAAAAAEAAAD+/wYAAAAAAAEAAAD9/wYAAAAAAAEAAAD9/wUAAAAAAAEAAAD+/wUAAAAAAAEAAAD//wUAAAAAAAEAAAD//wQAAAAAAAEAAAD+/wQAAAAAAAEAAAD9/wQAAAAAAAEAAAD//wMAAAAAAAAAAAD+/wMAAAAAAAAAAAD9/wMAAAAAAAAAAAD9/w4AAAAAAAAAAAD+/w4AAAAAAAAAAAD//w4AAAAAAAAAAAAAAA4AAAAAAAAAAAABAA4AAAAAAAAAAAACAA4AAAAAAAAAAAADAA4AAAAAAAAAAAAEAA4AAAAAAAAAAAD9/w8AAAAAAAEAAAD+/w8AAAAAAAEAAAD//w8AAAAAAAEAAAAAAA8AAAAAAAEAAAABAA8AAAAAAAEAAAACAA8AAAAAAAEAAAADAA8AAAAAAAEAAAAEAA8AAAAAAAEAAAAEABAAAAAAAAEAAAADABAAAAAAAAEAAAACABAAAAAAAAEAAAABABAAAAAAAAEAAAAAABAAAAAAAAEAAAD//xAAAAAAAAEAAAD+/xAAAAAAAAEAAAD+/xEAAAAAAAEAAAD9/xEAAAAAAAEAAAD9/xAAAAAAAAEAAAD//xEAAAAAAAEAAAAAABEAAAAAAAEAAAABABEAAAAAAAEAAAACABEAAAAAAAEAAAADABEAAAAAAAEAAAAEABEAAAAAAAEAAAD9/xIAAAAAAAEAAAD+/xIAAAAAAAEAAAD//xIAAAAAAAEAAAAAABIAAAAAAAEAAAABABIAAAAAAAEAAAACABIAAAAAAAEAAAADABIAAAAAAAEAAAAEABIAAAAAAAEAAAAHAAEAAAAAAAAAAAAIAAEAAAAAAAAAAAAIAAIAAAAAAAEAAAAHAAIAAAAAAAEAAAAJAAEAAAAAAAAAAAAJAAIAAAAAAAEAAAALAAIAAAAAAAAAAAAMAAIAAAAAAAAAAAANAAIAAAAAAAAAAAAPAAMAAAAAAAAAAAAQAAMAAAAAAAAAAAARAAMAAAAAAAAAAAALAAMAAAAAAAEAAAAMAAMAAAAAAAEAAAANAAMAAAAAAAEAAAAPAAQAAAAAAAEAAAAQAAQAAAAAAAEAAAARAAQAAAAAAAEAAAAmAAMAAAAAAAAAAAAmAAQAAAAAAAEAAAAtAAMAAAAAAAAAAAAtAAQAAAAAAAEAAAAtABAAAAAAAAEAAAAtABEAAAAAAAEAAAAtABIAAAAAAAEAAAAtABMAAAAAAAEAAAAuAAMAAAAAAAAAAAAuAAQAAAAAAAEAAAAuABAAAAAAAAEAAAAuABEAAAAAAAEAAAAuABIAAAAAAAEAAAAuABMAAAAAAAEAAAAvAAMAAAAAAAAAAAAvAAQAAAAAAAEAAAAvABAAAAAAAAEAAAAvABEAAAAAAAEAAAAvABIAAAAAAAEAAAAvABMAAAAAAAEAAAAwABEAAAAAAAEAAAAwABIAAAAAAAEAAAAwABMAAAAAAAEAAAAxABEAAAAAAAEAAAAxABIAAAAAAAEAAAAxABMAAAAAAAEAAAAyABEAAAAAAAEAAAAyABIAAAAAAAEAAAAyABMAAAAAAAEAAAAnAAMAAAAAAAAAAAAnAAQAAAAAAAEAAAAoAAMAAAAAAAAAAAAoAAQAAAAAAAEAAAApAAMAAAAAAAAAAAApAAQAAAAAAAEAAAAtAA8AAAAAAAAAAAAuAA8AAAAAAAAAAAAvAA8AAAAAAAAAAAAwAAMAAAAAAAAAAAAwAAQAAAAAAAEAAAAwABAAAAAAAAAAAAAxAAMAAAAAAAAAAAAxAAQAAAAAAAEAAAAxABAAAAAAAAAAAAAyAAMAAAAAAAAAAAAyAAQAAAAAAAEAAAAyABAAAAAAAAAAAAAzABEAAAAAAAAAAAAzABIAAAAAAAEAAAAzABMAAAAAAAEAAAA0ABEAAAAAAAAAAAA0ABIAAAAAAAEAAAA0ABMAAAAAAAEAAAA1ABEAAAAAAAAAAAA1ABIAAAAAAAEAAAA1ABMAAAAAAAEAAAA=")
 tile_set = SubResource("TileSet_5vn0v")
 
 [node name="Dog" parent="." instance=ExtResource("3_anwe6")]
 position = Vector2(-264, 65)
 scale = Vector2(2.6, 2.752)
 
+[node name="Boundary" type="Area2D" parent="."]
+position = Vector2(855, 1165)
+scale = Vector2(0.5, 0.5)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Boundary"]
+position = Vector2(-6, 218)
+shape = SubResource("WorldBoundaryShape2D_um320")
+
 [node name="Platform" parent="." instance=ExtResource("5_anwe6")]
-position = Vector2(540, 461)
+position = Vector2(527, 445)
 rotation = 0.000411549
 scale = Vector2(0.5, 0.5)
 distance = 800.0
 duration = 12
 start_direction = "down"
 
-[node name="Boundary" type="Area2D" parent="."]
-position = Vector2(855, 1165)
-scale = Vector2(0.5, 0.5)
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Boundary"]
-shape = SubResource("WorldBoundaryShape2D_um320")
-
 [node name="Platform2" parent="." instance=ExtResource("5_anwe6")]
-position = Vector2(858, 1165)
+position = Vector2(886, 1172)
 scale = Vector2(0.5, 0.5)
 distance = 300.0
 duration = 3
 start_direction = "left"
 
-[node name="hot_dog_coin" parent="." instance=ExtResource("7_ts8eg")]
-position = Vector2(462, 726)
-
 [node name="Platform3" parent="." instance=ExtResource("5_anwe6")]
-position = Vector2(1825, 1142)
+position = Vector2(1860, 1173)
 scale = Vector2(0.5, 0.5)
 distance = 300.0
 duration = 3
 start_direction = "right"
+
+[node name="Platform4" parent="." instance=ExtResource("5_anwe6")]
+position = Vector2(3494, 1245)
+scale = Vector2(0.5, 0.5)
+
+[node name="Platform5" parent="." instance=ExtResource("5_anwe6")]
+position = Vector2(1579, 303)
+scale = Vector2(0.5, 0.5)
+
+[node name="hot_dog_coin" parent="." instance=ExtResource("7_ts8eg")]
+position = Vector2(415, 710)
+
+[node name="hot_dog_coin2" parent="." instance=ExtResource("7_ts8eg")]
+position = Vector2(4177, 1239)
+
+[node name="hot_dog_coin3" parent="." instance=ExtResource("7_ts8eg")]
+position = Vector2(2376, 990)
+
+[node name="hot_dog_coin4" parent="." instance=ExtResource("7_ts8eg")]
+position = Vector2(3397, 657)
+
+[node name="hot_dog_coin5" parent="." instance=ExtResource("7_ts8eg")]
+position = Vector2(3823, 93)
+
+[node name="hot_dog_coin6" parent="." instance=ExtResource("7_ts8eg")]
+position = Vector2(1995, 100)
+
+[node name="hot_dog_coin7" parent="." instance=ExtResource("7_ts8eg")]
+position = Vector2(3121, 90)
+
+[node name="hot_dog_coin8" parent="." instance=ExtResource("7_ts8eg")]
+position = Vector2(632, -78)
+
+[node name="hot_dog_coin9" parent="." instance=ExtResource("7_ts8eg")]
+position = Vector2(55, 947)
+
+[node name="Platform6" parent="." instance=ExtResource("5_anwe6")]
+position = Vector2(2933, 291)
+scale = Vector2(0.5, 0.5)
 
 [connection signal="body_entered" from="Boundary" to="." method="_on_boundary_body_entered"]
