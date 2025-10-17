@@ -38,7 +38,7 @@ func update_animation() -> void:
 		animator.flip_h = false # Makes the sprite go back to the original position
 		
 func _input(event: InputEvent) -> void:
-	if Input.is_key_pressed(KEY_E):
+	if Input.is_key_pressed(KEY_E) and Autoload.can_open_interact_ui == true:
 		toggle_visibility(Autoload.interact_ui)
 		
 # Sign and Interact_ui code 

@@ -4,6 +4,8 @@ func _ready() -> void:
 	Autoload.hotdogs_found = 0
 	Autoload.hotdogs_needed = 9
 	Autoload.interact_ui = $CanvasLayer/InteractUI
+	Autoload.can_open_interact_ui = false # Makes the Interact_UI hidden on entering scene
+	Autoload.interact_ui.visible = false
 
 func _on_boundary_body_entered(body: Node2D) -> void:
 	if body.name == "Dog":

@@ -1,5 +1,6 @@
-[gd_scene load_steps=3 format=3 uid="uid://t673lynm5cvr"]
+[gd_scene load_steps=5 format=3 uid="uid://t673lynm5cvr"]
 
+[ext_resource type="Script" uid="uid://8s5g2h0wqrv0" path="res://scripts/interact_ui.gd" id="1_jgog5"]
 [ext_resource type="FontFile" uid="uid://b2dj0wvhrnjk" path="res://fonts/04B_30__.TTF" id="1_v0wli"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_jgog5"]
@@ -14,6 +15,9 @@ corner_radius_top_right = 30
 corner_radius_bottom_right = 30
 corner_radius_bottom_left = 30
 
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_v0wli"]
+bg_color = Color(0.6, 0.6, 0.6, 0)
+
 [node name="InteractUI" type="Control"]
 layout_mode = 3
 anchors_preset = 15
@@ -21,6 +25,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+script = ExtResource("1_jgog5")
 
 [node name="InteractBackground" type="Panel" parent="."]
 layout_mode = 1
@@ -65,3 +70,20 @@ offset_bottom = 531.0
 theme_override_fonts/normal_font = ExtResource("1_v0wli")
 theme_override_font_sizes/normal_font_size = 32
 text = "Default Paragraph Description"
+
+[node name="CloseButton" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 0.029
+anchor_bottom = 0.069
+offset_left = 972.0
+offset_top = 84.0
+offset_right = 1000.59
+offset_bottom = 104.288
+grow_horizontal = 0
+theme_override_fonts/font = ExtResource("1_v0wli")
+theme_override_font_sizes/font_size = 30
+theme_override_styles/normal = SubResource("StyleBoxFlat_v0wli")
+text = "X"
+
+[connection signal="button_down" from="CloseButton" to="." method="_on_close_button_button_down"]

@@ -1,4 +1,6 @@
+Line2D
 CanvasLayer
+Button
 RichTextLabel
 Panel
 Label
@@ -11,4 +13,3 @@ StaticBody2D
 AnimatableBody2D
 Path2D
 PathFollow2D
-TileMapLayer

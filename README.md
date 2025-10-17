@@ -29,3 +29,4 @@ Stop Being A Weenie is a game where you play as a Wiener Dog / Dachshund. The go
 
 - Doing Code Based on a Signal with If Statements: [Stack Overflow](https://stackoverflow.com/questions/77389673/godot-body-entered-only-for-a-specific-object-in-the-scene)
 - Playing Sound Effects: [Godot Forum](https://forum.godotengine.org/t/playing-sound-fx/57980/7)
+- Key Press Events: [Key Press Events](https://forum.godotengine.org/t/newbie-how-to-get-a-key-press-event/28203/2)

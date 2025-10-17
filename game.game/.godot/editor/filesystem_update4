@@ -16,3 +16,4 @@ res://scenes/sign.tscn
 res://scenes/Autoload.tscn
 res://scripts/sign.gd
 res://scripts/hotdog.gd
+res://scripts/interact_ui.gd
