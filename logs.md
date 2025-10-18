@@ -206,3 +206,15 @@ I only had to adjust the visibility on node_ready, and I changed the type of int
 8:56 PM I think I added all of the basic level code into the level 4 script. I added the objective ui, and the code to update the hotdogs found + change levels when the bojective is complete. I'm pretty much done with level 4, I just need to style the popup a bit and add another variable to control the text within the popup for the sign.
 
 9:04 PM Basically finished level 4. I'm too lazy to style the warning thing so I'm no longer doing so.
+
+## 10/18
+
+6:12 AM I started on the level 5 map. I added the first level platforms, the player, and the backgrounds.
+
+6:58 AM I'm still in the process of adding the tiles for the map game. I STILL don't know how to get a tile's coords, so I'm going to do the same thing for the sign tile for the bridge and just make it a separate scene so that it's easier for me to do.
+
+7:11 AM Finished adding tiles and platforms!!!!
+
+7:45 AM YESSSSSSSSSSSSSSSSSSSSS I figured out how to make a disappearing bridge!!!!
+
+I used add_child and remove_child to do this. I think my main problem was that I didn't know the syntax to get the node, so this also took a bit of trial and error to figure out.

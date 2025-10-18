@@ -19,3 +19,7 @@ res://scripts/hotdog.gd
 res://scripts/interact_ui.gd
 res://scripts/platform.gd
 res://scripts/level_3.gd
+res://scenes/levels/level_5.tscn
+res://scripts/level_5.gd
+res://scenes/bridge.tscn
+res://scripts/bridge.gd

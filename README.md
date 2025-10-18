@@ -13,7 +13,7 @@ Stop Being A Weenie is a game where you play as a Wiener Dog / Dachshund. The go
 
 ### Tutorials/Videos
 
-- Base Tutorial: Making a 2D Platformer Game: [Smooth and Fun Platformer Movement in Godot | Platformer Series #2 | Tutorial](https://www.youtube.com/watch?v=eTVT1KFToCQ&list=PLzSeGMddYQXDGEIOfDR7EXSvd1cuIfFWY&index=11)
+- Base Tutorial: Making a 2D Platformer Game (I used this tutorial to learn how to make basic movements, tilemaps, and how to create the physics for a player character): [Smooth and Fun Platformer Movement in Godot | Platformer Series #2 | Tutorial](https://www.youtube.com/watch?v=eTVT1KFToCQ&list=PLzSeGMddYQXDGEIOfDR7EXSvd1cuIfFWY&index=11)
 - Getting the UI to Stay in the Same Place:
 [Stick UI to Screen with Position Smoothing Camera2D | Godot 4.4](https://www.youtube.com/watch?v=dOr-fgBRMgs)
 - Moving Platforms: [5 Different Ways To Create A Moving Platform In Godot 4.0+](https://www.youtube.com/watch?v=MxrEM-jsMsM)
