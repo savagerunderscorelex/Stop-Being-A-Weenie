@@ -1,4 +1,4 @@
-[gd_scene load_steps=15 format=4 uid="uid://dkochw328ucvl"]
+[gd_scene load_steps=16 format=4 uid="uid://dkochw328ucvl"]
 
 [ext_resource type="Script" uid="uid://dog504fckphxb" path="res://scripts/level_4.gd" id="1_5vn0v"]
 [ext_resource type="PackedScene" uid="uid://cwqj114lof07w" path="res://scenes/background.tscn" id="1_w6h2s"]
@@ -8,6 +8,7 @@
 [ext_resource type="PackedScene" uid="uid://b1citgf11b13r" path="res://scenes/platform.tscn" id="5_anwe6"]
 [ext_resource type="PackedScene" uid="uid://m0d0pdtqgsgi" path="res://scenes/hot_dog_coin.tscn" id="7_ts8eg"]
 [ext_resource type="PackedScene" uid="uid://cqrnkoel2p0os" path="res://scenes/sign.tscn" id="8_ts8eg"]
+[ext_resource type="PackedScene" uid="uid://df6jpdfprom5p" path="res://scenes/game_ui.tscn" id="9_glw47"]
 [ext_resource type="PackedScene" uid="uid://t673lynm5cvr" path="res://scenes/interact_ui.tscn" id="9_um320"]
 
 [sub_resource type="TileMapPattern" id="TileMapPattern_ftfob"]
@@ -308,6 +309,13 @@ tile_set = SubResource("TileSet_5vn0v")
 position = Vector2(-264, 65)
 scale = Vector2(2.6, 2.752)
 
+[node name="CanvasLayerGameUI" type="CanvasLayer" parent="."]
+
+[node name="Game_UI" parent="CanvasLayerGameUI" instance=ExtResource("9_glw47")]
+anchors_preset = 10
+anchor_bottom = 0.0
+grow_vertical = 1
+
 [node name="Boundary" type="Area2D" parent="."]
 position = Vector2(855, 1165)
 scale = Vector2(0.5, 0.5)
@@ -320,7 +328,7 @@ shape = SubResource("WorldBoundaryShape2D_um320")
 position = Vector2(527, 445)
 rotation = 0.000411549
 scale = Vector2(0.5, 0.5)
-distance = 709.0
+distance = 715.0
 wait_time = 3.0
 duration = 5.305
 start_direction = "down"
@@ -328,21 +336,21 @@ start_direction = "down"
 [node name="Platform2" parent="." instance=ExtResource("5_anwe6")]
 position = Vector2(819, 1164)
 scale = Vector2(0.5, 0.5)
-distance = 1100.0
+distance = 1040.0
 wait_time = 2.0
 duration = 3.5
 start_direction = "left"
 
 [node name="Platform3" parent="." instance=ExtResource("5_anwe6")]
-position = Vector2(3222, 1152)
+position = Vector2(3222, 1164)
 scale = Vector2(0.5, 0.5)
-distance = 1100.0
+distance = 1040.0
 wait_time = 2.0
 duration = 3.5
 start_direction = "right"
 
 [node name="Platform4" parent="." instance=ExtResource("5_anwe6")]
-position = Vector2(3470, 1154)
+position = Vector2(3490, 1155)
 scale = Vector2(0.5, 0.5)
 distance = 900.0
 wait_time = 3.0
@@ -350,12 +358,12 @@ duration = 3.0
 start_direction = "up"
 
 [node name="Platform5" parent="." instance=ExtResource("5_anwe6")]
-position = Vector2(1579, 303)
+position = Vector2(1575, 288)
 scale = Vector2(0.5, 0.5)
-distance = 670.0
+distance = 550.0
 wait_time = 2.0
 duration = 2.0
-start_direction = "right"
+start_direction = "left"
 
 [node name="hot_dog_coin" parent="." instance=ExtResource("7_ts8eg")]
 position = Vector2(415, 710)
@@ -385,22 +393,14 @@ position = Vector2(632, -78)
 position = Vector2(55, 947)
 
 [node name="Platform6" parent="." instance=ExtResource("5_anwe6")]
-position = Vector2(2933, 291)
+position = Vector2(2933, 288)
 scale = Vector2(0.5, 0.5)
-distance = 670.0
+distance = 550.0
 wait_time = 2.0
 duration = 2.0
-start_direction = "left"
-
-[node name="CanvasLayer2" type="CanvasLayer" parent="."]
-
-[node name="Line2D" type="Line2D" parent="CanvasLayer2"]
-position = Vector2(-16055, -6564)
-scale = Vector2(10.8, 8.25)
-points = PackedVector2Array(1641.67, 907.758)
+start_direction = "right"
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
-visible = false
 
 [node name="InteractUI" parent="CanvasLayer" instance=ExtResource("9_um320")]
 

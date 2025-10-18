@@ -22,7 +22,6 @@ func _process(delta: float) -> void: # According to the little tidbit that appea
 		SoundBoard.levelComplete.play()
 		get_tree().change_scene_to_file("res://scenes/levels/level_4.tscn")
 
-# This type of function has to be called within a "main" function (Like _ready, _process, _physics_process)	
 func complete_level(): # Changing the boolean value is_level_complete when the player gets all of the hotdogs (again...)
 	if Autoload.hotdogs_found == Autoload.hotdogs_needed: # When the total hotdogs found equal the hotdogs needed in this level...
 		Autoload.is_level_complete = true # the level is complete!!

@@ -3,7 +3,7 @@
 ## To Do
 
 - [ ] Design Starting menu with player instructions/keys (wasd, arrows), start button, and options (turning off music or maybe changing music)
-- [ ] Figure out how many levels to do
+- [x] Figure out how many levels to do
 - [x] ~~Figure out how to update the level ui when finding the collectibles in each level~~
 - [x] Design each level
 - [x] ~~Figure out hotdog counter thingie (updating the ui when player finds each hot dog)~~
@@ -13,12 +13,12 @@
 - [x] ~~maybe add sound effects on jumping and landing and collecting hot dogs~~
 - [ ] specify game goals a little better
 - [x] ~~finish level 3~~
-- [ ] finish level 4
+- [x] finish level 4
 - [ ] finish level 5
 - [ ] do a stats thing when the player finishes the game like how I did for the flappy game: deaths, total hotdogs eaten, maybe time (as if ppl are gonna speedrun this game)
-- [ ] need to consider adding a wait time between moving up and down for the platforms
-- [ ] adjust sign label styling
-- [ ] design popup menu that appears when the player presses e when near a sign
+- [x] need to consider adding a wait time between moving up and down for the platforms
+- [x] adjust sign label styling
+- [x] design popup menu that appears when the player presses e when near a sign
 
 ## Logs
 
@@ -202,3 +202,7 @@ I only had to adjust the visibility on node_ready, and I changed the type of int
 8:05 PM Found out how to actually pause tweens: using tween interval. I'm using this instead to pause the platforms at the end of their animation
 
 8:35 PM I added the speed, wait times, and durations for each platform in level 4. I'm working on adding the game ui and styling the sign warning thing
+
+8:56 PM I think I added all of the basic level code into the level 4 script. I added the objective ui, and the code to update the hotdogs found + change levels when the bojective is complete. I'm pretty much done with level 4, I just need to style the popup a bit and add another variable to control the text within the popup for the sign.
+
+9:04 PM Basically finished level 4. I'm too lazy to style the warning thing so I'm no longer doing so.
