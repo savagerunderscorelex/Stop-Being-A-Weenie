@@ -1,10 +1,12 @@
 extends Node2D
 
 @onready var bridge_body = $StaticBody2D
+@export var disappear_time : float
+@export var appear_time : float
 
-func _on_area_2d_body_entered(body: Node2D) -> void:
-	if body.name == "Dog":
-		await get_tree().create_timer(2).timeout
-		self.remove_child(bridge_body)
-		await get_tree().create_timer(2).timeout
-		self.add_child(bridge_body)
+func _on_area_2d_body_entered(body: Node2D) -> void: # If a body enters the area 2d body...
+	if body.name == "Dog": # and the body is the dog...
+		await get_tree().create_timer(disappear_time).timeout # Wait disappear_time seconds...
+		self.remove_child(bridge_body) # remove the child node StaticBody2D...
+		await get_tree().create_timer(appear_time).timeout # Wait appear_time seconds...
+		self.add_child(bridge_body) # and add the child node StaticBody2D again!

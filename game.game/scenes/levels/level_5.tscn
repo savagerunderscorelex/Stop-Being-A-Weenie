@@ -1,4 +1,4 @@
-[gd_scene load_steps=12 format=4 uid="uid://dp3il4y46hqvu"]
+[gd_scene load_steps=13 format=4 uid="uid://dp3il4y46hqvu"]
 
 [ext_resource type="PackedScene" uid="uid://cwqj114lof07w" path="res://scenes/background.tscn" id="1_fi56y"]
 [ext_resource type="Script" uid="uid://35248dhs7ij4" path="res://scripts/level_5.gd" id="1_hldbq"]
@@ -274,25 +274,57 @@ sources/0 = SubResource("TileSetAtlasSource_tqnj0")
 sources/1 = SubResource("TileSetAtlasSource_dwyms")
 pattern_0 = SubResource("TileMapPattern_ftfob")
 
+[sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_fsnos"]
+distance = 297.215
+
 [node name="level_5" type="Node2D"]
 script = ExtResource("1_hldbq")
 
 [node name="Background" parent="." instance=ExtResource("1_fi56y")]
 position = Vector2(-6049, -1576)
 scale = Vector2(6.20296, 8.49606)
+metadata/_edit_lock_ = true
 
 [node name="TileMapLayer" type="TileMapLayer" parent="."]
 scale = Vector2(5, 5)
 tile_map_data = PackedByteArray("AADX//3/AAAAAAAAAADY//3/AAAAAAAAAADZ//3/AAAAAAAAAADa//3/AAAAAAAAAADb//3/AAAAAAAAAADc//3/AAAAAAAAAAD1//3/AAAAAAAAAAD2//3/AAAAAAAAAAD3//3/AAAAAAAAAAD4//3/AAAAAAAAAAD5//3/AAAAAAAAAAD6//3/AAAAAAAAAAD7//3/AAAAAAAAAAD6/w0AAAAAAAAAAAD7/w0AAAAAAAAAAAD5/w0AAAAAAAAAAAD4/w0AAAAAAAAAAAD2/wsAAAAAAAAAAAD1/wsAAAAAAAAAAAD0/woAAAAAAAAAAADz/woAAAAAAAAAAADy/wkAAAAAAAAAAADx/wkAAAAAAAAAAADw/wgAAAAAAAAAAADv/wgAAAAAAAAAAADt/wcAAAAAAAAAAADu/wcAAAAAAAAAAADs/wcAAAAAAAAAAADr/wcAAAAAAAAAAADq/wgAAAAAAAAAAADp/wgAAAAAAAAAAADn/wkAAAAAAAAAAADo/wkAAAAAAAAAAADm/woAAAAAAAAAAADl/woAAAAAAAAAAADk/wsAAAAAAAAAAAD2/w4AAAAAAAAAAAD1/w4AAAAAAAAAAAD0/w8AAAAAAAAAAADz/w8AAAAAAAAAAADy/xAAAAAAAAAAAADx/xAAAAAAAAAAAADw/xEAAAAAAAAAAADv/xEAAAAAAAAAAADu/xIAAAAAAAAAAADt/xIAAAAAAAAAAADs/xIAAAAAAAAAAADr/xIAAAAAAAAAAADv/w4AAAAAAAAAAADq/xEAAAAAAAAAAADp/xEAAAAAAAAAAADo/xAAAAAAAAAAAADn/xAAAAAAAAAAAADq/w4AAAAAAAAAAADt/wwAAAAAAAAAAADs/wwAAAAAAAAAAADl/w8AAAAAAAAAAADm/w8AAAAAAAAAAADj/w4AAAAAAAAAAADk/w4AAAAAAAAAAADh/w0AAAAAAAAAAADi/w0AAAAAAAAAAADV/x0AAAAAAAAAAADW/x0AAAAAAAAAAADX/x0AAAAAAAAAAADY/x0AAAAAAAAAAADZ/x0AAAAAAAAAAADp/x0AAAAAAAAAAADq/x0AAAAAAAAAAADr/x0AAAAAAAAAAAD3/x0AAAAAAAAAAAD4/x0AAAAAAAAAAAD5/x0AAAAAAAAAAAD6/x0AAAAAAAAAAAD7/x0AAAAAAAAAAAD7/y0AAAAAAAAAAAD5/y0AAAAAAAAAAAD6/y0AAAAAAAAAAAD4/y0AAAAAAAAAAAD3/y0AAAAAAAAAAAD2/y0AAAAAAAAAAADu/y0AAAAAAAAAAADq/y0AAAAAAAAAAADr/y0AAAAAAAAAAADs/y0AAAAAAAAAAADt/y0AAAAAAAAAAADQ/y0AAAAAAAAAAADP/y0AAAAAAAAAAADO/y0AAAAAAAAAAADN/y0AAAAAAAAAAADP/ysAAAAAAAAAAADQ/ysAAAAAAAAAAADR/ysAAAAAAAAAAADT/ykAAAAAAAAAAADU/ykAAAAAAAAAAADV/ykAAAAAAAAAAADW/ykAAAAAAAAAAADX/ykAAAAAAAAAAADa/yoAAAAAAAAAAADb/yoAAAAAAAAAAADc/yoAAAAAAAAAAADd/yoAAAAAAAAAAADe/yoAAAAAAAAAAADi/yoAAAAAAAAAAADj/yoAAAAAAAAAAADk/yoAAAAAAAAAAADl/yoAAAAAAAAAAADm/yoAAAAAAAAAAADn/yoAAAAAAAAAAADo/yoAAAAAAAAAAAA=")
 tile_set = SubResource("TileSet_6xwso")
 
+[node name="Dog" parent="." instance=ExtResource("5_vvoq0")]
+position = Vector2(-693, 2146)
+scale = Vector2(2.6, 2.752)
+
+[node name="Boundary" type="Area2D" parent="."]
+position = Vector2(56, 3883)
+scale = Vector2(1.3, 1.376)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Boundary"]
+position = Vector2(2.30769, 357.558)
+shape = SubResource("WorldBoundaryShape2D_fsnos")
+
 [node name="Platform" parent="." instance=ExtResource("4_mxx4w")]
 position = Vector2(-2668, -196)
 scale = Vector2(0.5, 0.5)
+distance = 700.0
+wait_time = 2.0
+duration = 3.0
+start_direction = "left"
 
 [node name="Platform2" parent="." instance=ExtResource("4_mxx4w")]
 position = Vector2(-1013, -197)
 scale = Vector2(0.5, 0.5)
+distance = 700.0
+wait_time = 2.0
+duration = 3.0
+start_direction = "right"
+
+[node name="Platform3" parent="." instance=ExtResource("4_mxx4w")]
+position = Vector2(-164, -207)
+scale = Vector2(0.5, 0.5)
+distance = 1300.0
+wait_time = 3.0
+duration = 5.0
+start_direction = "down"
 
 [node name="Platform4" parent="." instance=ExtResource("4_mxx4w")]
 position = Vector2(-1876, 3651)
@@ -303,20 +335,36 @@ position = Vector2(-3636, 3641)
 scale = Vector2(0.5, 0.5)
 
 [node name="Platform6" parent="." instance=ExtResource("4_mxx4w")]
-position = Vector2(-183, 1076)
+position = Vector2(-173, 1088)
 scale = Vector2(0.5, 0.5)
+distance = 1300.0
+wait_time = 3.0
+duration = 5.0
+start_direction = "down"
 
 [node name="Platform7" parent="." instance=ExtResource("4_mxx4w")]
 position = Vector2(-188, 2370)
 scale = Vector2(0.5, 0.5)
+distance = 1300.0
+wait_time = 3.0
+duration = 5.0
+start_direction = "down"
 
-[node name="Dog" parent="." instance=ExtResource("5_vvoq0")]
-position = Vector2(-692, 3421)
-scale = Vector2(2.6, 2.752)
-
-[node name="Platform3" parent="." instance=ExtResource("4_mxx4w")]
-position = Vector2(-164, -207)
+[node name="Platform8" parent="." instance=ExtResource("4_mxx4w")]
+position = Vector2(-823, 2374)
 scale = Vector2(0.5, 0.5)
+distance = 650.0
+wait_time = 2.0
+duration = 3.0
+start_direction = "right"
+
+[node name="Platform9" parent="." instance=ExtResource("4_mxx4w")]
+position = Vector2(-1942, 2374)
+scale = Vector2(0.5, 0.5)
+distance = 970.0
+wait_time = 2.0
+duration = 4.0
+start_direction = "right"
 
 [node name="bridge" parent="." instance=ExtResource("7_fsnos")]
 position = Vector2(-861, 3647)
@@ -338,3 +386,5 @@ position = Vector2(-1257, 3647)
 
 [node name="bridge7" parent="." instance=ExtResource("7_fsnos")]
 position = Vector2(-1337, 3646)
+
+[connection signal="body_entered" from="Boundary" to="." method="_on_boundary_body_entered"]
