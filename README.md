@@ -2,14 +2,20 @@
 
 ## About
 
-Stop Being A Weenie is a game where you play as a Wiener Dog / Dachshund. The goal of the game is to collect all the hotdogs scattered around the map in each level
+Stop Being A Weenie is a game where you play as a Wiener Dog / Dachshund. The goal of the game is to eat all the hotdogs scattered around the map in each level to advance to the next level. However, the levels get progressively harder, with a higher number of hotdogs to eat and with more difficult obstacles to overcome.
 
 **Time Spent:** ![Hackatime: Time Spent on this project](https://hackatime-badge.hackclub.com/U08UGTGS4HE/Stop-Being-A-Weenie
 )
 
 ## Journey
 
+I originally started this project for Jumpstart, but I found it difficult to actually start the project. My original idea for this project was a platformer game with a hotdog as the playing character. However, I couldn't actually find a free hot dog character sprite to make the project of, so I changed the game to include a wiener dog going around eating hotdogs as the main theme for the game.
+
+Like many of my other projects, I had to learn a lot of things to actually make it work (shown through the 15 tutorials and forum posts I had to look through). I try to usually start a project and use tutorials to fill through the gaps of my knowledge. Even with the first resources I used, I face a looooot of issue when working on this project. Sometimes, my code that I previously worked on to get working would stop working, and I would have to find another way to get the code to work the way I would want it to. I also spent some time using a pathway method for the platforms, which ended up not working too well for my project (and I would say was too complicated for me to understand). This project really deepened my knowledge of how to use Godot and the Godot Script languge(?).
+
 ## Tutorials and Resources
+
+Recently, I've added the resources I used to create a project to my README.md files. I like to do this so that if I ever want to complete another project, I can look at these resources to give myself a refresher. This list also credits the creators of the fonts, images, and assets that I used to create this project (though one day, hopefully, I will make my own).
 
 ### Tutorials/Videos
 
@@ -25,6 +31,9 @@ Stop Being A Weenie is a game where you play as a Wiener Dog / Dachshund. The go
 - Jump Sound: [Cartoon Jump](https://pixabay.com/sound-effects/cartoon-jump-6462/)
 - Hotdog Eating Sound: [Carrotnom](https://pixabay.com/sound-effects/carrotnom-92106/)
 - Game Font: [04b_30](https://www.dafont.com/04b-30.font)
+- Dog Sprite: [Avy's MZ Stuff](https://forums.rpgmakerweb.com/index.php?threads/avys-mz-stuff.125711/page-4#post-1138039)
+- Tileset: [Four Seasons Platformer Tileset](https://rottingpixels.itch.io/four-seasons-platformer-tileset-16x16free)
+- Hotdog [Free Pixel Foods](https://ghostpixxells.itch.io/pixelfood)
 
 ### Forum Posts and Such
 
