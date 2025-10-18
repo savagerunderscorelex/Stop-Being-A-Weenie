@@ -160,12 +160,12 @@ offset_bottom = 224.5
 grow_horizontal = 2
 grow_vertical = 2
 theme_override_fonts/normal_font = ExtResource("3_ih2x6")
-theme_override_font_sizes/normal_font_size = 23
+theme_override_font_sizes/normal_font_size = 21
 text = "The goal of the game is to find a certain number of hotdogs and eat them. Each level will contain a different amount of hotdogs, and will have a bigger map to make each level progressively more difficult.
 
 To move, You can use either WASD Buttons (W for Jump, A for left, and D for Right) or Arrow buttons (Up for Jump, Left arrow for moving left, and Right Arrow for moving right. 
 
-At later levels, there will be signs that can be interacted with to tell you something about the level. You can press E to interact with those signs."
+At later levels, there will be signs that can be interacted with to tell you something about the level. You can press E to interact with those signs. If you get stuck at any point, press R to restart the level. You lose progress when you do, though."
 fit_content = true
 scroll_active = false
 horizontal_alignment = 1

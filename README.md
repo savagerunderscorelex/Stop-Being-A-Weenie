@@ -2,7 +2,7 @@
 
 ## About
 
-Stop Being A Weenie is a game where you play as a Wiener Dog / Dachshund. The goal of the game is to collect all the hotdogs scattered around the map in each levelk
+Stop Being A Weenie is a game where you play as a Wiener Dog / Dachshund. The goal of the game is to collect all the hotdogs scattered around the map in each level
 
 **Time Spent:** ![Hackatime: Time Spent on this project](https://hackatime-badge.hackclub.com/U08UGTGS4HE/Stop-Being-A-Weenie
 )
@@ -17,6 +17,7 @@ Stop Being A Weenie is a game where you play as a Wiener Dog / Dachshund. The go
 - Getting the UI to Stay in the Same Place:
 [Stick UI to Screen with Position Smoothing Camera2D | Godot 4.4](https://www.youtube.com/watch?v=dOr-fgBRMgs)
 - Moving Platforms: [5 Different Ways To Create A Moving Platform In Godot 4.0+](https://www.youtube.com/watch?v=MxrEM-jsMsM)
+- Guide to User Interface (Used like a 30 sec clip thought): [Guide to User Interface in Godot](https://www.youtube.com/watch?v=KOyREJu1P3I&t=3505s)
 
 ### Asset Links
 

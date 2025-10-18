@@ -8,6 +8,7 @@ func _ready():
 	Autoload.interact_ui = $CanvasLayer/InteractUI # Gets the Interact UI for the Level :3
 	Autoload.can_open_interact_ui = false
 	Autoload.interact_ui.visible = false
+	Autoload.is_level_complete = false
 	
 func _on_boundary_body_entered(body: Node2D) -> void: # If a body enters the boundary area body...
 	if body.name == "Dog": # and it's the player...

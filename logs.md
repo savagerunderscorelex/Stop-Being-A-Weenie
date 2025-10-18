@@ -236,3 +236,5 @@ Currently I'm working on the overall level code, like adding the interact ui, ga
 3:42 PM I basically finished the game now!!!!!!!!!!!!!!!!!!!!!!! I finished the home screen and also lowered the volume of the background music since it's not that good lol
 
 4:03 PM Thank God I wasn't lazy enough to submit my project without testing it! I just test ran the game and there was an issue with it advancing past levels when finishing level 3. This was because I didn't set is_level_complete to false, so it kept sending the player to the next level.
+
+4:25 PM Updated how to play section
