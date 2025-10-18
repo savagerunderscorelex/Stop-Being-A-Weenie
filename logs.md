@@ -12,7 +12,7 @@
 - [x] specify game goals a little better
 - [x] ~~finish level 3~~
 - [x] finish level 4
-- [ ] finish level 5
+- [x] finish level 5
 - [ ] do a stats thing when the player finishes the game like how I did for the flappy game: deaths, total hotdogs eaten, maybe time (as if ppl are gonna speedrun this game)
 - [x] need to consider adding a wait time between moving up and down for the platforms
 - [x] adjust sign label styling

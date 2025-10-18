@@ -25,6 +25,7 @@ BgMusic="*res://scenes/bgMusic.tscn"
 
 window/stretch/mode="viewport"
 window/stretch/aspect="expand"
+window/main_scene="uid://ttlqusqk5kq1"
 
 [editor_plugins]
 
