@@ -1,4 +1,4 @@
-[gd_scene load_steps=13 format=4 uid="uid://dp3il4y46hqvu"]
+[gd_scene load_steps=18 format=4 uid="uid://dp3il4y46hqvu"]
 
 [ext_resource type="PackedScene" uid="uid://cwqj114lof07w" path="res://scenes/background.tscn" id="1_fi56y"]
 [ext_resource type="Script" uid="uid://35248dhs7ij4" path="res://scripts/level_5.gd" id="1_hldbq"]
@@ -7,6 +7,11 @@
 [ext_resource type="PackedScene" uid="uid://b1citgf11b13r" path="res://scenes/platform.tscn" id="4_mxx4w"]
 [ext_resource type="PackedScene" uid="uid://dy1hr0aihdyf4" path="res://scenes/dog.tscn" id="5_vvoq0"]
 [ext_resource type="PackedScene" uid="uid://44jbs70d2bct" path="res://scenes/bridge.tscn" id="7_fsnos"]
+[ext_resource type="PackedScene" uid="uid://cqrnkoel2p0os" path="res://scenes/sign.tscn" id="8_vvoq0"]
+[ext_resource type="PackedScene" uid="uid://df6jpdfprom5p" path="res://scenes/game_ui.tscn" id="9_dwyms"]
+[ext_resource type="PackedScene" uid="uid://t673lynm5cvr" path="res://scenes/interact_ui.tscn" id="9_tqnj0"]
+[ext_resource type="Script" uid="uid://c835s3eggorbu" path="res://scripts/interact_ui2.gd" id="10_tqnj0"]
+[ext_resource type="PackedScene" uid="uid://m0d0pdtqgsgi" path="res://scenes/hot_dog_coin.tscn" id="12_6xwso"]
 
 [sub_resource type="TileMapPattern" id="TileMapPattern_ftfob"]
 tile_data = PackedInt32Array(393216, 0, 0, 393217, 0, 0, 393218, 0, 0, 262148, 0, 0, 524292, 0, 0, 262149, 0, 0, 524293, 0, 0, 262150, 0, 0, 524294, 0, 0, 131080, 0, 0, 655368, 0, 0, 1114120, 0, 0, 131081, 0, 0, 655369, 0, 0, 1114121, 0, 0, 131082, 0, 0, 655370, 0, 0, 1114122, 0, 0, 1114123, 0, 0, 12, 0, 0, 786444, 0, 0, 1114124, 0, 0, 13, 0, 0, 786445, 0, 0, 1114125, 0, 0, 14, 0, 0, 786446, 0, 0, 1048590, 0, 0, 983055, 0, 0, 131088, 0, 0, 917520, 0, 0, 131089, 0, 0, 917521, 0, 0, 131090, 0, 0, 917522, 0, 0, 262164, 0, 0, 1048596, 0, 0, 262165, 0, 0, 1048597, 0, 0, 262166, 0, 0, 1048598, 0, 0, 393240, 0, 0, 1179672, 0, 0, 1245208, 0, 1, 1310744, 0, 1, 1376280, 0, 1, 1441816, 0, 1, 1507352, 0, 1, 393241, 0, 0, 1179673, 0, 0, 1245209, 0, 1, 1310745, 0, 1, 1376281, 0, 1, 1441817, 0, 1, 1507353, 0, 1, 393242, 0, 0, 1179674, 0, 0, 1245210, 0, 1, 1310746, 0, 1, 1376282, 0, 1, 1441818, 0, 1, 1507354, 0, 1, 393243, 0, 0, 1179675, 0, 0, 1245211, 0, 1, 1310747, 0, 1, 1376283, 0, 1, 1441819, 0, 1, 1507355, 0, 1, 262173, 0, 0, 1048605, 0, 0, 262174, 0, 0, 1048606, 0, 0, 262175, 0, 0, 1048607, 0, 0, 131105, 0, 0, 917537, 0, 0, 131106, 0, 0, 917538, 0, 0, 131107, 0, 0, 917539, 0, 0, 983076, 0, 0, 37, 0, 0, 786469, 0, 0, 1048613, 0, 0, 38, 0, 0, 786470, 0, 0, 1114150, 0, 0, 39, 0, 0, 786471, 0, 0, 1114151, 0, 0, 1114152, 0, 0, 131113, 0, 0, 655401, 0, 0, 1114153, 0, 0, 131114, 0, 0, 655402, 0, 0, 1114154, 0, 0, 131115, 0, 0, 655403, 0, 0, 1114155, 0, 0, 262189, 0, 0, 524333, 0, 0, 262190, 0, 0, 524334, 0, 0, 262191, 0, 0, 524335, 0, 0, 393265, 0, 0, 393266, 0, 0, 393267, 0, 0)
@@ -278,6 +283,7 @@ pattern_0 = SubResource("TileMapPattern_ftfob")
 distance = 297.215
 
 [node name="level_5" type="Node2D"]
+process_mode = 1
 script = ExtResource("1_hldbq")
 
 [node name="Background" parent="." instance=ExtResource("1_fi56y")]
@@ -287,11 +293,11 @@ metadata/_edit_lock_ = true
 
 [node name="TileMapLayer" type="TileMapLayer" parent="."]
 scale = Vector2(5, 5)
-tile_map_data = PackedByteArray("AADX//3/AAAAAAAAAADY//3/AAAAAAAAAADZ//3/AAAAAAAAAADa//3/AAAAAAAAAADb//3/AAAAAAAAAADc//3/AAAAAAAAAAD1//3/AAAAAAAAAAD2//3/AAAAAAAAAAD3//3/AAAAAAAAAAD4//3/AAAAAAAAAAD5//3/AAAAAAAAAAD6//3/AAAAAAAAAAD7//3/AAAAAAAAAAD6/w0AAAAAAAAAAAD7/w0AAAAAAAAAAAD5/w0AAAAAAAAAAAD4/w0AAAAAAAAAAAD2/wsAAAAAAAAAAAD1/wsAAAAAAAAAAAD0/woAAAAAAAAAAADz/woAAAAAAAAAAADy/wkAAAAAAAAAAADx/wkAAAAAAAAAAADw/wgAAAAAAAAAAADv/wgAAAAAAAAAAADt/wcAAAAAAAAAAADu/wcAAAAAAAAAAADs/wcAAAAAAAAAAADr/wcAAAAAAAAAAADq/wgAAAAAAAAAAADp/wgAAAAAAAAAAADn/wkAAAAAAAAAAADo/wkAAAAAAAAAAADm/woAAAAAAAAAAADl/woAAAAAAAAAAADk/wsAAAAAAAAAAAD2/w4AAAAAAAAAAAD1/w4AAAAAAAAAAAD0/w8AAAAAAAAAAADz/w8AAAAAAAAAAADy/xAAAAAAAAAAAADx/xAAAAAAAAAAAADw/xEAAAAAAAAAAADv/xEAAAAAAAAAAADu/xIAAAAAAAAAAADt/xIAAAAAAAAAAADs/xIAAAAAAAAAAADr/xIAAAAAAAAAAADv/w4AAAAAAAAAAADq/xEAAAAAAAAAAADp/xEAAAAAAAAAAADo/xAAAAAAAAAAAADn/xAAAAAAAAAAAADq/w4AAAAAAAAAAADt/wwAAAAAAAAAAADs/wwAAAAAAAAAAADl/w8AAAAAAAAAAADm/w8AAAAAAAAAAADj/w4AAAAAAAAAAADk/w4AAAAAAAAAAADh/w0AAAAAAAAAAADi/w0AAAAAAAAAAADV/x0AAAAAAAAAAADW/x0AAAAAAAAAAADX/x0AAAAAAAAAAADY/x0AAAAAAAAAAADZ/x0AAAAAAAAAAADp/x0AAAAAAAAAAADq/x0AAAAAAAAAAADr/x0AAAAAAAAAAAD3/x0AAAAAAAAAAAD4/x0AAAAAAAAAAAD5/x0AAAAAAAAAAAD6/x0AAAAAAAAAAAD7/x0AAAAAAAAAAAD7/y0AAAAAAAAAAAD5/y0AAAAAAAAAAAD6/y0AAAAAAAAAAAD4/y0AAAAAAAAAAAD3/y0AAAAAAAAAAAD2/y0AAAAAAAAAAADu/y0AAAAAAAAAAADq/y0AAAAAAAAAAADr/y0AAAAAAAAAAADs/y0AAAAAAAAAAADt/y0AAAAAAAAAAADQ/y0AAAAAAAAAAADP/y0AAAAAAAAAAADO/y0AAAAAAAAAAADN/y0AAAAAAAAAAADP/ysAAAAAAAAAAADQ/ysAAAAAAAAAAADR/ysAAAAAAAAAAADT/ykAAAAAAAAAAADU/ykAAAAAAAAAAADV/ykAAAAAAAAAAADW/ykAAAAAAAAAAADX/ykAAAAAAAAAAADa/yoAAAAAAAAAAADb/yoAAAAAAAAAAADc/yoAAAAAAAAAAADd/yoAAAAAAAAAAADe/yoAAAAAAAAAAADi/yoAAAAAAAAAAADj/yoAAAAAAAAAAADk/yoAAAAAAAAAAADl/yoAAAAAAAAAAADm/yoAAAAAAAAAAADn/yoAAAAAAAAAAADo/yoAAAAAAAAAAAA=")
+tile_map_data = PackedByteArray("AADX//3/AAAAAAAAAADY//3/AAAAAAAAAADZ//3/AAAAAAAAAADa//3/AAAAAAAAAADb//3/AAAAAAAAAADc//3/AAAAAAAAAAD1//3/AAAAAAAAAAD2//3/AAAAAAAAAAD3//3/AAAAAAAAAAD4//3/AAAAAAAAAAD5//3/AAAAAAAAAAD6//3/AAAAAAAAAAD7//3/AAAAAAAAAAD6/w0AAAAAAAAAAAD7/w0AAAAAAAAAAAD5/w0AAAAAAAAAAAD4/w0AAAAAAAAAAAD2/wsAAAAAAAAAAAD1/wsAAAAAAAAAAAD0/woAAAAAAAAAAADz/woAAAAAAAAAAADy/wkAAAAAAAAAAADx/wkAAAAAAAAAAADw/wgAAAAAAAAAAADv/wgAAAAAAAAAAADt/wcAAAAAAAAAAADu/wcAAAAAAAAAAADs/wcAAAAAAAAAAADr/wcAAAAAAAAAAADq/wgAAAAAAAAAAADp/wgAAAAAAAAAAADn/wkAAAAAAAAAAADo/wkAAAAAAAAAAADm/woAAAAAAAAAAADl/woAAAAAAAAAAADk/wsAAAAAAAAAAAD2/w4AAAAAAAAAAAD1/w4AAAAAAAAAAAD0/w8AAAAAAAAAAADz/w8AAAAAAAAAAADy/xAAAAAAAAAAAADx/xAAAAAAAAAAAADw/xEAAAAAAAAAAADv/xEAAAAAAAAAAADu/xIAAAAAAAAAAADt/xIAAAAAAAAAAADs/xIAAAAAAAAAAADr/xIAAAAAAAAAAADv/w4AAAAAAAAAAADq/xEAAAAAAAAAAADp/xEAAAAAAAAAAADo/xAAAAAAAAAAAADn/xAAAAAAAAAAAADq/w4AAAAAAAAAAADt/wwAAAAAAAAAAADs/wwAAAAAAAAAAADl/w8AAAAAAAAAAADm/w8AAAAAAAAAAADj/w4AAAAAAAAAAADk/w4AAAAAAAAAAADh/w0AAAAAAAAAAADi/w0AAAAAAAAAAADV/x0AAAAAAAAAAADW/x0AAAAAAAAAAADX/x0AAAAAAAAAAADY/x0AAAAAAAAAAADZ/x0AAAAAAAAAAADp/x0AAAAAAAAAAADq/x0AAAAAAAAAAADr/x0AAAAAAAAAAAD3/x0AAAAAAAAAAAD4/x0AAAAAAAAAAAD5/x0AAAAAAAAAAAD6/x0AAAAAAAAAAAD7/x0AAAAAAAAAAAD7/y0AAAAAAAAAAAD5/y0AAAAAAAAAAAD6/y0AAAAAAAAAAAD4/y0AAAAAAAAAAAD3/y0AAAAAAAAAAAD2/y0AAAAAAAAAAADu/y0AAAAAAAAAAADq/y0AAAAAAAAAAADr/y0AAAAAAAAAAADs/y0AAAAAAAAAAADt/y0AAAAAAAAAAADQ/y0AAAAAAAAAAADP/y0AAAAAAAAAAADO/y0AAAAAAAAAAADN/y0AAAAAAAAAAADT/ykAAAAAAAAAAADU/ykAAAAAAAAAAADV/ykAAAAAAAAAAADW/ykAAAAAAAAAAADX/ykAAAAAAAAAAADa/yoAAAAAAAAAAADb/yoAAAAAAAAAAADc/yoAAAAAAAAAAADd/yoAAAAAAAAAAADe/yoAAAAAAAAAAADi/yoAAAAAAAAAAADj/yoAAAAAAAAAAADk/yoAAAAAAAAAAADl/yoAAAAAAAAAAADm/yoAAAAAAAAAAADn/yoAAAAAAAAAAADo/yoAAAAAAAAAAADS/ykAAAAAAAAAAADP/ysAAAAAAAAAAADQ/yoAAAAAAAAAAADR/ykAAAAAAAAAAAA=")
 tile_set = SubResource("TileSet_6xwso")
 
 [node name="Dog" parent="." instance=ExtResource("5_vvoq0")]
-position = Vector2(-693, 2146)
+position = Vector2(-3074, -438)
 scale = Vector2(2.6, 2.752)
 
 [node name="Boundary" type="Area2D" parent="."]
@@ -329,10 +335,18 @@ start_direction = "down"
 [node name="Platform4" parent="." instance=ExtResource("4_mxx4w")]
 position = Vector2(-1876, 3651)
 scale = Vector2(0.5, 0.5)
+distance = 750.0
+wait_time = 1.0
+duration = 3.0
+start_direction = "right"
 
 [node name="Platform5" parent="." instance=ExtResource("4_mxx4w")]
 position = Vector2(-3636, 3641)
 scale = Vector2(0.5, 0.5)
+distance = 750.0
+wait_time = 1.0
+duration = 3.0
+start_direction = "left"
 
 [node name="Platform6" parent="." instance=ExtResource("4_mxx4w")]
 position = Vector2(-173, 1088)
@@ -359,12 +373,12 @@ duration = 3.0
 start_direction = "right"
 
 [node name="Platform9" parent="." instance=ExtResource("4_mxx4w")]
-position = Vector2(-1942, 2374)
+position = Vector2(-2923, 2354)
 scale = Vector2(0.5, 0.5)
 distance = 970.0
 wait_time = 2.0
-duration = 4.0
-start_direction = "right"
+duration = 3.0
+start_direction = "left"
 
 [node name="bridge" parent="." instance=ExtResource("7_fsnos")]
 position = Vector2(-861, 3647)
@@ -386,5 +400,56 @@ position = Vector2(-1257, 3647)
 
 [node name="bridge7" parent="." instance=ExtResource("7_fsnos")]
 position = Vector2(-1337, 3646)
+
+[node name="sign" parent="." instance=ExtResource("8_vvoq0")]
+position = Vector2(-768, 3567)
+
+[node name="CanvasLayerGameUI" type="CanvasLayer" parent="."]
+
+[node name="Game_UI" parent="CanvasLayerGameUI" instance=ExtResource("9_dwyms")]
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="InteractUI" parent="CanvasLayer" instance=ExtResource("9_tqnj0")]
+script = ExtResource("10_tqnj0")
+
+[node name="hot_dog_coin" parent="." instance=ExtResource("12_6xwso")]
+position = Vector2(-1974, -339)
+
+[node name="hot_dog_coin2" parent="." instance=ExtResource("12_6xwso")]
+position = Vector2(-243, 296)
+
+[node name="hot_dog_coin3" parent="." instance=ExtResource("12_6xwso")]
+position = Vector2(-234, 1710)
+
+[node name="hot_dog_coin4" parent="." instance=ExtResource("12_6xwso")]
+position = Vector2(-126, 3110)
+
+[node name="hot_dog_coin5" parent="." instance=ExtResource("12_6xwso")]
+position = Vector2(-1303, 2200)
+
+[node name="hot_dog_coin6" parent="." instance=ExtResource("12_6xwso")]
+position = Vector2(-2450, 2185)
+
+[node name="hot_dog_coin7" parent="." instance=ExtResource("12_6xwso")]
+position = Vector2(-2905, 3488)
+
+[node name="hot_dog_coin8" parent="." instance=ExtResource("12_6xwso")]
+position = Vector2(-2894, 3177)
+
+[node name="hot_dog_coin9" parent="." instance=ExtResource("12_6xwso")]
+position = Vector2(-3678, 3166)
+
+[node name="hot_dog_coin10" parent="." instance=ExtResource("12_6xwso")]
+position = Vector2(-1614, 837)
+
+[node name="hot_dog_coin11" parent="." instance=ExtResource("12_6xwso")]
+position = Vector2(-1609, 1288)
+
+[node name="hot_dog_coin12" parent="." instance=ExtResource("12_6xwso")]
+position = Vector2(-919, 637)
+
+[node name="hot_dog_coin13" parent="." instance=ExtResource("12_6xwso")]
+position = Vector2(-2131, 582)
 
 [connection signal="body_entered" from="Boundary" to="." method="_on_boundary_body_entered"]

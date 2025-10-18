@@ -9,6 +9,6 @@ loop_end = -1
 [node name="AudioStreamPlayer" type="AudioStreamPlayer"]
 stream = SubResource("AudioStreamWAV_t4sc2")
 
-[node name="Weenie-bg" type="AudioStreamPlayer" parent="."]
+[node name="WeenieBg" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("1_t4sc2")
 autoplay = true

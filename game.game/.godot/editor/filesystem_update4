@@ -23,3 +23,11 @@ res://scenes/levels/level_5.tscn
 res://scripts/level_5.gd
 res://scenes/bridge.tscn
 res://scripts/bridge.gd
+res://scripts/interact_ui2.gd
+res://scenes/interact_ui2.tscn
+res://scenes/end_screen.tscn
+res://scenes/levels/level_2.tscn
+res://scripts/interact_ui1.gd
+res://scripts/end_screen.gd
+res://scenes/home_screen.tscn
+res://scripts/home_screen.gd

@@ -2,16 +2,14 @@
 
 ## To Do
 
-- [ ] Design Starting menu with player instructions/keys (wasd, arrows), start button, and options (turning off music or maybe changing music)
+- [x] Design Starting menu with player instructions/keys (wasd, arrows), start button, and options (turning off music or maybe changing music)
 - [x] Figure out how many levels to do
 - [x] ~~Figure out how to update the level ui when finding the collectibles in each level~~
 - [x] Design each level
 - [x] ~~Figure out hotdog counter thingie (updating the ui when player finds each hot dog)~~
-- [ ] Explain the goal of the game at the cutscene
-- [ ] Figure out how to even do cutscenes
 - [x] ~~Figure out how to do the script to change the ui based on current objectives (objectives are probably going to be: find x number of hotdogs, listen to rules, etc )~~
 - [x] ~~maybe add sound effects on jumping and landing and collecting hot dogs~~
-- [ ] specify game goals a little better
+- [x] specify game goals a little better
 - [x] ~~finish level 3~~
 - [x] finish level 4
 - [ ] finish level 5
@@ -226,3 +224,15 @@ I used add_child and remove_child to do this. I think my main problem was that I
 8:42 AM Did movement code for the up and down platforms to the side of the main map
 
 8:48 AM finished coding second obstacle platforms
+
+2:32 PM Finished coding all of the platforms :)!!
+
+Currently I'm working on the overall level code, like adding the interact ui, game ui, and signs
+
+3 PM There was an issue with the interact_ui bugging, so I just made a second script for it. I know that it's not the best coding practice, however I can't see to find what's wrong with my code at all.
+
+3:21 PM I'm getting lazy so I wanna finish up this project now. I finished the end screen, so all I have to really do is the enter screen.
+
+3:42 PM I basically finished the game now!!!!!!!!!!!!!!!!!!!!!!! I finished the home screen and also lowered the volume of the background music since it's not that good lol
+
+4:03 PM Thank God I wasn't lazy enough to submit my project without testing it! I just test ran the game and there was an issue with it advancing past levels when finishing level 3. This was because I didn't set is_level_complete to false, so it kept sending the player to the next level.
