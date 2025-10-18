@@ -196,3 +196,9 @@ I was just about to write down about how the code for the interact ui stopped wo
 I only had to adjust the visibility on node_ready, and I changed the type of interact ui autoload to control (I forgot the ui was a control node and not a node2d).
 
 7:45 PM Added sign code comments
+
+7:49 PM Added more comments, added timer function to make it easier to add the delay for the platforms within the other functions
+
+8:05 PM Found out how to actually pause tweens: using tween interval. I'm using this instead to pause the platforms at the end of their animation
+
+8:35 PM I added the speed, wait times, and durations for each platform in level 4. I'm working on adding the game ui and styling the sign warning thing

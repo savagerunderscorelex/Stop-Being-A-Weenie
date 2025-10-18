@@ -1,5 +1,8 @@
 extends Node2D
 
+# This script is mostly for setting up variable values for this specific level, and also include the death boundary code
+# as well. 
+
 func _ready() -> void: # When the scene is ready
 	Autoload.hotdogs_found = 0 # Current hotdogs found (always zero)
 	Autoload.hotdogs_needed = 9 # This level requires 9 hotdogs
