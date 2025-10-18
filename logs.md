@@ -218,3 +218,5 @@ I only had to adjust the visibility on node_ready, and I changed the type of int
 7:45 AM YESSSSSSSSSSSSSSSSSSSSS I figured out how to make a disappearing bridge!!!!
 
 I used add_child and remove_child to do this. I think my main problem was that I didn't know the syntax to get the node, so this also took a bit of trial and error to figure out.
+
+7:51 AM I didn't test the bridge so I didn't realize it didn't add the bridge parts back, but I fixed it now :3

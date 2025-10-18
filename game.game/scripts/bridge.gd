@@ -1,8 +1,10 @@
 extends Node2D
 
+@onready var bridge_body = $StaticBody2D
+
 func _on_area_2d_body_entered(body: Node2D) -> void:
 	if body.name == "Dog":
 		await get_tree().create_timer(2).timeout
-		self.remove_child($StaticBody2D)
+		self.remove_child(bridge_body)
 		await get_tree().create_timer(2).timeout
-		self.add_child($StaticBody2D)
+		self.add_child(bridge_body)
