@@ -238,3 +238,5 @@ Currently I'm working on the overall level code, like adding the interact ui, ga
 4:03 PM Thank God I wasn't lazy enough to submit my project without testing it! I just test ran the game and there was an issue with it advancing past levels when finishing level 3. This was because I didn't set is_level_complete to false, so it kept sending the player to the next level.
 
 4:25 PM Updated how to play section
+
+7:11 PM Added sketches and pseudocode drafts for the levels
