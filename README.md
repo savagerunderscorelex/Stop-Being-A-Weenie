@@ -22,7 +22,7 @@ Like many of my other projects, I had to learn a lot of things to actually make 
 
 The first release of the game can be found in the releases section. You can play it on Windows (only) by downloading the folder in the releases section, unzipping it, and by running the game executable once download. Now you can play on your own laptop or PC!!
 
-This game is also published on itch.io. You can find it here: [itch.io](https://alexistreamoon.itch.io/stop-being-a-weenie). 
+This game is also published on itch.io. You can find it here: [itch.io](https://alexistreamoon.itch.io/stop-being-a-weenie).
 
 ## Tutorials and Resources
 
