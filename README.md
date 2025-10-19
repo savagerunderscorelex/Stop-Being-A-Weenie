@@ -42,3 +42,4 @@ Recently, I've added the resources I used to create a project to my README.md fi
 - Doing Code Based on a Signal with If Statements: [Stack Overflow](https://stackoverflow.com/questions/77389673/godot-body-entered-only-for-a-specific-object-in-the-scene)
 - Playing Sound Effects: [Godot Forum](https://forum.godotengine.org/t/playing-sound-fx/57980/7)
 - Key Press Events: [Key Press Events](https://forum.godotengine.org/t/newbie-how-to-get-a-key-press-event/28203/2)
+- Export Game Issues (how I learned about the importance of case sensitivity when exporting games): [Exporting Game Issues](https://forum.godotengine.org/t/why-does-my-exported-version-of-game-is-broken-while-in-engine-works-completely-fine/72192/9)
