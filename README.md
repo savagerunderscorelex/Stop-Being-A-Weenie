@@ -4,6 +4,8 @@
 
 Stop Being A Weenie is a game where you play as a Wiener Dog / Dachshund. The goal of the game is to eat all the hotdogs scattered around the map in each level to advance to the next level. However, the levels get progressively harder, with a higher number of hotdogs to eat and with more difficult obstacles to overcome.
 
+Each level will have a certain amount of hotdogs that the player must collect. The objective number of hotdogs is shown at the top of the screen and the number of hotdogs found and the number of hotdogs needed for that level are shown as a fraction as well. When a player finds a hotdog and collects it, the number of hotdogs needed goes up. Once the number of hotdogs needed and the number of hotdogs found are the same, the player will advance to the next level. **Currently there are 5 levels.**
+
 **Time Spent:** ![Hackatime: Time Spent on this project](https://hackatime-badge.hackclub.com/U08UGTGS4HE/Stop-Being-A-Weenie
 )
 
@@ -14,6 +16,12 @@ I originally started this project for Jumpstart, but I found it difficult to act
 Like many of my other projects, I had to learn a lot of things to actually make it work (shown through the 15 tutorials and forum posts I had to look through). I try to usually start a project and use tutorials to fill through the gaps of my knowledge. Even with the first resources I used, I faced a looooot of issues when working on this project. Sometimes, my code that previously worked would stop working, and I would have to find another way to get the code to work the way I would want it to. I also spent some time using a pathway method for the platforms, which ended up not working too well for my project (and I would say was too complicated for me to understand). I also struggled a lot with getting sound effects to play, which led me to use the sound in a different way. There were a lot of moments like this where I would adjust my goals to fit my knowledge scope, or to "make the bug a feature."
 
  This project really deepened my knowledge of how to use Godot and the Godot Script languge. One thing I discovered from this project was @export variables, which I found both useful and very cool.
+
+## Where to Play
+
+The first release of the game can be found in the releases section. You can play it on Windows (only) by downloading the folder in the releases section, unzipping it, and by running the game executable once download. Now you can play on your own laptop or PC!!
+
+This game is also published on itch.io. You can find it here: [itch.io](https://alexistreamoon.itch.io/stop-being-a-weenie). 
 
 ## Tutorials and Resources
 
