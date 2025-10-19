@@ -244,3 +244,15 @@ Currently I'm working on the overall level code, like adding the interact ui, ga
 8:38 PM DUDE ITS EVERY SINGLE TIME WITH GODOT!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!111
 
 I've been trying to export the game for the past hour. Already, I've encountered a bug with the hot dog coins. The player cannot collect them, and its like the hotdog doesn't even have a collision body to do anything with. I'm still in the process of trying to fix my code to make it work when it's exported.
+
+9:12 PM THANK YOU JESUSSSSSSSSSSSSSSSSSSSSSSSS
+
+Ok basically I figured out how to make it disappear on web. I had to put the queue_free() part in a process function for it to actually disappear. I noticed that the collision body was working (the chomp noise went off when the player would go near the hotodog) but it wouldn't disappear. I'm glad I could figure it out myself (no video or forum post helped me unfortunately).
+
+9:17 PM Basically the thing I need to fix is the autoload variable thing. It doesn't update when the play eats a hotdog.
+
+## 10/19
+
+9:28 AM I actually figured out the issue earlier this morning, but now I have the time to write a log.
+
+So I read a post about web exports not working well, and a comment mentioned the case sensitivity that web exporting has compared to the godot editor which is not case sensitive. So, I managed to fix the error with hotdogs not disappearing, but the score would not update on colliding with the hotdogs. What worked (just a SIMPLE fix) was changing the Autoload scene name to lowercase (so autoload).

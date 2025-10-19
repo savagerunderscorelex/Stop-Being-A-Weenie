@@ -13,4 +13,7 @@ res://scenes/interact_ui2.tscn
 res://scenes/end_screen.tscn
 res://scenes/levels/level_2.tscn
 res://scenes/home_screen.tscn
+res://scenes/platform.tscn
 res://scripts/hot_dog_coin.gd
+res://scripts/main.gd
+res://scenes/autoload.tscn
