@@ -260,3 +260,5 @@ So I read a post about web exports not working well, and a comment mentioned the
 9:39 AM Adjusted the positions of some of the hotdogs
 
 9:58 AM Exported the game, added windows executable release, changed icon
+
+10:31 AM Project Complete!!
