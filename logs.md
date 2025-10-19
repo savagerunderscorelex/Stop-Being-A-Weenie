@@ -256,3 +256,7 @@ Ok basically I figured out how to make it disappear on web. I had to put the que
 9:28 AM I actually figured out the issue earlier this morning, but now I have the time to write a log.
 
 So I read a post about web exports not working well, and a comment mentioned the case sensitivity that web exporting has compared to the godot editor which is not case sensitive. So, I managed to fix the error with hotdogs not disappearing, but the score would not update on colliding with the hotdogs. What worked (just a SIMPLE fix) was changing the Autoload scene name to lowercase (so autoload).
+
+9:39 AM Adjusted the positions of some of the hotdogs
+
+9:58 AM Exported the game, added windows executable release, changed icon

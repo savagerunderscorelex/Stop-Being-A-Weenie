@@ -429,7 +429,7 @@ position = Vector2(-126, 3110)
 position = Vector2(-1303, 2200)
 
 [node name="hot_dog_coin6" parent="." instance=ExtResource("12_6xwso")]
-position = Vector2(-2450, 2185)
+position = Vector2(-3193, 2124)
 
 [node name="hot_dog_coin7" parent="." instance=ExtResource("12_6xwso")]
 position = Vector2(-2905, 3488)
@@ -438,7 +438,7 @@ position = Vector2(-2905, 3488)
 position = Vector2(-2894, 3177)
 
 [node name="hot_dog_coin9" parent="." instance=ExtResource("12_6xwso")]
-position = Vector2(-3678, 3166)
+position = Vector2(-3682, 3133)
 
 [node name="hot_dog_coin10" parent="." instance=ExtResource("12_6xwso")]
 position = Vector2(-1614, 837)

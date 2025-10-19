@@ -310,6 +310,7 @@ position = Vector2(-264, 65)
 scale = Vector2(2.6, 2.752)
 
 [node name="CanvasLayerGameUI" type="CanvasLayer" parent="."]
+visible = false
 
 [node name="Game_UI" parent="CanvasLayerGameUI" instance=ExtResource("9_glw47")]
 anchors_preset = 10
@@ -401,6 +402,7 @@ duration = 2.0
 start_direction = "right"
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
+visible = false
 
 [node name="InteractUI" parent="CanvasLayer" instance=ExtResource("9_um320")]
 
