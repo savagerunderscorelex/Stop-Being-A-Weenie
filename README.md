@@ -6,7 +6,8 @@ Stop Being A Weenie is a game where you play as a Wiener Dog / Dachshund. The go
 
 Each level will have a certain amount of hotdogs that the player must collect. The objective number of hotdogs is shown at the top of the screen and the number of hotdogs found and the number of hotdogs needed for that level are shown as a fraction as well. When a player finds a hotdog and collects it, the number of hotdogs needed goes up. Once the number of hotdogs needed and the number of hotdogs found are the same, the player will advance to the next level. **Currently there are 5 levels.**
 
-**Time Spent:** ![Hackatime: Time Spent on this project](https://hackatime-badge.hackclub.com/U08UGTGS4HE/Stop-Being-A-Weenie
+**Time Spent:** ![Hackatime: Time Spent on this project](https://hackatime-badge.hackclub.com/U08UGTGS4HE/Stop-Being-A-Weenie)
+For the Athena Award: [![Athena Award Badge](https://img.shields.io/endpoint?url=https%3A%2F%2Faward.athena.hackclub.com%2Fapi%2Fbadge)](https://award.athena.hackclub.com?utm_source=readme)
 )
 
 ## Journey
