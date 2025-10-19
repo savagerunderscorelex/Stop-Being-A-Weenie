@@ -240,3 +240,7 @@ Currently I'm working on the overall level code, like adding the interact ui, ga
 4:25 PM Updated how to play section
 
 7:11 PM Added sketches and pseudocode drafts for the levels
+
+8:38 PM DUDE ITS EVERY SINGLE TIME WITH GODOT!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!111
+
+I've been trying to export the game for the past hour. Already, I've encountered a bug with the hot dog coins. The player cannot collect them, and its like the hotdog doesn't even have a collision body to do anything with. I'm still in the process of trying to fix my code to make it work when it's exported.
