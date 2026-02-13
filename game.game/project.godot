@@ -8,12 +8,16 @@
 
 config_version=5
 
+[animation]
+
+compatibility/default_parent_skeleton_in_mesh_instance_3d=true
+
 [application]
 
 config/name="game_game"
 config/description="Stop Being A Weenie is a game where you play as a Wiener Dog / Dachshund. The goal of the game is to eat all the hotdogs scattered around the map in each level to advance to the next level. However, the levels get progressively harder, with a higher number of hotdogs to eat and with more difficult obstacles to overcome."
 run/main_scene="uid://ttlqusqk5kq1"
-config/features=PackedStringArray("4.4", "Mobile")
+config/features=PackedStringArray("4.6", "Mobile")
 config/icon="uid://cf6q85rnm5pb6"
 
 [autoload]

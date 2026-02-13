@@ -1,4 +1,4 @@
-[gd_scene load_steps=4 format=3 uid="uid://b1citgf11b13r"]
+[gd_scene format=3 uid="uid://b1citgf11b13r"]
 
 [ext_resource type="Script" uid="uid://ny44pob21cx" path="res://scripts/platform.gd" id="1_sgs7c"]
 [ext_resource type="Texture2D" uid="uid://cyntltjkvc02i" path="res://assets/Pixel fallen tree log.png" id="2_ycufq"]
@@ -6,20 +6,24 @@
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_sgs7c"]
 size = Vector2(432.382, 113.707)
 
-[node name="Platform" type="Node2D"]
+[node name="Platform" type="Node2D" unique_id=1671748097]
+texture_filter = 1
 script = ExtResource("1_sgs7c")
 
-[node name="StaticBody2D" type="StaticBody2D" parent="."]
+[node name="StaticBody2D" type="StaticBody2D" parent="." unique_id=1143119841]
+texture_filter = 1
 rotation = 1.57228
 
-[node name="CharacterBody2D" type="CharacterBody2D" parent="StaticBody2D"]
+[node name="CharacterBody2D" type="CharacterBody2D" parent="StaticBody2D" unique_id=1616590758]
+texture_filter = 1
 rotation = -0.189905
 
-[node name="Sprite2D" type="Sprite2D" parent="StaticBody2D/CharacterBody2D"]
+[node name="Sprite2D" type="Sprite2D" parent="StaticBody2D/CharacterBody2D" unique_id=1843575363]
+texture_filter = 1
 rotation = -1.39375
 texture = ExtResource("2_ycufq")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D/CharacterBody2D"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D/CharacterBody2D" unique_id=1479358377]
 position = Vector2(-23.2228, 11.7629)
 rotation = -1.39375
 shape = SubResource("RectangleShape2D_sgs7c")

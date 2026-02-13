@@ -1,4 +1,4 @@
-[gd_scene load_steps=13 format=3 uid="uid://m0d0pdtqgsgi"]
+[gd_scene format=3 uid="uid://m0d0pdtqgsgi"]
 
 [ext_resource type="Script" uid="uid://cmwk0qdpd21gf" path="res://scripts/hot_dog_coin.gd" id="1_pixb7"]
 [ext_resource type="Texture2D" uid="uid://knfyjm33x7iv" path="res://assets/hotdog.png" id="1_vfcmv"]
@@ -70,17 +70,19 @@ animations = [{
 "speed": 6.0
 }]
 
-[node name="hot_dog_coin" type="Node2D"]
+[node name="hot_dog_coin" type="Node2D" unique_id=699140438]
 scale = Vector2(0.446, 0.446)
 script = ExtResource("1_pixb7")
 
-[node name="Area2D" type="Area2D" parent="."]
+[node name="Area2D" type="Area2D" parent="." unique_id=750238086]
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=258490899]
 position = Vector2(183.856, 150.224)
 shape = SubResource("CircleShape2D_knub6")
 
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Area2D"]
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Area2D" unique_id=725090517]
+texture_filter = 6
+texture_repeat = 1
 position = Vector2(213, 164)
 sprite_frames = SubResource("SpriteFrames_do0wu")
 

@@ -1,4 +1,4 @@
-[gd_scene load_steps=16 format=4 uid="uid://dkochw328ucvl"]
+[gd_scene format=4 uid="uid://dkochw328ucvl"]
 
 [ext_resource type="Script" uid="uid://dog504fckphxb" path="res://scripts/level_4.gd" id="1_5vn0v"]
 [ext_resource type="PackedScene" uid="uid://cwqj114lof07w" path="res://scenes/background.tscn" id="1_w6h2s"]
@@ -274,57 +274,58 @@ pattern_0 = SubResource("TileMapPattern_ftfob")
 [sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_um320"]
 distance = -992.0
 
-[node name="level_4" type="Node2D"]
+[node name="level_4" type="Node2D" unique_id=310988132]
 script = ExtResource("1_5vn0v")
 
-[node name="Background" parent="." instance=ExtResource("1_w6h2s")]
+[node name="Background" parent="." unique_id=501834872 instance=ExtResource("1_w6h2s")]
 position = Vector2(1146, 1347)
 scale = Vector2(1.9367, 2.24459)
 
-[node name="Background4" parent="." instance=ExtResource("1_w6h2s")]
+[node name="Background4" parent="." unique_id=733959195 instance=ExtResource("1_w6h2s")]
 position = Vector2(1139, -678)
 rotation = -0.00437528
 scale = Vector2(1.9367, 2.24459)
 metadata/_edit_lock_ = true
 
-[node name="Background3" parent="." instance=ExtResource("1_w6h2s")]
+[node name="Background3" parent="." unique_id=1691001098 instance=ExtResource("1_w6h2s")]
 position = Vector2(-2842, 1346)
 scale = Vector2(1.9367, 2.24459)
 metadata/_edit_lock_ = true
 
-[node name="Background2" parent="." instance=ExtResource("1_w6h2s")]
+[node name="Background2" parent="." unique_id=173225559 instance=ExtResource("1_w6h2s")]
 position = Vector2(-2842, -677)
 scale = Vector2(1.9367, 2.24459)
 metadata/_edit_lock_ = true
 
-[node name="sign" parent="." instance=ExtResource("8_ts8eg")]
+[node name="sign" parent="." unique_id=1609522377 instance=ExtResource("8_ts8eg")]
 position = Vector2(115, 206)
 
-[node name="TileMapLayer" type="TileMapLayer" parent="."]
+[node name="TileMapLayer" type="TileMapLayer" parent="." unique_id=307223093]
+texture_filter = 1
 scale = Vector2(5, 5)
 tile_map_data = PackedByteArray("AAAAAAMAAAAAAAAAAAABAAMAAAAAAAAAAAACAAMAAAAAAAAAAAAAAAQAAAAAAAEAAAABAAQAAAAAAAEAAAACAAQAAAAAAAEAAAAAAAUAAAAAAAEAAAABAAUAAAAAAAEAAAACAAUAAAAAAAEAAAADAAUAAAAAAAEAAAAEAAYAAAAAAAEAAAADAAQAAAAAAAAAAAAEAAUAAAAAAAAAAAABAAYAAAAAAAEAAAACAAYAAAAAAAEAAAADAAYAAAAAAAEAAAAAAAYAAAAAAAEAAAD//wYAAAAAAAEAAAD+/wYAAAAAAAEAAAD9/wYAAAAAAAEAAAD9/wUAAAAAAAEAAAD+/wUAAAAAAAEAAAD//wUAAAAAAAEAAAD//wQAAAAAAAEAAAD+/wQAAAAAAAEAAAD9/wQAAAAAAAEAAAD//wMAAAAAAAAAAAD+/wMAAAAAAAAAAAD9/wMAAAAAAAAAAAD9/w4AAAAAAAAAAAD+/w4AAAAAAAAAAAD//w4AAAAAAAAAAAAAAA4AAAAAAAAAAAABAA4AAAAAAAAAAAACAA4AAAAAAAAAAAADAA4AAAAAAAAAAAAEAA4AAAAAAAAAAAD9/w8AAAAAAAEAAAD+/w8AAAAAAAEAAAD//w8AAAAAAAEAAAAAAA8AAAAAAAEAAAABAA8AAAAAAAEAAAACAA8AAAAAAAEAAAADAA8AAAAAAAEAAAAEAA8AAAAAAAEAAAAEABAAAAAAAAEAAAADABAAAAAAAAEAAAACABAAAAAAAAEAAAABABAAAAAAAAEAAAAAABAAAAAAAAEAAAD//xAAAAAAAAEAAAD+/xAAAAAAAAEAAAD+/xEAAAAAAAEAAAD9/xEAAAAAAAEAAAD9/xAAAAAAAAEAAAD//xEAAAAAAAEAAAAAABEAAAAAAAEAAAABABEAAAAAAAEAAAACABEAAAAAAAEAAAADABEAAAAAAAEAAAAEABEAAAAAAAEAAAD9/xIAAAAAAAEAAAD+/xIAAAAAAAEAAAD//xIAAAAAAAEAAAAAABIAAAAAAAEAAAABABIAAAAAAAEAAAACABIAAAAAAAEAAAADABIAAAAAAAEAAAAEABIAAAAAAAEAAAAHAAEAAAAAAAAAAAAIAAEAAAAAAAAAAAAIAAIAAAAAAAEAAAAHAAIAAAAAAAEAAAAJAAEAAAAAAAAAAAAJAAIAAAAAAAEAAAALAAIAAAAAAAAAAAAMAAIAAAAAAAAAAAANAAIAAAAAAAAAAAAPAAMAAAAAAAAAAAAQAAMAAAAAAAAAAAARAAMAAAAAAAAAAAALAAMAAAAAAAEAAAAMAAMAAAAAAAEAAAANAAMAAAAAAAEAAAAPAAQAAAAAAAEAAAAQAAQAAAAAAAEAAAARAAQAAAAAAAEAAAAmAAMAAAAAAAAAAAAmAAQAAAAAAAEAAAAtAAMAAAAAAAAAAAAtAAQAAAAAAAEAAAAuAAMAAAAAAAAAAAAuAAQAAAAAAAEAAAAvAAMAAAAAAAAAAAAvAAQAAAAAAAEAAAAnAAMAAAAAAAAAAAAnAAQAAAAAAAEAAAAoAAMAAAAAAAAAAAAoAAQAAAAAAAEAAAApAAMAAAAAAAAAAAApAAQAAAAAAAEAAAAwAAMAAAAAAAAAAAAwAAQAAAAAAAEAAAAxAAMAAAAAAAAAAAAxAAQAAAAAAAEAAAAyAAMAAAAAAAAAAAAyAAQAAAAAAAEAAAAtAA8AAAAAAAEAAAAtABAAAAAAAAEAAAAtABEAAAAAAAEAAAAtABIAAAAAAAEAAAAuAA8AAAAAAAEAAAAuABAAAAAAAAEAAAAuABEAAAAAAAEAAAAuABIAAAAAAAEAAAAvAA8AAAAAAAEAAAAvABAAAAAAAAEAAAAvABEAAAAAAAEAAAAvABIAAAAAAAEAAAAwABAAAAAAAAEAAAAwABEAAAAAAAEAAAAwABIAAAAAAAEAAAAxABAAAAAAAAEAAAAxABEAAAAAAAEAAAAxABIAAAAAAAEAAAAyABAAAAAAAAEAAAAyABEAAAAAAAEAAAAyABIAAAAAAAEAAAAzABEAAAAAAAEAAAAzABIAAAAAAAEAAAA0ABEAAAAAAAEAAAA0ABIAAAAAAAEAAAA1ABEAAAAAAAEAAAA1ABIAAAAAAAEAAAAtAA4AAAAAAAAAAAAuAA4AAAAAAAAAAAAvAA4AAAAAAAAAAAAwAA8AAAAAAAAAAAAxAA8AAAAAAAAAAAAyAA8AAAAAAAAAAAAzABAAAAAAAAAAAAA0ABAAAAAAAAAAAAA1ABAAAAAAAAAAAAA=")
 tile_set = SubResource("TileSet_5vn0v")
 
-[node name="Dog" parent="." instance=ExtResource("3_anwe6")]
+[node name="Dog" parent="." unique_id=2006343406 instance=ExtResource("3_anwe6")]
 position = Vector2(-264, 65)
 scale = Vector2(2.6, 2.752)
 
-[node name="CanvasLayerGameUI" type="CanvasLayer" parent="."]
+[node name="CanvasLayerGameUI" type="CanvasLayer" parent="." unique_id=572466209]
 
-[node name="Game_UI" parent="CanvasLayerGameUI" instance=ExtResource("9_glw47")]
+[node name="Game_UI" parent="CanvasLayerGameUI" unique_id=1136841665 instance=ExtResource("9_glw47")]
 anchors_preset = 10
 anchor_bottom = 0.0
 grow_vertical = 1
 
-[node name="Boundary" type="Area2D" parent="."]
+[node name="Boundary" type="Area2D" parent="." unique_id=1450132495]
 position = Vector2(855, 1165)
 scale = Vector2(0.5, 0.5)
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Boundary"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Boundary" unique_id=460586081]
 position = Vector2(-6, 218)
 shape = SubResource("WorldBoundaryShape2D_um320")
 
-[node name="Platform" parent="." instance=ExtResource("5_anwe6")]
+[node name="Platform" parent="." unique_id=1892485530 instance=ExtResource("5_anwe6")]
 position = Vector2(527, 445)
 rotation = 0.000411549
 scale = Vector2(0.5, 0.5)
@@ -333,7 +334,7 @@ wait_time = 3.0
 duration = 5.305
 start_direction = "down"
 
-[node name="Platform2" parent="." instance=ExtResource("5_anwe6")]
+[node name="Platform2" parent="." unique_id=771461697 instance=ExtResource("5_anwe6")]
 position = Vector2(819, 1164)
 scale = Vector2(0.5, 0.5)
 distance = 1040.0
@@ -341,7 +342,7 @@ wait_time = 2.0
 duration = 3.5
 start_direction = "left"
 
-[node name="Platform3" parent="." instance=ExtResource("5_anwe6")]
+[node name="Platform3" parent="." unique_id=947456938 instance=ExtResource("5_anwe6")]
 position = Vector2(3222, 1164)
 scale = Vector2(0.5, 0.5)
 distance = 1040.0
@@ -349,7 +350,7 @@ wait_time = 2.0
 duration = 3.5
 start_direction = "right"
 
-[node name="Platform4" parent="." instance=ExtResource("5_anwe6")]
+[node name="Platform4" parent="." unique_id=1280574628 instance=ExtResource("5_anwe6")]
 position = Vector2(3490, 1155)
 scale = Vector2(0.5, 0.5)
 distance = 900.0
@@ -357,7 +358,7 @@ wait_time = 3.0
 duration = 3.0
 start_direction = "up"
 
-[node name="Platform5" parent="." instance=ExtResource("5_anwe6")]
+[node name="Platform5" parent="." unique_id=1614772454 instance=ExtResource("5_anwe6")]
 position = Vector2(1575, 288)
 scale = Vector2(0.5, 0.5)
 distance = 550.0
@@ -365,34 +366,34 @@ wait_time = 2.0
 duration = 2.0
 start_direction = "left"
 
-[node name="hot_dog_coin" parent="." instance=ExtResource("7_ts8eg")]
+[node name="hot_dog_coin" parent="." unique_id=132288210 instance=ExtResource("7_ts8eg")]
 position = Vector2(415, 710)
 
-[node name="hot_dog_coin2" parent="." instance=ExtResource("7_ts8eg")]
+[node name="hot_dog_coin2" parent="." unique_id=902318638 instance=ExtResource("7_ts8eg")]
 position = Vector2(4152, 1130)
 
-[node name="hot_dog_coin3" parent="." instance=ExtResource("7_ts8eg")]
+[node name="hot_dog_coin3" parent="." unique_id=1809002523 instance=ExtResource("7_ts8eg")]
 position = Vector2(2214, 953)
 
-[node name="hot_dog_coin4" parent="." instance=ExtResource("7_ts8eg")]
+[node name="hot_dog_coin4" parent="." unique_id=63898128 instance=ExtResource("7_ts8eg")]
 position = Vector2(3397, 657)
 
-[node name="hot_dog_coin5" parent="." instance=ExtResource("7_ts8eg")]
+[node name="hot_dog_coin5" parent="." unique_id=1104559302 instance=ExtResource("7_ts8eg")]
 position = Vector2(3823, 93)
 
-[node name="hot_dog_coin6" parent="." instance=ExtResource("7_ts8eg")]
+[node name="hot_dog_coin6" parent="." unique_id=605116633 instance=ExtResource("7_ts8eg")]
 position = Vector2(1995, 100)
 
-[node name="hot_dog_coin7" parent="." instance=ExtResource("7_ts8eg")]
+[node name="hot_dog_coin7" parent="." unique_id=1627997025 instance=ExtResource("7_ts8eg")]
 position = Vector2(3121, 90)
 
-[node name="hot_dog_coin8" parent="." instance=ExtResource("7_ts8eg")]
+[node name="hot_dog_coin8" parent="." unique_id=1111329319 instance=ExtResource("7_ts8eg")]
 position = Vector2(632, -78)
 
-[node name="hot_dog_coin9" parent="." instance=ExtResource("7_ts8eg")]
+[node name="hot_dog_coin9" parent="." unique_id=1829388708 instance=ExtResource("7_ts8eg")]
 position = Vector2(55, 947)
 
-[node name="Platform6" parent="." instance=ExtResource("5_anwe6")]
+[node name="Platform6" parent="." unique_id=2007428796 instance=ExtResource("5_anwe6")]
 position = Vector2(2933, 288)
 scale = Vector2(0.5, 0.5)
 distance = 550.0
@@ -400,8 +401,8 @@ wait_time = 2.0
 duration = 2.0
 start_direction = "right"
 
-[node name="CanvasLayer" type="CanvasLayer" parent="."]
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1443423853]
 
-[node name="InteractUI" parent="CanvasLayer" instance=ExtResource("9_um320")]
+[node name="InteractUI" parent="CanvasLayer" unique_id=90555997 instance=ExtResource("9_um320")]
 
 [connection signal="body_entered" from="Boundary" to="." method="_on_boundary_body_entered"]

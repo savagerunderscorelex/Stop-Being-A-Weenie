@@ -1,4 +1,4 @@
-[gd_scene load_steps=11 format=4 uid="uid://cf2puiwe0a8a7"]
+[gd_scene format=4 uid="uid://cf2puiwe0a8a7"]
 
 [ext_resource type="Script" uid="uid://bfglbhv1muvhm" path="res://scripts/level_3.gd" id="1_ftfob"]
 [ext_resource type="PackedScene" uid="uid://cwqj114lof07w" path="res://scenes/background.tscn" id="2_fkk1g"]
@@ -262,56 +262,57 @@ pattern_0 = SubResource("TileMapPattern_ftfob")
 
 [sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_ftfob"]
 
-[node name="level_3" type="Node2D"]
+[node name="level_3" type="Node2D" unique_id=1667242954]
 script = ExtResource("1_ftfob")
 
-[node name="Background" parent="." instance=ExtResource("2_fkk1g")]
+[node name="Background" parent="." unique_id=922153134 instance=ExtResource("2_fkk1g")]
 position = Vector2(-7057, -2371)
 scale = Vector2(3.83066, 4.77557)
 
-[node name="Background2" parent="." instance=ExtResource("2_fkk1g")]
+[node name="Background2" parent="." unique_id=1818635023 instance=ExtResource("2_fkk1g")]
 position = Vector2(629, -2189)
 scale = Vector2(3.96861, 4.75309)
 
-[node name="TileMapLayer" type="TileMapLayer" parent="."]
+[node name="TileMapLayer" type="TileMapLayer" parent="." unique_id=1507657370]
+texture_filter = 1
 position = Vector2(3, -3)
 scale = Vector2(5, 5)
 tile_map_data = PackedByteArray("AADt//v/AAAAAAAAAADu//v/AAAAAAAAAADv//v/AAAAAAAAAADx//n/AAAAAAAAAADx//3/AAAAAAAAAADy//n/AAAAAAAAAADy//3/AAAAAAAAAADz//n/AAAAAAAAAADz//3/AAAAAAAAAAD1//f/AAAAAAAAAAD1////AAAAAAAAAAD1/wYAAAAAAAAAAAD2//f/AAAAAAAAAAD2////AAAAAAAAAAD2/wYAAAAAAAAAAAD3//f/AAAAAAAAAAD3////AAAAAAAAAAD3/wYAAAAAAAAAAAD4/wYAAAAAAAAAAAD5//X/AAAAAAAAAAD5/wEAAAAAAAAAAAD5/wYAAAAAAAAAAAD6//X/AAAAAAAAAAD6/wEAAAAAAAAAAAD6/wYAAAAAAAAAAAD7//X/AAAAAAAAAAD7/wEAAAAAAAAAAAD7/wUAAAAAAAAAAAD8/wQAAAAAAAAAAAD9//f/AAAAAAAAAAD9/wMAAAAAAAAAAAD+//f/AAAAAAAAAAD+/wMAAAAAAAAAAAD///f/AAAAAAAAAAD//wMAAAAAAAAAAAABAPn/AAAAAAAAAAABAAUAAAAAAAAAAAACAPn/AAAAAAAAAAACAAUAAAAAAAAAAAADAPn/AAAAAAAAAAADAAUAAAAAAAAAAAAFAPv/AAAAAAAAAAAFAAcAAAAAAAAAAAAFAAgAAAAAAAEAAAAFAAkAAAAAAAEAAAAFAAoAAAAAAAEAAAAFAAsAAAAAAAEAAAAFAAwAAAAAAAEAAAAGAPv/AAAAAAAAAAAGAAcAAAAAAAAAAAAGAAgAAAAAAAEAAAAGAAkAAAAAAAEAAAAGAAoAAAAAAAEAAAAGAAsAAAAAAAEAAAAGAAwAAAAAAAEAAAAHAPv/AAAAAAAAAAAHAAcAAAAAAAAAAAAHAAgAAAAAAAEAAAAHAAkAAAAAAAEAAAAHAAoAAAAAAAEAAAAHAAsAAAAAAAEAAAAHAAwAAAAAAAEAAAAIAPv/AAAAAAAAAAAIAAcAAAAAAAAAAAAIAAgAAAAAAAEAAAAIAAkAAAAAAAEAAAAIAAoAAAAAAAEAAAAIAAsAAAAAAAEAAAAIAAwAAAAAAAEAAAAKAPn/AAAAAAAAAAAKAAUAAAAAAAAAAAALAPn/AAAAAAAAAAALAAUAAAAAAAAAAAAMAPn/AAAAAAAAAAAMAAUAAAAAAAAAAAAOAPf/AAAAAAAAAAAOAAMAAAAAAAAAAAAPAPf/AAAAAAAAAAAPAAMAAAAAAAAAAAAQAPf/AAAAAAAAAAAQAAMAAAAAAAAAAAARAAQAAAAAAAAAAAASAPX/AAAAAAAAAAASAAEAAAAAAAAAAAASAAUAAAAAAAAAAAATAPX/AAAAAAAAAAATAAEAAAAAAAAAAAATAAYAAAAAAAAAAAAUAPX/AAAAAAAAAAAUAAEAAAAAAAAAAAAUAAYAAAAAAAAAAAAVAAYAAAAAAAAAAAAWAPf/AAAAAAAAAAAWAP//AAAAAAAAAAAWAAYAAAAAAAAAAAAXAPf/AAAAAAAAAAAXAP//AAAAAAAAAAAXAAYAAAAAAAAAAAAYAPf/AAAAAAAAAAAYAP//AAAAAAAAAAAYAAYAAAAAAAAAAAAaAPn/AAAAAAAAAAAaAP3/AAAAAAAAAAAbAPn/AAAAAAAAAAAbAP3/AAAAAAAAAAAcAPn/AAAAAAAAAAAcAP3/AAAAAAAAAAAeAPv/AAAAAAAAAAAfAPv/AAAAAAAAAAAgAPv/AAAAAAAAAAA=")
 tile_set = SubResource("TileSet_f6egh")
 
-[node name="Dog" parent="." instance=ExtResource("4_pimnq")]
+[node name="Dog" parent="." unique_id=886160682 instance=ExtResource("4_pimnq")]
 position = Vector2(398, 382)
 scale = Vector2(2.6, 2.752)
 
-[node name="CanvasLayer" type="CanvasLayer" parent="."]
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=354246095]
 
-[node name="Game_UI" parent="CanvasLayer" instance=ExtResource("5_2bnyt")]
+[node name="Game_UI" parent="CanvasLayer" unique_id=294934035 instance=ExtResource("5_2bnyt")]
 
-[node name="hot_dog_coin" parent="." instance=ExtResource("6_n6eey")]
+[node name="hot_dog_coin" parent="." unique_id=1311401087 instance=ExtResource("6_n6eey")]
 position = Vector2(-468, -1025)
 
-[node name="hot_dog_coin2" parent="." instance=ExtResource("6_n6eey")]
+[node name="hot_dog_coin2" parent="." unique_id=963931891 instance=ExtResource("6_n6eey")]
 position = Vector2(-863, 358)
 
-[node name="hot_dog_coin3" parent="." instance=ExtResource("6_n6eey")]
+[node name="hot_dog_coin3" parent="." unique_id=1694636875 instance=ExtResource("6_n6eey")]
 position = Vector2(1854, 343)
 
-[node name="hot_dog_coin4" parent="." instance=ExtResource("6_n6eey")]
+[node name="hot_dog_coin4" parent="." unique_id=332537126 instance=ExtResource("6_n6eey")]
 position = Vector2(2441, -536)
 
-[node name="hot_dog_coin5" parent="." instance=ExtResource("6_n6eey")]
+[node name="hot_dog_coin5" parent="." unique_id=27878242 instance=ExtResource("6_n6eey")]
 position = Vector2(553, -519)
 
-[node name="hot_dog_coin6" parent="." instance=ExtResource("6_n6eey")]
+[node name="hot_dog_coin6" parent="." unique_id=1348939348 instance=ExtResource("6_n6eey")]
 position = Vector2(-1415, -526)
 
-[node name="hot_dog_coin7" parent="." instance=ExtResource("6_n6eey")]
+[node name="hot_dog_coin7" parent="." unique_id=1022739127 instance=ExtResource("6_n6eey")]
 position = Vector2(1554, -1002)
 
-[node name="Boundary" type="Area2D" parent="."]
+[node name="Boundary" type="Area2D" parent="." unique_id=1635825949]
 position = Vector2(-1072, 1019)
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Boundary"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Boundary" unique_id=1066478665]
 shape = SubResource("WorldBoundaryShape2D_ftfob")
 
 [connection signal="body_entered" from="Boundary" to="." method="_on_boundary_body_entered"]

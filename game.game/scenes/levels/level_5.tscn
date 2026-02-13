@@ -1,4 +1,4 @@
-[gd_scene load_steps=18 format=4 uid="uid://dp3il4y46hqvu"]
+[gd_scene format=4 uid="uid://dp3il4y46hqvu"]
 
 [ext_resource type="PackedScene" uid="uid://cwqj114lof07w" path="res://scenes/background.tscn" id="1_fi56y"]
 [ext_resource type="Script" uid="uid://35248dhs7ij4" path="res://scripts/level_5.gd" id="1_hldbq"]
@@ -282,33 +282,34 @@ pattern_0 = SubResource("TileMapPattern_ftfob")
 [sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_fsnos"]
 distance = 297.215
 
-[node name="level_5" type="Node2D"]
+[node name="level_5" type="Node2D" unique_id=1075105815]
 process_mode = 1
 script = ExtResource("1_hldbq")
 
-[node name="Background" parent="." instance=ExtResource("1_fi56y")]
+[node name="Background" parent="." unique_id=1698803768 instance=ExtResource("1_fi56y")]
 position = Vector2(-6049, -1576)
 scale = Vector2(6.20296, 8.49606)
 metadata/_edit_lock_ = true
 
-[node name="TileMapLayer" type="TileMapLayer" parent="."]
+[node name="TileMapLayer" type="TileMapLayer" parent="." unique_id=130628033]
+texture_filter = 1
 scale = Vector2(5, 5)
 tile_map_data = PackedByteArray("AADX//3/AAAAAAAAAADY//3/AAAAAAAAAADZ//3/AAAAAAAAAADa//3/AAAAAAAAAADb//3/AAAAAAAAAADc//3/AAAAAAAAAAD1//3/AAAAAAAAAAD2//3/AAAAAAAAAAD3//3/AAAAAAAAAAD4//3/AAAAAAAAAAD5//3/AAAAAAAAAAD6//3/AAAAAAAAAAD7//3/AAAAAAAAAAD6/w0AAAAAAAAAAAD7/w0AAAAAAAAAAAD5/w0AAAAAAAAAAAD4/w0AAAAAAAAAAAD2/wsAAAAAAAAAAAD1/wsAAAAAAAAAAAD0/woAAAAAAAAAAADz/woAAAAAAAAAAADy/wkAAAAAAAAAAADx/wkAAAAAAAAAAADw/wgAAAAAAAAAAADv/wgAAAAAAAAAAADt/wcAAAAAAAAAAADu/wcAAAAAAAAAAADs/wcAAAAAAAAAAADr/wcAAAAAAAAAAADq/wgAAAAAAAAAAADp/wgAAAAAAAAAAADn/wkAAAAAAAAAAADo/wkAAAAAAAAAAADm/woAAAAAAAAAAADl/woAAAAAAAAAAADk/wsAAAAAAAAAAAD2/w4AAAAAAAAAAAD1/w4AAAAAAAAAAAD0/w8AAAAAAAAAAADz/w8AAAAAAAAAAADy/xAAAAAAAAAAAADx/xAAAAAAAAAAAADw/xEAAAAAAAAAAADv/xEAAAAAAAAAAADu/xIAAAAAAAAAAADt/xIAAAAAAAAAAADs/xIAAAAAAAAAAADr/xIAAAAAAAAAAADv/w4AAAAAAAAAAADq/xEAAAAAAAAAAADp/xEAAAAAAAAAAADo/xAAAAAAAAAAAADn/xAAAAAAAAAAAADq/w4AAAAAAAAAAADt/wwAAAAAAAAAAADs/wwAAAAAAAAAAADl/w8AAAAAAAAAAADm/w8AAAAAAAAAAADj/w4AAAAAAAAAAADk/w4AAAAAAAAAAADh/w0AAAAAAAAAAADi/w0AAAAAAAAAAADV/x0AAAAAAAAAAADW/x0AAAAAAAAAAADX/x0AAAAAAAAAAADY/x0AAAAAAAAAAADZ/x0AAAAAAAAAAADp/x0AAAAAAAAAAADq/x0AAAAAAAAAAADr/x0AAAAAAAAAAAD3/x0AAAAAAAAAAAD4/x0AAAAAAAAAAAD5/x0AAAAAAAAAAAD6/x0AAAAAAAAAAAD7/x0AAAAAAAAAAAD7/y0AAAAAAAAAAAD5/y0AAAAAAAAAAAD6/y0AAAAAAAAAAAD4/y0AAAAAAAAAAAD3/y0AAAAAAAAAAAD2/y0AAAAAAAAAAADu/y0AAAAAAAAAAADq/y0AAAAAAAAAAADr/y0AAAAAAAAAAADs/y0AAAAAAAAAAADt/y0AAAAAAAAAAADQ/y0AAAAAAAAAAADP/y0AAAAAAAAAAADO/y0AAAAAAAAAAADN/y0AAAAAAAAAAADT/ykAAAAAAAAAAADU/ykAAAAAAAAAAADV/ykAAAAAAAAAAADW/ykAAAAAAAAAAADX/ykAAAAAAAAAAADa/yoAAAAAAAAAAADb/yoAAAAAAAAAAADc/yoAAAAAAAAAAADd/yoAAAAAAAAAAADe/yoAAAAAAAAAAADi/yoAAAAAAAAAAADj/yoAAAAAAAAAAADk/yoAAAAAAAAAAADl/yoAAAAAAAAAAADm/yoAAAAAAAAAAADn/yoAAAAAAAAAAADo/yoAAAAAAAAAAADS/ykAAAAAAAAAAADP/ysAAAAAAAAAAADQ/yoAAAAAAAAAAADR/ykAAAAAAAAAAAA=")
 tile_set = SubResource("TileSet_6xwso")
 
-[node name="Dog" parent="." instance=ExtResource("5_vvoq0")]
+[node name="Dog" parent="." unique_id=114456652 instance=ExtResource("5_vvoq0")]
 position = Vector2(-3074, -438)
 scale = Vector2(2.6, 2.752)
 
-[node name="Boundary" type="Area2D" parent="."]
+[node name="Boundary" type="Area2D" parent="." unique_id=126888742]
 position = Vector2(56, 3883)
 scale = Vector2(1.3, 1.376)
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Boundary"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Boundary" unique_id=1266546914]
 position = Vector2(2.30769, 357.558)
 shape = SubResource("WorldBoundaryShape2D_fsnos")
 
-[node name="Platform" parent="." instance=ExtResource("4_mxx4w")]
+[node name="Platform" parent="." unique_id=2124900902 instance=ExtResource("4_mxx4w")]
 position = Vector2(-2668, -196)
 scale = Vector2(0.5, 0.5)
 distance = 700.0
@@ -316,7 +317,7 @@ wait_time = 2.0
 duration = 3.0
 start_direction = "left"
 
-[node name="Platform2" parent="." instance=ExtResource("4_mxx4w")]
+[node name="Platform2" parent="." unique_id=130053759 instance=ExtResource("4_mxx4w")]
 position = Vector2(-1013, -197)
 scale = Vector2(0.5, 0.5)
 distance = 700.0
@@ -324,7 +325,7 @@ wait_time = 2.0
 duration = 3.0
 start_direction = "right"
 
-[node name="Platform3" parent="." instance=ExtResource("4_mxx4w")]
+[node name="Platform3" parent="." unique_id=168886941 instance=ExtResource("4_mxx4w")]
 position = Vector2(-164, -207)
 scale = Vector2(0.5, 0.5)
 distance = 1300.0
@@ -332,7 +333,7 @@ wait_time = 3.0
 duration = 5.0
 start_direction = "down"
 
-[node name="Platform4" parent="." instance=ExtResource("4_mxx4w")]
+[node name="Platform4" parent="." unique_id=294944059 instance=ExtResource("4_mxx4w")]
 position = Vector2(-1876, 3651)
 scale = Vector2(0.5, 0.5)
 distance = 750.0
@@ -340,7 +341,7 @@ wait_time = 1.0
 duration = 3.0
 start_direction = "right"
 
-[node name="Platform5" parent="." instance=ExtResource("4_mxx4w")]
+[node name="Platform5" parent="." unique_id=1654315031 instance=ExtResource("4_mxx4w")]
 position = Vector2(-3636, 3641)
 scale = Vector2(0.5, 0.5)
 distance = 750.0
@@ -348,7 +349,7 @@ wait_time = 1.0
 duration = 3.0
 start_direction = "left"
 
-[node name="Platform6" parent="." instance=ExtResource("4_mxx4w")]
+[node name="Platform6" parent="." unique_id=11575545 instance=ExtResource("4_mxx4w")]
 position = Vector2(-173, 1088)
 scale = Vector2(0.5, 0.5)
 distance = 1300.0
@@ -356,7 +357,7 @@ wait_time = 3.0
 duration = 5.0
 start_direction = "down"
 
-[node name="Platform7" parent="." instance=ExtResource("4_mxx4w")]
+[node name="Platform7" parent="." unique_id=147252898 instance=ExtResource("4_mxx4w")]
 position = Vector2(-188, 2370)
 scale = Vector2(0.5, 0.5)
 distance = 1300.0
@@ -364,7 +365,7 @@ wait_time = 3.0
 duration = 5.0
 start_direction = "down"
 
-[node name="Platform8" parent="." instance=ExtResource("4_mxx4w")]
+[node name="Platform8" parent="." unique_id=639779928 instance=ExtResource("4_mxx4w")]
 position = Vector2(-823, 2374)
 scale = Vector2(0.5, 0.5)
 distance = 650.0
@@ -372,7 +373,7 @@ wait_time = 2.0
 duration = 3.0
 start_direction = "right"
 
-[node name="Platform9" parent="." instance=ExtResource("4_mxx4w")]
+[node name="Platform9" parent="." unique_id=1284441025 instance=ExtResource("4_mxx4w")]
 position = Vector2(-2923, 2354)
 scale = Vector2(0.5, 0.5)
 distance = 970.0
@@ -380,76 +381,76 @@ wait_time = 2.0
 duration = 3.0
 start_direction = "left"
 
-[node name="bridge" parent="." instance=ExtResource("7_fsnos")]
+[node name="bridge" parent="." unique_id=1780631331 instance=ExtResource("7_fsnos")]
 position = Vector2(-861, 3647)
 
-[node name="bridge2" parent="." instance=ExtResource("7_fsnos")]
+[node name="bridge2" parent="." unique_id=543448898 instance=ExtResource("7_fsnos")]
 position = Vector2(-939, 3647)
 
-[node name="bridge3" parent="." instance=ExtResource("7_fsnos")]
+[node name="bridge3" parent="." unique_id=1892645443 instance=ExtResource("7_fsnos")]
 position = Vector2(-1018, 3647)
 
-[node name="bridge4" parent="." instance=ExtResource("7_fsnos")]
+[node name="bridge4" parent="." unique_id=272761846 instance=ExtResource("7_fsnos")]
 position = Vector2(-1098, 3647)
 
-[node name="bridge5" parent="." instance=ExtResource("7_fsnos")]
+[node name="bridge5" parent="." unique_id=437981988 instance=ExtResource("7_fsnos")]
 position = Vector2(-1178, 3647)
 
-[node name="bridge6" parent="." instance=ExtResource("7_fsnos")]
+[node name="bridge6" parent="." unique_id=1673077475 instance=ExtResource("7_fsnos")]
 position = Vector2(-1257, 3647)
 
-[node name="bridge7" parent="." instance=ExtResource("7_fsnos")]
+[node name="bridge7" parent="." unique_id=2126198507 instance=ExtResource("7_fsnos")]
 position = Vector2(-1337, 3646)
 
-[node name="sign" parent="." instance=ExtResource("8_vvoq0")]
+[node name="sign" parent="." unique_id=465554624 instance=ExtResource("8_vvoq0")]
 position = Vector2(-768, 3567)
 
-[node name="CanvasLayerGameUI" type="CanvasLayer" parent="."]
+[node name="CanvasLayerGameUI" type="CanvasLayer" parent="." unique_id=786704343]
 
-[node name="Game_UI" parent="CanvasLayerGameUI" instance=ExtResource("9_dwyms")]
+[node name="Game_UI" parent="CanvasLayerGameUI" unique_id=364536689 instance=ExtResource("9_dwyms")]
 
-[node name="CanvasLayer" type="CanvasLayer" parent="."]
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=528082280]
 
-[node name="InteractUI" parent="CanvasLayer" instance=ExtResource("9_tqnj0")]
+[node name="InteractUI" parent="CanvasLayer" unique_id=1186616874 instance=ExtResource("9_tqnj0")]
 script = ExtResource("10_tqnj0")
 
-[node name="hot_dog_coin" parent="." instance=ExtResource("12_6xwso")]
+[node name="hot_dog_coin" parent="." unique_id=394905411 instance=ExtResource("12_6xwso")]
 position = Vector2(-1974, -339)
 
-[node name="hot_dog_coin2" parent="." instance=ExtResource("12_6xwso")]
+[node name="hot_dog_coin2" parent="." unique_id=801130292 instance=ExtResource("12_6xwso")]
 position = Vector2(-243, 296)
 
-[node name="hot_dog_coin3" parent="." instance=ExtResource("12_6xwso")]
+[node name="hot_dog_coin3" parent="." unique_id=1014413106 instance=ExtResource("12_6xwso")]
 position = Vector2(-234, 1710)
 
-[node name="hot_dog_coin4" parent="." instance=ExtResource("12_6xwso")]
+[node name="hot_dog_coin4" parent="." unique_id=2018664678 instance=ExtResource("12_6xwso")]
 position = Vector2(-126, 3110)
 
-[node name="hot_dog_coin5" parent="." instance=ExtResource("12_6xwso")]
+[node name="hot_dog_coin5" parent="." unique_id=2059623324 instance=ExtResource("12_6xwso")]
 position = Vector2(-1303, 2200)
 
-[node name="hot_dog_coin6" parent="." instance=ExtResource("12_6xwso")]
+[node name="hot_dog_coin6" parent="." unique_id=714862700 instance=ExtResource("12_6xwso")]
 position = Vector2(-3193, 2124)
 
-[node name="hot_dog_coin7" parent="." instance=ExtResource("12_6xwso")]
+[node name="hot_dog_coin7" parent="." unique_id=527921725 instance=ExtResource("12_6xwso")]
 position = Vector2(-2905, 3488)
 
-[node name="hot_dog_coin8" parent="." instance=ExtResource("12_6xwso")]
+[node name="hot_dog_coin8" parent="." unique_id=1526256210 instance=ExtResource("12_6xwso")]
 position = Vector2(-2894, 3177)
 
-[node name="hot_dog_coin9" parent="." instance=ExtResource("12_6xwso")]
+[node name="hot_dog_coin9" parent="." unique_id=1148075513 instance=ExtResource("12_6xwso")]
 position = Vector2(-3682, 3133)
 
-[node name="hot_dog_coin10" parent="." instance=ExtResource("12_6xwso")]
+[node name="hot_dog_coin10" parent="." unique_id=629373407 instance=ExtResource("12_6xwso")]
 position = Vector2(-1614, 837)
 
-[node name="hot_dog_coin11" parent="." instance=ExtResource("12_6xwso")]
+[node name="hot_dog_coin11" parent="." unique_id=1781009363 instance=ExtResource("12_6xwso")]
 position = Vector2(-1609, 1288)
 
-[node name="hot_dog_coin12" parent="." instance=ExtResource("12_6xwso")]
+[node name="hot_dog_coin12" parent="." unique_id=1963613957 instance=ExtResource("12_6xwso")]
 position = Vector2(-919, 637)
 
-[node name="hot_dog_coin13" parent="." instance=ExtResource("12_6xwso")]
+[node name="hot_dog_coin13" parent="." unique_id=1990046734 instance=ExtResource("12_6xwso")]
 position = Vector2(-2131, 582)
 
 [connection signal="body_entered" from="Boundary" to="." method="_on_boundary_body_entered"]
