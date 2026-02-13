@@ -14,13 +14,13 @@ For the Athena Award: [![Athena Award Badge](https://img.shields.io/endpoint?url
 
 I originally started this project for Jumpstart, but I found it difficult to actually start the project. My original idea for this project was a platformer game with a hotdog as the playing character. However, I couldn't actually find a free hot dog character sprite to make the project of, so I changed the game to include a wiener dog going around eating hotdogs as the main theme for the game.
 
-Like many of my other projects, I had to learn a lot of things to actually make it work (shown through the 15 tutorials and forum posts I had to look through). I try to usually start a project and use tutorials to fill through the gaps of my knowledge. Even with the first resources I used, I faced a looooot of issues when working on this project. Sometimes, my code that previously worked would stop working, and I would have to find another way to get the code to work the way I would want it to. I also spent some time using a pathway method for the platforms, which ended up not working too well for my project (and I would say was too complicated for me to understand). I also struggled a lot with getting sound effects to play, which led me to use the sound in a different way. There were a lot of moments like this where I would adjust my goals to fit my knowledge scope, or to "make the bug a feature."
+Like many of my other projects, I had to learn a lot of things to actually make it work (shown through the 15 tutorials and forum posts I had to look through). I try to usually start a project and use tutorials to fill through the gaps of my knowledge. Even with the first resources I used, I faced a looooot of issues when working on this project. Sometimes, my code that previously worked would stop working, and I would have to find another way to get the code to work the way I would want it to. I also spent some time using a pathway method for the platforms, which ended up not working too well for my project (and I would say was too complicated for me to understand). I also struggled a lot with getting sound effects to play, which led me to use the sounds in a different way. There were a lot of moments like this where I would adjust my goals to fit my knowledge scope, or to "make the bug a feature."
 
  This project really deepened my knowledge of how to use Godot and the Godot Script languge. One thing I discovered from this project was @export variables, which I found both useful and very cool.
 
 ## Where to Play
 
-The first release of the game can be found in the releases section. You can play it on Windows (only) by downloading the folder in the releases section, unzipping it, and by running the game executable once download. Now you can play on your own laptop or PC!!
+The first release of the game can be found in the releases section of this repository. You can play it on Windows by downloading the folder in the releases section, unzipping it, and by running the game executable once it's downloaded. Now you can play on your own laptop or PC!!
 
 This game is also published on itch.io. You can find it here: [itch.io](https://alexistreamoon.itch.io/stop-being-a-weenie).
 
@@ -34,7 +34,7 @@ Recently, I've added the resources I used to create a project to my README.md fi
 - Getting the UI to Stay in the Same Place:
 [Stick UI to Screen with Position Smoothing Camera2D | Godot 4.4](https://www.youtube.com/watch?v=dOr-fgBRMgs)
 - Moving Platforms: [5 Different Ways To Create A Moving Platform In Godot 4.0+](https://www.youtube.com/watch?v=MxrEM-jsMsM)
-- Guide to User Interface (Used like a 30 sec clip thought): [Guide to User Interface in Godot](https://www.youtube.com/watch?v=KOyREJu1P3I&t=3505s)
+- Guide to User Interface (Used like a 30 sec clip though): [Guide to User Interface in Godot](https://www.youtube.com/watch?v=KOyREJu1P3I&t=3505s)
 
 ### Asset Links
 
