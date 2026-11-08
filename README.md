@@ -18,6 +18,8 @@ Like many of my other projects, I had to learn a lot of things to actually make 
 
  This project really deepened my knowledge of how to use Godot and the Godot Script languge. One thing I discovered from this project was @export variables, which I found both useful and very cool.
 
+![demo image](demo-image.png)
+
 ## Where to Play
 
 The first release of the game can be found in the releases section of this repository. You can play it on Windows by downloading the folder in the releases section, unzipping it, and by running the game executable once it's downloaded. Now you can play on your own laptop or PC!!
